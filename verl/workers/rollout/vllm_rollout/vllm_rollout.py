@@ -140,7 +140,10 @@ class ServerAdapter(BaseRollout):
         job_id = ray.get_runtime_context().get_job_id()
         self.zmq_handle = f"ipc:///tmp/rl-colocate-zmq-{job_id}-replica-{self.replica_rank}-rank-{local_rank}.sock"
 
-        self.use_shm = not is_support_ipc()
+        # self.use_shm = not is_support_ipc()
+        # TEMP workaround: CUDA IPC handle incompatibility
+        self.use_shm = True
+        
         self._delta_weight_transfer_engine_initialized = False
         if self.use_shm:
             logger.warning(
