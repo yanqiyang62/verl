@@ -1,0 +1,959 @@
+step,sample,uid,kind,score,category,error,format_valid,field_accuracy,acc,response_wrapper,wrapper_inner_exact,xml_output,expected_tools,expected_keys
+1,1,20061f5c-d059-40e6-a0e5-b8912e58ef7c_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,True,,"data,err_message,succ_message"
+1,2,20061f5c-d059-40e6-a0e5-b8912e58ef7c_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,True,,"data,err_message,succ_message"
+2,1,9399c6a1-0733-47a8-ac82-2f8c0d913f17_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,True,,"data,err_message,succ_message"
+2,2,9399c6a1-0733-47a8-ac82-2f8c0d913f17_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,True,,"data,err_message,succ_message"
+3,1,dff5624f-b5dc-4785-9eaa-c1de54d30139_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,True,,"data,err_message,succ_message"
+3,2,dff5624f-b5dc-4785-9eaa-c1de54d30139_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,True,,"data,err_message,succ_message"
+4,1,9b9cf658-208a-40e3-aa6b-63fde1e6aeff_0_0,json,0.7384615540504456,partial,,1.0,0.9230769230769231,0.0,False,False,False,,"data,err_message,succ_message"
+4,2,9b9cf658-208a-40e3-aa6b-63fde1e6aeff_1_0,json,0.7384615540504456,partial,,1.0,0.9230769230769231,0.0,False,False,False,,"data,err_message,succ_message"
+5,1,e52ded8e-baa3-4a2a-9a46-a9203354b4d2_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"data,err_message,succ_message"
+5,2,e52ded8e-baa3-4a2a-9a46-a9203354b4d2_1_0,json,0.6769230961799622,partial,,1.0,0.8461538461538461,0.0,False,False,False,,"data,err_message,succ_message"
+6,1,ca5947f4-03e2-4cc8-8144-a8e3627cf226_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,True,,"data,err_message,succ_message"
+6,2,ca5947f4-03e2-4cc8-8144-a8e3627cf226_1_0,json,0.782608687877655,partial,,1.0,0.9782608695652174,0.0,False,False,False,,"data,err_message,succ_message"
+7,1,abca3f60-9ed7-4be6-87fd-ce487cf6690e_0_0,json,0.7384615540504456,partial,,1.0,0.9230769230769231,0.0,False,False,False,,"data,err_message,succ_message"
+7,2,abca3f60-9ed7-4be6-87fd-ce487cf6690e_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,True,,"data,err_message,succ_message"
+8,1,a8cab9f3-94d2-4d38-90ee-69a1f54f7890_0_0,tool_call,0.33898305892944336,partial,,1.0,0.423728813559322,0.0,False,False,True,tool_city_recommendation_everyday,
+8,2,a8cab9f3-94d2-4d38-90ee-69a1f54f7890_1_0,tool_call,0.0,parse_or_type_error,ToolSchemaError: invalid_typed_value:recommend_food_keywords_list,0.0,0.0,0.0,False,False,True,tool_city_recommendation_everyday,
+9,1,067ce9ea-aa78-4042-a3c3-d67c4468f2df_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+9,2,067ce9ea-aa78-4042-a3c3-d67c4468f2df_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+10,1,2c4ed65f-76e8-47d8-93e6-36f5c31a7d14_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+10,2,2c4ed65f-76e8-47d8-93e6-36f5c31a7d14_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+11,1,551067f7-8f51-4202-8177-cf68a5b9e642_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,selected_hotels
+11,2,551067f7-8f51-4202-8177-cf68a5b9e642_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,selected_hotels
+12,1,81da3238-0d15-40ff-8a06-188142c48a57_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+12,2,81da3238-0d15-40ff-8a06-188142c48a57_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+13,1,53fd181d-1ef0-4da9-a5b4-d1ae7e7b9d85_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+13,2,53fd181d-1ef0-4da9-a5b4-d1ae7e7b9d85_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+14,1,8bf1b9ec-57e8-4e45-89ee-b0a811a42766_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+14,2,8bf1b9ec-57e8-4e45-89ee-b0a811a42766_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+15,1,1e309b7b-df02-4c1a-8734-633217b24603_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+15,2,1e309b7b-df02-4c1a-8734-633217b24603_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+16,1,13f2b494-43e7-4cff-934f-6c0ecbe3c965_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+16,2,13f2b494-43e7-4cff-934f-6c0ecbe3c965_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+17,1,522d24a8-394e-429e-9345-58a8522e1353_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+17,2,522d24a8-394e-429e-9345-58a8522e1353_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+18,1,49b70b9c-4b69-4c61-ab94-9ace12ac0de0_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+18,2,49b70b9c-4b69-4c61-ab94-9ace12ac0de0_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+19,1,55fbe483-7b98-4117-a2cc-78406e001c8a_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+19,2,55fbe483-7b98-4117-a2cc-78406e001c8a_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+20,1,30ed0853-3640-45d0-b935-74972ff3dc09_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+20,2,30ed0853-3640-45d0-b935-74972ff3dc09_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+21,1,fac7f8ef-7607-42ad-9b80-ddb6bb84854a_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+21,2,fac7f8ef-7607-42ad-9b80-ddb6bb84854a_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+22,1,d3f1bbcb-7de3-4a32-92dc-0185c451e7bf_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+22,2,d3f1bbcb-7de3-4a32-92dc-0185c451e7bf_1_0,json,0.7272727489471436,partial,,1.0,0.9090909090909091,0.0,False,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+23,1,83c86123-13bb-46b1-8f37-74bab0b839bd_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+23,2,83c86123-13bb-46b1-8f37-74bab0b839bd_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+24,1,4ba29a1c-6a75-4cca-ab0c-6ec6f1330e78_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+24,2,4ba29a1c-6a75-4cca-ab0c-6ec6f1330e78_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+25,1,66e11f6a-486a-42fa-acba-a297f4ddf30c_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+25,2,66e11f6a-486a-42fa-acba-a297f4ddf30c_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+26,1,cb8e7e0f-af85-4bb1-916a-dcb40329546b_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+26,2,cb8e7e0f-af85-4bb1-916a-dcb40329546b_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+27,1,9f8d7110-f149-468e-af18-fca8087e6df7_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+27,2,9f8d7110-f149-468e-af18-fca8087e6df7_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+28,1,a84c3d90-67ab-4c94-b898-b3181a27c9d5_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+28,2,a84c3d90-67ab-4c94-b898-b3181a27c9d5_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+29,1,e51a7012-09ff-4f18-a16e-c008fa60b865_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+29,2,e51a7012-09ff-4f18-a16e-c008fa60b865_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+30,1,7d388d6b-167b-433b-a5c2-b1a773bebbef_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+30,2,7d388d6b-167b-433b-a5c2-b1a773bebbef_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+31,1,4f670ac6-49f5-427b-b1db-c0e853bf2569_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+31,2,4f670ac6-49f5-427b-b1db-c0e853bf2569_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+32,1,f0db6d08-2eee-4628-a1a0-18a85140e4a4_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+32,2,f0db6d08-2eee-4628-a1a0-18a85140e4a4_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+33,1,79fa40c3-d5a4-4131-8567-ed6f331b263f_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+33,2,79fa40c3-d5a4-4131-8567-ed6f331b263f_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+34,1,e9a82158-f36a-4af8-997c-88e88fdfb84c_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+34,2,e9a82158-f36a-4af8-997c-88e88fdfb84c_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+35,1,6e294add-bc0c-4302-a14a-aad911e7871d_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"data,err_message,succ_message"
+35,2,6e294add-bc0c-4302-a14a-aad911e7871d_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"data,err_message,succ_message"
+36,1,2b28f8c1-4a91-49e6-8940-1c97ac798772_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"data,err_message,succ_message"
+36,2,2b28f8c1-4a91-49e6-8940-1c97ac798772_1_0,json,0.6153846383094788,partial,,1.0,0.7692307692307693,0.0,False,False,False,,"data,err_message,succ_message"
+37,1,e8412223-f2c6-4097-af7a-a77375d7d60a_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,keywords
+37,2,e8412223-f2c6-4097-af7a-a77375d7d60a_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,keywords
+38,1,af49c58d-ad33-473d-969f-aad7dc431607_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,keywords
+38,2,af49c58d-ad33-473d-969f-aad7dc431607_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,keywords
+39,1,623e2f3e-0833-4b8d-9e08-3f9b2db17df4_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+39,2,623e2f3e-0833-4b8d-9e08-3f9b2db17df4_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+40,1,c19faeb7-0e0c-47ab-a580-e6dbfa9e9115_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+40,2,c19faeb7-0e0c-47ab-a580-e6dbfa9e9115_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+41,1,8e84ca48-e368-45d7-b917-d01de1a1e598_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+41,2,8e84ca48-e368-45d7-b917-d01de1a1e598_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+42,1,3011ac61-3d68-4203-a1b0-dd35babd5c59_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,keywords
+42,2,3011ac61-3d68-4203-a1b0-dd35babd5c59_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,keywords
+43,1,11f56d20-4e65-43e4-9b89-8f3161c967fc_0_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,SetectHotelsResponse,
+43,2,11f56d20-4e65-43e4-9b89-8f3161c967fc_1_0,tool_call,0.17777778208255768,partial,,1.0,0.2222222222222222,0.0,False,False,True,SetectHotelsResponse,
+44,1,1d24f897-dd54-4154-848d-90249e751f69_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+44,2,1d24f897-dd54-4154-848d-90249e751f69_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+45,1,0b14f119-e29a-4b81-b161-fa3343f57e3c_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+45,2,0b14f119-e29a-4b81-b161-fa3343f57e3c_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+46,1,d5864d8d-fe09-4188-a09e-13671e852ec8_0_0,tool_call,0.17777778208255768,partial,,1.0,0.2222222222222222,0.0,False,False,True,SetectHotelsResponse,
+46,2,d5864d8d-fe09-4188-a09e-13671e852ec8_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,SetectHotelsResponse,
+47,1,b16ff08d-732b-4289-8f85-0f342bf1f076_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+47,2,b16ff08d-732b-4289-8f85-0f342bf1f076_1_0,tool_call,0.7111111283302307,partial,,1.0,0.8888888888888888,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+48,1,2d56cd0a-a9d1-42a7-925e-b7ab5a52e2d0_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+48,2,2d56cd0a-a9d1-42a7-925e-b7ab5a52e2d0_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+49,1,34dfc6e2-bbf5-4f11-ae22-c42ed5c8efbd_0_0,tool_call,0.6000000238418579,partial,,1.0,0.75,0.0,False,False,True,tool_web_search_all,
+49,2,34dfc6e2-bbf5-4f11-ae22-c42ed5c8efbd_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,tool_web_search_all,
+50,1,e8d0a12e-fa68-431b-8808-92e6fa19eafd_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_aigc_image,
+50,2,e8d0a12e-fa68-431b-8808-92e6fa19eafd_1_0,tool_call,0.4571428596973419,partial,,1.0,0.5714285714285714,0.0,False,False,True,ai_assistant_aigc_image,
+51,1,c9192e85-1034-4e8d-92f4-972c1f60d2a4_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_aigc_image,
+51,2,c9192e85-1034-4e8d-92f4-972c1f60d2a4_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_aigc_image,
+52,1,2a77b841-97c8-4c92-accf-f81ceed210c7_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+52,2,2a77b841-97c8-4c92-accf-f81ceed210c7_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+53,1,9d42be49-b1cf-4e5b-a0bf-a3bcbf9fd7b5_0_0,tool_call,0.4444444477558136,partial,,1.0,0.5555555555555556,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+53,2,9d42be49-b1cf-4e5b-a0bf-a3bcbf9fd7b5_1_0,tool_call,0.0,call_or_schema_rejected,,0.0,0.0,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+54,1,f7db6582-9a18-4d0b-986f-cf2d786f557d_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+54,2,f7db6582-9a18-4d0b-986f-cf2d786f557d_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+55,1,d64660e0-ee9e-46d4-b63a-5f375a0f61b9_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+55,2,d64660e0-ee9e-46d4-b63a-5f375a0f61b9_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+56,1,c640abe4-a7b5-4932-886e-64412a235dd2_0_0,tool_call,0.17777778208255768,partial,,1.0,0.2222222222222222,0.0,False,False,True,ai_assistant_music,
+56,2,c640abe4-a7b5-4932-886e-64412a235dd2_1_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_music,
+57,1,2e665505-0cba-44f5-bc1a-5a972e6279c4_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+57,2,2e665505-0cba-44f5-bc1a-5a972e6279c4_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+58,1,66050d69-ef57-4091-a198-70d5a75e994a_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+58,2,66050d69-ef57-4091-a198-70d5a75e994a_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+59,1,4c0e9da8-ee0c-4686-a551-66d51ea18082_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+59,2,4c0e9da8-ee0c-4686-a551-66d51ea18082_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+60,1,e086f45d-46e7-42ea-8d93-49a430faa760_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_aigc_image,
+60,2,e086f45d-46e7-42ea-8d93-49a430faa760_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_aigc_image,
+61,1,b08aab01-7de7-416a-92d1-4500c509419a_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+61,2,b08aab01-7de7-416a-92d1-4500c509419a_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+62,1,e341ad9f-ff9f-4cb8-993c-d3609e5eb144_0_0,tool_call,0.22857142984867096,partial,,1.0,0.2857142857142857,0.0,False,False,True,ai_assistant_video,
+62,2,e341ad9f-ff9f-4cb8-993c-d3609e5eb144_1_0,tool_call,0.22857142984867096,partial,,1.0,0.2857142857142857,0.0,False,False,True,ai_assistant_video,
+63,1,4dd4c5b6-6dd7-45aa-aadc-a934fec57622_0_0,tool_call,0.0,parse_or_type_error,ValueError: Expected native <tool_call> JSON output,0.0,0.0,0.0,False,False,False,ai_assistant_music,
+63,2,4dd4c5b6-6dd7-45aa-aadc-a934fec57622_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_music,
+64,1,160e10a8-830e-49b9-a971-542058874ff7_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+64,2,160e10a8-830e-49b9-a971-542058874ff7_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+65,1,d4a464ad-3277-4e47-8340-ccf28c7d8797_0_0,tool_call,0.4444444477558136,partial,,1.0,0.5555555555555556,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+65,2,d4a464ad-3277-4e47-8340-ccf28c7d8797_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+66,1,44f055db-25c9-4848-b8ec-f5cf1c83b8b1_0_0,tool_call,0.0,parse_or_type_error,ToolSchemaError: invalid_typed_value:departure_split,0.0,0.0,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+66,2,44f055db-25c9-4848-b8ec-f5cf1c83b8b1_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+67,1,6c1dc17e-2212-4ab5-9719-a02d308f7175_0_0,tool_call,0.0,call_or_schema_rejected,,0.0,0.0,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+67,2,6c1dc17e-2212-4ab5-9719-a02d308f7175_1_0,tool_call,0.7111111283302307,partial,,1.0,0.8888888888888888,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+68,1,52c160da-c687-4c92-afaa-bccfa46b9f20_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_aigc_image,
+68,2,52c160da-c687-4c92-afaa-bccfa46b9f20_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_aigc_image,
+69,1,a1f045eb-ce87-4482-806e-89d3b918f67d_0_0,tool_call,0.6399999856948853,partial,,1.0,0.8,0.0,False,False,True,tool_web_search_all,
+69,2,a1f045eb-ce87-4482-806e-89d3b918f67d_1_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,tool_web_search_all,
+70,1,b31a779c-b4f2-478d-accd-0f4881423588_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,inspiration
+70,2,b31a779c-b4f2-478d-accd-0f4881423588_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,inspiration
+71,1,13903157-50e0-4b4e-841e-76a4d796c9a0_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,inspiration
+71,2,13903157-50e0-4b4e-841e-76a4d796c9a0_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,inspiration
+72,1,9716adf1-f42c-4ae1-907e-44b9863efad5_0_0,tool_call,0.0,call_or_schema_rejected,,0.0,0.0,0.0,False,False,True,tool_city_recommendation_everyday,
+72,2,9716adf1-f42c-4ae1-907e-44b9863efad5_1_0,tool_call,0.26446279883384705,partial,,1.0,0.3305785123966942,0.0,False,False,True,tool_city_recommendation_everyday,
+73,1,bd8c0bb4-773b-4981-b274-750d6f426ccf_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,inspiration
+73,2,bd8c0bb4-773b-4981-b274-750d6f426ccf_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,inspiration
+74,1,101127ad-29de-460c-9414-1fd69d539b22_0_0,tool_call,0.0,parse_or_type_error,ToolParseError: malformed_or_truncated_call_end,0.0,0.0,0.0,False,False,True,tool_city_recommendation_everyday,
+74,2,101127ad-29de-460c-9414-1fd69d539b22_1_0,tool_call,0.2370370328426361,partial,,1.0,0.2962962962962963,0.0,False,False,True,tool_city_recommendation_everyday,
+75,1,09f44916-7f3b-4e09-9df6-8545d593e88f_0_0,tool_call,0.0,parse_or_type_error,ValueError: Expected native <tool_call> JSON output,0.0,0.0,0.0,False,False,False,ProductInfoAndKeywordsResponse_v1,
+75,2,09f44916-7f3b-4e09-9df6-8545d593e88f_1_0,tool_call,0.0,parse_or_type_error,ValueError: Expected native <tool_call> JSON output,0.0,0.0,0.0,False,False,False,ProductInfoAndKeywordsResponse_v1,
+76,1,622bf125-54a3-4a3b-9224-f568b7417bfe_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,inspiration
+76,2,622bf125-54a3-4a3b-9224-f568b7417bfe_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,inspiration
+77,1,e429bd77-0e17-4598-9363-15695e7563c6_0_0,tool_call,0.2461538463830948,partial,,1.0,0.3076923076923077,0.0,False,False,True,ProductInfoAndKeywordsResponse_v1,
+77,2,e429bd77-0e17-4598-9363-15695e7563c6_1_0,tool_call,0.290909081697464,partial,,1.0,0.36363636363636365,0.0,False,False,True,ProductInfoAndKeywordsResponse_v1,
+78,1,7c464318-e412-4021-b5ea-a3e3fa0ac82e_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,inspiration
+78,2,7c464318-e412-4021-b5ea-a3e3fa0ac82e_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,inspiration
+79,1,d91d102f-3743-4fea-9bc8-592deef37f51_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,inspiration
+79,2,d91d102f-3743-4fea-9bc8-592deef37f51_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,inspiration
+80,1,c492df95-39d9-49db-b370-f097158a89e1_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+80,2,c492df95-39d9-49db-b370-f097158a89e1_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+81,1,5488ed68-7292-437d-9480-61e346ff7caf_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+81,2,5488ed68-7292-437d-9480-61e346ff7caf_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+82,1,ff5447b0-a983-4669-8cc5-4198427e184c_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+82,2,ff5447b0-a983-4669-8cc5-4198427e184c_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+83,1,4b371145-4629-4c1a-a946-e09a88c1ed52_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+83,2,4b371145-4629-4c1a-a946-e09a88c1ed52_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+84,1,b2570224-9130-4a9e-8249-31d7093accdc_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+84,2,b2570224-9130-4a9e-8249-31d7093accdc_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+85,1,bdb4bd9d-a466-48b8-86a4-6c7c3bf0f4a0_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+85,2,bdb4bd9d-a466-48b8-86a4-6c7c3bf0f4a0_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+86,1,f4750e4d-46a1-4721-8a49-dead3e3d39f2_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_video,
+86,2,f4750e4d-46a1-4721-8a49-dead3e3d39f2_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+87,1,c2b8a2bc-5116-4e76-924d-9fdd91ee32bd_0_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_video,
+87,2,c2b8a2bc-5116-4e76-924d-9fdd91ee32bd_1_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_video,
+88,1,019ed312-805d-411d-a95a-a75557275166_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+88,2,019ed312-805d-411d-a95a-a75557275166_1_0,tool_call,0.6000000238418579,partial,,1.0,0.75,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+89,1,dacdd67e-229e-41f3-8443-e5d77da74329_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+89,2,dacdd67e-229e-41f3-8443-e5d77da74329_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+90,1,46c67301-5e99-43ba-ac39-bba6f14428d9_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_aigc_image,
+90,2,46c67301-5e99-43ba-ac39-bba6f14428d9_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_aigc_image,
+91,1,2d0d2efa-1ba4-4c44-abfb-fabd10eef27d_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,inspiration
+91,2,2d0d2efa-1ba4-4c44-abfb-fabd10eef27d_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,inspiration
+92,1,0c2817d1-f645-4af2-9e87-c476040b366a_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+92,2,0c2817d1-f645-4af2-9e87-c476040b366a_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+93,1,998c0722-7e06-4591-a25b-4b67bc4db4eb_0_0,tool_call,0.0,parse_or_type_error,ValueError: Expected native <tool_call> JSON output,0.0,0.0,0.0,False,False,False,ai_assistant_video,
+93,2,998c0722-7e06-4591-a25b-4b67bc4db4eb_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+94,1,9d6d5b1b-e12c-4ef8-97d2-d494a7f2ddcb_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_aigc_image,
+94,2,9d6d5b1b-e12c-4ef8-97d2-d494a7f2ddcb_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_aigc_image,
+95,1,46c3f1ac-440d-49a1-9c2b-fdcae2771dcd_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+95,2,46c3f1ac-440d-49a1-9c2b-fdcae2771dcd_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+96,1,0687e6cd-9597-401e-88b3-6a1040e9d55a_0_0,json,0.17777778208255768,partial,,1.0,0.2222222222222222,0.0,False,False,False,,"advices,opening_remarks"
+96,2,0687e6cd-9597-401e-88b3-6a1040e9d55a_1_0,json,0.17777778208255768,partial,,1.0,0.2222222222222222,0.0,False,False,False,,"advices,opening_remarks"
+97,1,8f106524-585c-45fa-804a-aa492d6fba21_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+97,2,8f106524-585c-45fa-804a-aa492d6fba21_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+98,1,cdb432af-a772-4b9d-8e07-e91d9bb3ba60_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"content,title"
+98,2,cdb432af-a772-4b9d-8e07-e91d9bb3ba60_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"content,title"
+99,1,86606bd3-e468-4fc6-b13d-89d58c349912_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_video,
+99,2,86606bd3-e468-4fc6-b13d-89d58c349912_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_video,
+100,1,3731b0ff-9dd8-4bb7-b514-53fe96c88d40_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+100,2,3731b0ff-9dd8-4bb7-b514-53fe96c88d40_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+101,1,81774716-e969-4038-9e38-4e80095e61fb_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+101,2,81774716-e969-4038-9e38-4e80095e61fb_1_0,tool_call,0.7200000286102295,partial,,1.0,0.9,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+102,1,34fdd600-bfd7-4c2d-a75c-1809bdce34de_0_0,tool_call,0.4571428596973419,partial,,1.0,0.5714285714285714,0.0,False,False,True,ai_assistant_video,
+102,2,34fdd600-bfd7-4c2d-a75c-1809bdce34de_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+103,1,d4cbd0fa-b7eb-4556-b646-526487a81c98_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+103,2,d4cbd0fa-b7eb-4556-b646-526487a81c98_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+104,1,d2203416-c967-4dd0-a8c2-e80fc9d9d342_0_0,tool_call,0.4571428596973419,partial,,1.0,0.5714285714285714,0.0,False,False,True,ai_assistant_music,
+104,2,d2203416-c967-4dd0-a8c2-e80fc9d9d342_1_0,tool_call,0.4571428596973419,partial,,1.0,0.5714285714285714,0.0,False,False,True,ai_assistant_music,
+105,1,c814f522-15ba-48c8-86cc-321106e772a3_0_0,tool_call,0.6222222447395325,partial,,1.0,0.7777777777777778,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+105,2,c814f522-15ba-48c8-86cc-321106e772a3_1_0,tool_call,0.5894736647605896,partial,,1.0,0.7368421052631579,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+106,1,cb906b29-4a2b-4418-971c-5a926f8d075a_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+106,2,cb906b29-4a2b-4418-971c-5a926f8d075a_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+107,1,3e7298e7-b9a8-43c5-aab5-da33f104fc9d_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+107,2,3e7298e7-b9a8-43c5-aab5-da33f104fc9d_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+108,1,d215e29a-91fc-4d3f-aeec-a2c9c75ad57e_0_0,tool_call,0.5600000023841858,partial,,1.0,0.7,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+108,2,d215e29a-91fc-4d3f-aeec-a2c9c75ad57e_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+109,1,9c10a7d1-d2c4-4574-972d-4a15ef14355e_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+109,2,9c10a7d1-d2c4-4574-972d-4a15ef14355e_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+110,1,1cf577a1-e612-4334-9206-257f9b2adf92_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_music,
+110,2,1cf577a1-e612-4334-9206-257f9b2adf92_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_music,
+111,1,0cbbf7d0-f262-4400-bce8-f3559d0d512f_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+111,2,0cbbf7d0-f262-4400-bce8-f3559d0d512f_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+112,1,82212388-1661-4397-b986-4dd41a2ac417_0_0,tool_call,0.7272727489471436,partial,,1.0,0.9090909090909091,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+112,2,82212388-1661-4397-b986-4dd41a2ac417_1_0,tool_call,0.6545454263687134,partial,,1.0,0.8181818181818182,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+113,1,717e65aa-fade-48dc-97e1-aaae771134d9_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+113,2,717e65aa-fade-48dc-97e1-aaae771134d9_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+114,1,40513313-0a12-42ed-a187-386d1c860b7b_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_video,
+114,2,40513313-0a12-42ed-a187-386d1c860b7b_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+115,1,0e533af0-1e1b-4560-a995-83ed04eee123_0_0,tool_call,0.22857142984867096,partial,,1.0,0.2857142857142857,0.0,False,False,True,ai_assistant_video,
+115,2,0e533af0-1e1b-4560-a995-83ed04eee123_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+116,1,94279f02-be4e-4031-a638-609f851a9293_0_0,tool_call,0.1599999964237213,partial,,1.0,0.2,0.0,False,False,True,ai_assistant_music,
+116,2,94279f02-be4e-4031-a638-609f851a9293_1_0,tool_call,0.1599999964237213,partial,,1.0,0.2,0.0,False,False,True,ai_assistant_music,
+117,1,f1081d24-22d2-4604-a820-ed7a5058f9d1_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+117,2,f1081d24-22d2-4604-a820-ed7a5058f9d1_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+118,1,f67ada2b-fd59-4d44-b1a1-c67705ae0498_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_aigc_image,
+118,2,f67ada2b-fd59-4d44-b1a1-c67705ae0498_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_aigc_image,
+119,1,fb0634e9-7f0e-4e60-91d2-9bb0a242a435_0_0,tool_call,0.0,parse_or_type_error,ValueError: Expected native <tool_call> JSON output,0.0,0.0,0.0,False,False,False,ai_assistant_video,
+119,2,fb0634e9-7f0e-4e60-91d2-9bb0a242a435_1_0,tool_call,0.6399999856948853,partial,,1.0,0.8,0.0,False,False,True,ai_assistant_video,
+120,1,13ea3686-55f0-45f0-bf0d-eb405f02b3be_0_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_video,
+120,2,13ea3686-55f0-45f0-bf0d-eb405f02b3be_1_0,tool_call,0.22857142984867096,partial,,1.0,0.2857142857142857,0.0,False,False,True,ai_assistant_video,
+121,1,e33160cc-4c37-4eb9-af02-aa791a159830_0_0,tool_call,0.4571428596973419,partial,,1.0,0.5714285714285714,0.0,False,False,True,ai_assistant_music,
+121,2,e33160cc-4c37-4eb9-af02-aa791a159830_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_music,
+122,1,1ae57a06-d5c3-4b3d-82c8-6e7223bdd7ee_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+122,2,1ae57a06-d5c3-4b3d-82c8-6e7223bdd7ee_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+123,1,30734cb0-30e6-4235-a88e-b81480e86a9d_0_0,tool_call,0.0,parse_or_type_error,ValueError: Expected native <tool_call> JSON output,0.0,0.0,0.0,False,False,False,ai_assistant_video,
+123,2,30734cb0-30e6-4235-a88e-b81480e86a9d_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+124,1,69490705-7e40-4eaf-9df3-9c92334b69bc_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+124,2,69490705-7e40-4eaf-9df3-9c92334b69bc_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+125,1,7e539302-c004-4803-a441-741b1a8cb552_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+125,2,7e539302-c004-4803-a441-741b1a8cb552_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+126,1,7a5eee2d-57a3-4bed-8f25-bd893e4d3dc6_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_music,
+126,2,7a5eee2d-57a3-4bed-8f25-bd893e4d3dc6_1_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_music,
+127,1,e88b0e36-90cb-44af-bf25-c0788ffcf1f6_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+127,2,e88b0e36-90cb-44af-bf25-c0788ffcf1f6_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+128,1,0b47b469-eb62-4455-863e-bb6c5c9efe3f_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+128,2,0b47b469-eb62-4455-863e-bb6c5c9efe3f_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+129,1,5b412c55-1f21-4efa-8e3d-2b39550eb75c_0_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_video,
+129,2,5b412c55-1f21-4efa-8e3d-2b39550eb75c_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+130,1,1a70b567-efdd-4fd3-b8aa-18894481a356_0_0,tool_call,0.0,parse_or_type_error,ValueError: Expected native <tool_call> JSON output,0.0,0.0,0.0,False,False,False,ai_assistant_video,
+130,2,1a70b567-efdd-4fd3-b8aa-18894481a356_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+131,1,535c1818-1684-4adf-9179-75f61a9ce690_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+131,2,535c1818-1684-4adf-9179-75f61a9ce690_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+132,1,0a049ca8-3d7d-46fa-8d40-6f753df46408_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"correct_or_not,hint"
+132,2,0a049ca8-3d7d-46fa-8d40-6f753df46408_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"correct_or_not,hint"
+133,1,87880669-d012-41c8-a0e1-f2bef65a40f6_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+133,2,87880669-d012-41c8-a0e1-f2bef65a40f6_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+134,1,0366bd4f-ef56-44e5-8986-245590ac9932_0_0,tool_call,0.7272727489471436,partial,,1.0,0.9090909090909091,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+134,2,0366bd4f-ef56-44e5-8986-245590ac9932_1_0,tool_call,0.7272727489471436,partial,,1.0,0.9090909090909091,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+135,1,7849df86-d897-43cc-9341-19996e563d0e_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+135,2,7849df86-d897-43cc-9341-19996e563d0e_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+136,1,895d01d5-9be9-410d-92a5-20429313353b_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_music,
+136,2,895d01d5-9be9-410d-92a5-20429313353b_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_music,
+137,1,5f954b18-24b0-4c93-ab2a-a54e1a69780c_0_0,tool_call,0.13333334028720856,partial,,1.0,0.16666666666666666,0.0,False,False,True,ShoppingAdviceResponse,
+137,2,5f954b18-24b0-4c93-ab2a-a54e1a69780c_1_0,tool_call,0.13333334028720856,partial,,1.0,0.16666666666666666,0.0,False,False,True,ShoppingAdviceResponse,
+138,1,a6b66c16-d064-44d3-b0d2-9d117bb09762_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+138,2,a6b66c16-d064-44d3-b0d2-9d117bb09762_1_0,tool_call,0.4571428596973419,partial,,1.0,0.5714285714285714,0.0,False,False,True,ai_assistant_video,
+139,1,a62fa91a-8a26-42e8-83c5-852c85fcaa05_0_0,tool_call,0.2666666805744171,partial,,1.0,0.3333333333333333,0.0,False,False,True,ai_assistant_video,
+139,2,a62fa91a-8a26-42e8-83c5-852c85fcaa05_1_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_video,
+140,1,4bb97af0-f0d9-4f51-a578-7b1387e6d08f_0_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_video,
+140,2,4bb97af0-f0d9-4f51-a578-7b1387e6d08f_1_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_video,
+141,1,ed3eddac-007e-4056-8087-25a54e5f5b39_0_0,tool_call,0.5925925970077515,partial,,1.0,0.7407407407407407,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+141,2,ed3eddac-007e-4056-8087-25a54e5f5b39_1_0,tool_call,0.6857143044471741,partial,,1.0,0.8571428571428571,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+142,1,d1766b47-4d4b-48fe-8719-456e01bea092_0_0,tool_call,0.2666666805744171,partial,,1.0,0.3333333333333333,0.0,False,False,True,ai_assistant_video,
+142,2,d1766b47-4d4b-48fe-8719-456e01bea092_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+143,1,b652194d-a8ec-4b04-9fee-f6bbc05f2b1e_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+143,2,b652194d-a8ec-4b04-9fee-f6bbc05f2b1e_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+144,1,ef7d1b2d-c26f-4f8d-a881-4a932d2a5801_0_0,tool_call,0.20000000298023224,partial,,1.0,0.25,0.0,False,False,True,ai_assistant_video,
+144,2,ef7d1b2d-c26f-4f8d-a881-4a932d2a5801_1_0,tool_call,0.6857143044471741,partial,,1.0,0.8571428571428571,0.0,False,False,True,ai_assistant_video,
+145,1,9ce24ed6-076c-49bd-aebb-35788842efb6_0_0,tool_call,0.2666666805744171,partial,,1.0,0.3333333333333333,0.0,False,False,True,ai_assistant_music,
+145,2,9ce24ed6-076c-49bd-aebb-35788842efb6_1_0,tool_call,0.2666666805744171,partial,,1.0,0.3333333333333333,0.0,False,False,True,ai_assistant_music,
+146,1,cd32d09e-8c85-42ac-9769-adde3ad51114_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+146,2,cd32d09e-8c85-42ac-9769-adde3ad51114_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+147,1,6ba40f2a-c4ff-46b3-b137-e51537457232_0_0,tool_call,0.6399999856948853,partial,,1.0,0.8,0.0,False,False,True,ai_assistant_music,
+147,2,6ba40f2a-c4ff-46b3-b137-e51537457232_1_0,tool_call,0.6399999856948853,partial,,1.0,0.8,0.0,False,False,True,ai_assistant_music,
+148,1,134a3203-b106-449e-93ba-768fab96d6b2_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+148,2,134a3203-b106-449e-93ba-768fab96d6b2_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+149,1,ed2cdc36-fafa-4b23-844d-a4f49e2ecce4_0_0,tool_call,0.46666666865348816,partial,,1.0,0.5833333333333334,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+149,2,ed2cdc36-fafa-4b23-844d-a4f49e2ecce4_1_0,tool_call,0.46666666865348816,partial,,1.0,0.5833333333333334,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+150,1,1c4720cc-2959-4e73-befe-84fbe5ddff0d_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+150,2,1c4720cc-2959-4e73-befe-84fbe5ddff0d_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+151,1,8e41ed5e-0498-4f59-accd-1de74e41158b_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_video,
+151,2,8e41ed5e-0498-4f59-accd-1de74e41158b_1_0,tool_call,0.6857143044471741,partial,,1.0,0.8571428571428571,0.0,False,False,True,ai_assistant_video,
+152,1,f87995c2-8f31-4bd9-b6e6-3cd6934ef70f_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+152,2,f87995c2-8f31-4bd9-b6e6-3cd6934ef70f_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+153,1,6f4a446f-3806-4de5-beb4-79c65e8796a3_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+153,2,6f4a446f-3806-4de5-beb4-79c65e8796a3_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+154,1,1bbd942c-e68b-4341-9bad-37ca320f35ed_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+154,2,1bbd942c-e68b-4341-9bad-37ca320f35ed_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+155,1,481645bb-7e95-4859-936d-ce5d2c69d490_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+155,2,481645bb-7e95-4859-936d-ce5d2c69d490_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+156,1,a9c73cab-e62a-4444-ac2a-d66f2450e3b0_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+156,2,a9c73cab-e62a-4444-ac2a-d66f2450e3b0_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+157,1,e5e0e0b1-9a8a-493a-a3e3-efa9d416bc04_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+157,2,e5e0e0b1-9a8a-493a-a3e3-efa9d416bc04_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+158,1,16d3363e-86fb-495f-8c4d-f8becf596378_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+158,2,16d3363e-86fb-495f-8c4d-f8becf596378_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+159,1,6aa48eee-b8e4-4a49-ab7e-534522256c74_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+159,2,6aa48eee-b8e4-4a49-ab7e-534522256c74_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+160,1,ce25f182-d203-491b-ac44-a99c2c178ccf_0_0,tool_call,0.2666666805744171,partial,,1.0,0.3333333333333333,0.0,False,False,True,ai_assistant_music,
+160,2,ce25f182-d203-491b-ac44-a99c2c178ccf_1_0,tool_call,0.35555556416511536,partial,,1.0,0.4444444444444444,0.0,False,False,True,ai_assistant_music,
+161,1,c0d72472-80e4-4a0a-b86b-253fc3378dfd_0_0,tool_call,0.6666666865348816,partial,,1.0,0.8333333333333334,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+161,2,c0d72472-80e4-4a0a-b86b-253fc3378dfd_1_0,tool_call,0.0,parse_or_type_error,ValueError: Expected native <tool_call> JSON output,0.0,0.0,0.0,False,False,False,mcp_taxi_generate_ride_app_link,
+162,1,76b44781-0e29-4308-86e3-a8d52ed01d3e_0_0,tool_call,0.22857142984867096,partial,,1.0,0.2857142857142857,0.0,False,False,True,ai_assistant_music,
+162,2,76b44781-0e29-4308-86e3-a8d52ed01d3e_1_0,tool_call,0.2666666805744171,partial,,1.0,0.3333333333333333,0.0,False,False,True,ai_assistant_music,
+163,1,3a32dc6f-26fa-42fe-9e31-8f481d5d77e5_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+163,2,3a32dc6f-26fa-42fe-9e31-8f481d5d77e5_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+164,1,c21766eb-4163-47fe-9d4b-1d24915f28c4_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+164,2,c21766eb-4163-47fe-9d4b-1d24915f28c4_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+165,1,8b08eeb8-2898-4efc-a631-701117a5863b_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+165,2,8b08eeb8-2898-4efc-a631-701117a5863b_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+166,1,3545055b-8f7b-4ff8-a564-ddb102d817db_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+166,2,3545055b-8f7b-4ff8-a564-ddb102d817db_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+167,1,04404a86-2ccb-4133-9282-84f1b08f20bf_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+167,2,04404a86-2ccb-4133-9282-84f1b08f20bf_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+168,1,86341133-53ea-4cb6-9579-6410e4de83ba_0_0,tool_call,0.7111111283302307,partial,,1.0,0.8888888888888888,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+168,2,86341133-53ea-4cb6-9579-6410e4de83ba_1_0,tool_call,0.7111111283302307,partial,,1.0,0.8888888888888888,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+169,1,421639a5-bcbe-499a-a83f-3421d7869288_0_0,json,0.1599999964237213,partial,,1.0,0.2,0.0,False,False,False,,"advices,opening_remarks"
+169,2,421639a5-bcbe-499a-a83f-3421d7869288_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+170,1,e5183a3a-d61a-48d9-a793-4e0cb270048e_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+170,2,e5183a3a-d61a-48d9-a793-4e0cb270048e_1_0,tool_call,0.7333333492279053,partial,,1.0,0.9166666666666666,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+171,1,6c82dd44-c310-44f5-be72-601e8db05365_0_0,tool_call,0.5565217137336731,partial,,1.0,0.6956521739130435,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+171,2,6c82dd44-c310-44f5-be72-601e8db05365_1_0,tool_call,0.626086950302124,partial,,1.0,0.782608695652174,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+172,1,f567d983-3618-4c4b-8a23-0739ebf57571_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+172,2,f567d983-3618-4c4b-8a23-0739ebf57571_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+173,1,42130de6-0fb7-437c-b0b8-ca18c46f8de1_0_0,tool_call,0.4571428596973419,partial,,1.0,0.5714285714285714,0.0,False,False,True,ai_assistant_music,
+173,2,42130de6-0fb7-437c-b0b8-ca18c46f8de1_1_0,tool_call,0.4571428596973419,partial,,1.0,0.5714285714285714,0.0,False,False,True,ai_assistant_music,
+174,1,fccbe681-b475-42ef-9e3c-53601db42472_0_0,tool_call,0.6000000238418579,partial,,1.0,0.75,0.0,False,False,True,ai_assistant_video,
+174,2,fccbe681-b475-42ef-9e3c-53601db42472_1_0,tool_call,0.6000000238418579,partial,,1.0,0.75,0.0,False,False,True,ai_assistant_video,
+175,1,3fcb7a62-0c52-4796-bbd4-9c02cf06f714_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+175,2,3fcb7a62-0c52-4796-bbd4-9c02cf06f714_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+176,1,07b93ef6-bdaf-49e7-9b7b-1768caa683fe_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_music,
+176,2,07b93ef6-bdaf-49e7-9b7b-1768caa683fe_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_music,
+177,1,2ffc4cfc-f28d-4e61-92b7-982319ddf1ab_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+177,2,2ffc4cfc-f28d-4e61-92b7-982319ddf1ab_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+178,1,f36d6fad-a852-4f4f-94ab-df43a41e1797_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+178,2,f36d6fad-a852-4f4f-94ab-df43a41e1797_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+179,1,3a3481e6-d467-4936-aee2-ac4dfe26a2fe_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+179,2,3a3481e6-d467-4936-aee2-ac4dfe26a2fe_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+180,1,3e89b10d-1c6b-4ee4-aef2-75ce0cd2e7d6_0_0,tool_call,0.4571428596973419,partial,,1.0,0.5714285714285714,0.0,False,False,True,ai_assistant_music,
+180,2,3e89b10d-1c6b-4ee4-aef2-75ce0cd2e7d6_1_0,tool_call,0.4571428596973419,partial,,1.0,0.5714285714285714,0.0,False,False,True,ai_assistant_music,
+181,1,362e136b-ec28-438d-91bc-d5ec49a28867_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+181,2,362e136b-ec28-438d-91bc-d5ec49a28867_1_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_video,
+182,1,544f3dbe-fe9e-47d4-8f9b-ef43cf37eaf1_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+182,2,544f3dbe-fe9e-47d4-8f9b-ef43cf37eaf1_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+183,1,bc1c6404-53fe-4ebe-910a-7f9aaadf0382_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"correct_or_not,hint"
+183,2,bc1c6404-53fe-4ebe-910a-7f9aaadf0382_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"correct_or_not,hint"
+184,1,5672b44b-cc9d-414e-b0d9-2ac34672b704_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+184,2,5672b44b-cc9d-414e-b0d9-2ac34672b704_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+185,1,65fb840f-bf0b-42e3-b138-76757972795a_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_video,
+185,2,65fb840f-bf0b-42e3-b138-76757972795a_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+186,1,9420cb67-09b3-4b0c-96d6-043cca169868_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+186,2,9420cb67-09b3-4b0c-96d6-043cca169868_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+187,1,f806fbf1-9c85-4d47-bad9-1dca7e14ebe2_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+187,2,f806fbf1-9c85-4d47-bad9-1dca7e14ebe2_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+188,1,ecd3d9b8-5951-4e14-84a5-90e7002af126_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+188,2,ecd3d9b8-5951-4e14-84a5-90e7002af126_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+189,1,9220f24c-d08d-4bf2-8fa4-640dd2fec21b_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_video,
+189,2,9220f24c-d08d-4bf2-8fa4-640dd2fec21b_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_video,
+190,1,5ce2d949-a19e-4015-beb2-cdaa9816da3c_0_0,tool_call,0.0,parse_or_type_error,ValueError: Expected native <tool_call> JSON output,0.0,0.0,0.0,False,False,False,tool_web_search_all,
+190,2,5ce2d949-a19e-4015-beb2-cdaa9816da3c_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,tool_web_search_all,
+191,1,aace9779-9240-4034-b222-6534f6682631_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+191,2,aace9779-9240-4034-b222-6534f6682631_1_0,tool_call,0.35555556416511536,partial,,1.0,0.4444444444444444,0.0,False,False,True,ai_assistant_video,
+192,1,5312ab81-4410-4a57-bc99-19df61faf5c7_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+192,2,5312ab81-4410-4a57-bc99-19df61faf5c7_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+193,1,748fa2cb-880b-4b48-ac94-fbc438385b4e_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+193,2,748fa2cb-880b-4b48-ac94-fbc438385b4e_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+194,1,7537c957-c3e4-447c-b6bc-763bfdea15c0_0_0,tool_call,0.4363636374473572,partial,,1.0,0.5454545454545454,0.0,False,False,True,ai_assistant_music,
+194,2,7537c957-c3e4-447c-b6bc-763bfdea15c0_1_0,tool_call,0.4363636374473572,partial,,1.0,0.5454545454545454,0.0,False,False,True,ai_assistant_music,
+195,1,bc949a17-d2e3-4f6a-8afc-5b6e74e6db23_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+195,2,bc949a17-d2e3-4f6a-8afc-5b6e74e6db23_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+196,1,3faaa779-186c-49fe-8de9-d45c4a0dad59_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+196,2,3faaa779-186c-49fe-8de9-d45c4a0dad59_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+197,1,feebd823-c12f-4181-bf65-38698b87a725_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+197,2,feebd823-c12f-4181-bf65-38698b87a725_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+198,1,f2def09f-f012-4a85-831c-c3a3d3a17c89_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+198,2,f2def09f-f012-4a85-831c-c3a3d3a17c89_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+199,1,7c0ea201-6d2f-4304-a8ac-315a9be98bce_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+199,2,7c0ea201-6d2f-4304-a8ac-315a9be98bce_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+200,1,50695d9c-0b17-4079-ac85-9de7ee1a1320_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+200,2,50695d9c-0b17-4079-ac85-9de7ee1a1320_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+201,1,12362c8d-5489-4d9e-a476-39a51772186c_0_0,tool_call,0.35555556416511536,partial,,1.0,0.4444444444444444,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+201,2,12362c8d-5489-4d9e-a476-39a51772186c_1_0,tool_call,0.35555556416511536,partial,,1.0,0.4444444444444444,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+202,1,afbe9c54-f37a-4f66-9f16-b0ea9e3b1d6b_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+202,2,afbe9c54-f37a-4f66-9f16-b0ea9e3b1d6b_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+203,1,a7563692-1b3e-4771-bab3-a856d1cda55a_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+203,2,a7563692-1b3e-4771-bab3-a856d1cda55a_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+204,1,a9f3e6f1-f30f-4b04-9f53-3787522c33f0_0_0,tool_call,0.4363636374473572,partial,,1.0,0.5454545454545454,0.0,False,False,True,ai_assistant_music,
+204,2,a9f3e6f1-f30f-4b04-9f53-3787522c33f0_1_0,tool_call,0.6000000238418579,partial,,1.0,0.75,0.0,False,False,True,ai_assistant_music,
+205,1,f58176b2-d771-47c0-a0c0-18c55cb9e1e7_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+205,2,f58176b2-d771-47c0-a0c0-18c55cb9e1e7_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+206,1,54bb8ae4-9213-47da-9cf0-1aa7dc2861bb_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+206,2,54bb8ae4-9213-47da-9cf0-1aa7dc2861bb_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+207,1,5071fa73-df00-4d45-8d5e-4dabdf8519be_0_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_video,
+207,2,5071fa73-df00-4d45-8d5e-4dabdf8519be_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+208,1,8347727b-919e-43d9-8d2b-6d5c07fa4adc_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+208,2,8347727b-919e-43d9-8d2b-6d5c07fa4adc_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+209,1,a6fd56ac-640f-43f2-bade-9f19669965fb_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,search_food,
+209,2,a6fd56ac-640f-43f2-bade-9f19669965fb_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,search_food,
+210,1,b9cf1488-2e25-46db-8fa9-657e0311ce13_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+210,2,b9cf1488-2e25-46db-8fa9-657e0311ce13_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+211,1,2822aab4-47ad-4f10-8692-2f4e1ebf3276_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+211,2,2822aab4-47ad-4f10-8692-2f4e1ebf3276_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+212,1,f195cb7b-8794-4478-8be5-08da6322a337_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+212,2,f195cb7b-8794-4478-8be5-08da6322a337_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+213,1,a654ac00-aab9-4cc6-8fd4-54b1ba493536_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+213,2,a654ac00-aab9-4cc6-8fd4-54b1ba493536_1_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_video,
+214,1,f7714fa3-3bc9-4ff9-8901-3e1f0f8a482b_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_music,
+214,2,f7714fa3-3bc9-4ff9-8901-3e1f0f8a482b_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_music,
+215,1,f19ee9b6-44fd-4e80-a7a8-5d280270385b_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+215,2,f19ee9b6-44fd-4e80-a7a8-5d280270385b_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+216,1,52d46631-83aa-4829-a303-039a19a77802_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+216,2,52d46631-83aa-4829-a303-039a19a77802_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+217,1,46e2982d-ce69-483b-b307-6a7e25565d7b_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+217,2,46e2982d-ce69-483b-b307-6a7e25565d7b_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+218,1,fa650351-e638-4181-840b-a506a67eb1f5_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+218,2,fa650351-e638-4181-840b-a506a67eb1f5_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+219,1,2cfea4a1-93b1-4f58-9a71-3ba801b6a13e_0_0,tool_call,0.22857142984867096,partial,,1.0,0.2857142857142857,0.0,False,False,True,ai_assistant_video,
+219,2,2cfea4a1-93b1-4f58-9a71-3ba801b6a13e_1_0,tool_call,0.4571428596973419,partial,,1.0,0.5714285714285714,0.0,False,False,True,ai_assistant_video,
+220,1,eacf09e9-5bea-4e04-a7c2-0f771066c0cb_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+220,2,eacf09e9-5bea-4e04-a7c2-0f771066c0cb_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+221,1,0b2a1eb7-10c0-4dcc-a035-f9c58b42f79c_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+221,2,0b2a1eb7-10c0-4dcc-a035-f9c58b42f79c_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+222,1,3838ef3a-380b-4fce-ac07-91b47bcb5984_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,search_food,
+222,2,3838ef3a-380b-4fce-ac07-91b47bcb5984_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,search_food,
+223,1,f421f435-5f73-4c7d-b4fe-5e49c9ae6785_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+223,2,f421f435-5f73-4c7d-b4fe-5e49c9ae6785_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+224,1,c4a7fb83-89ea-4f56-9c51-849e1cbd530b_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+224,2,c4a7fb83-89ea-4f56-9c51-849e1cbd530b_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+225,1,6a08d761-7ff6-480f-b279-124e893e2716_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_aigc_image,
+225,2,6a08d761-7ff6-480f-b279-124e893e2716_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_aigc_image,
+226,1,9a5a2109-82b4-4bfe-92aa-48a7963a2b17_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+226,2,9a5a2109-82b4-4bfe-92aa-48a7963a2b17_1_0,tool_call,0.5090909004211426,partial,,1.0,0.6363636363636364,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+227,1,97d7f39a-2eee-4d05-b594-da54fa103717_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+227,2,97d7f39a-2eee-4d05-b594-da54fa103717_1_0,tool_call,0.2666666805744171,partial,,1.0,0.3333333333333333,0.0,False,False,True,ai_assistant_video,
+228,1,09003f69-a9be-4578-af4e-90317343bb6e_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+228,2,09003f69-a9be-4578-af4e-90317343bb6e_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+229,1,a7a20f3f-9420-4ee9-a49c-a55634e886d4_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+229,2,a7a20f3f-9420-4ee9-a49c-a55634e886d4_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+230,1,3197969a-b955-4976-9119-216dbc0265fd_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+230,2,3197969a-b955-4976-9119-216dbc0265fd_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+231,1,62185917-c86a-4810-8433-9fdb71de01db_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+231,2,62185917-c86a-4810-8433-9fdb71de01db_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+232,1,7336cf6a-73c2-4d76-af68-7b10fc85b425_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+232,2,7336cf6a-73c2-4d76-af68-7b10fc85b425_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+233,1,832e585e-9a63-4694-96d6-84c4daef534b_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+233,2,832e585e-9a63-4694-96d6-84c4daef534b_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+234,1,05443b9d-411c-4963-9937-218581ae9d25_0_0,tool_call,0.0,parse_or_type_error,ValueError: Expected native <tool_call> JSON output,0.0,0.0,0.0,False,False,False,tool_web_search_all,
+234,2,05443b9d-411c-4963-9937-218581ae9d25_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,tool_web_search_all,
+235,1,5fddd0cd-a981-4813-904b-cb070e788101_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_music,
+235,2,5fddd0cd-a981-4813-904b-cb070e788101_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_music,
+236,1,9e3427d4-879d-42f5-a79f-0852766a67bc_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_video,
+236,2,9e3427d4-879d-42f5-a79f-0852766a67bc_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+237,1,981ca63d-94f3-4a7d-97b0-991450a0e9c8_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+237,2,981ca63d-94f3-4a7d-97b0-991450a0e9c8_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+238,1,de3241f2-6d9a-4714-b37c-01cb91473e5f_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+238,2,de3241f2-6d9a-4714-b37c-01cb91473e5f_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+239,1,fe69a43a-f58f-45a7-aab2-e341db81d09d_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+239,2,fe69a43a-f58f-45a7-aab2-e341db81d09d_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+240,1,ec40be08-f53f-4b3a-ac4f-8bf62cca97fc_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+240,2,ec40be08-f53f-4b3a-ac4f-8bf62cca97fc_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+241,1,3ede9bcd-3791-44fd-96ba-13d47d7c9298_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+241,2,3ede9bcd-3791-44fd-96ba-13d47d7c9298_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+242,1,10dcde12-0f74-4f22-8c24-17786a6232c5_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+242,2,10dcde12-0f74-4f22-8c24-17786a6232c5_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+243,1,69f53d9b-6ce9-462f-99a1-84ef1cab0eaa_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+243,2,69f53d9b-6ce9-462f-99a1-84ef1cab0eaa_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+244,1,5bb0d8bc-583d-4513-a325-33d9ed131328_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+244,2,5bb0d8bc-583d-4513-a325-33d9ed131328_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+245,1,f28e4eb6-30bb-44e5-b2d9-1f9157fbb56d_0_0,tool_call,0.2666666805744171,partial,,1.0,0.3333333333333333,0.0,False,False,True,ai_assistant_music,
+245,2,f28e4eb6-30bb-44e5-b2d9-1f9157fbb56d_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_music,
+246,1,22b6fc6b-24ee-4bff-965a-9c2d79e9e16f_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+246,2,22b6fc6b-24ee-4bff-965a-9c2d79e9e16f_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+247,1,77b3b8a9-b814-4af7-a649-595e0ca380ca_0_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_music,
+247,2,77b3b8a9-b814-4af7-a649-595e0ca380ca_1_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_music,
+248,1,60b744c9-92cb-4f12-88cc-63310d4e5d62_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+248,2,60b744c9-92cb-4f12-88cc-63310d4e5d62_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+249,1,28ebee33-95b5-43f1-93a7-5643d05d1992_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_aigc_image,
+249,2,28ebee33-95b5-43f1-93a7-5643d05d1992_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_aigc_image,
+250,1,dda6ee3e-3a7a-42fd-a335-fa4701cfb5b4_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+250,2,dda6ee3e-3a7a-42fd-a335-fa4701cfb5b4_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+251,1,9c21fd73-5701-4da0-9332-bb6b37fcbb81_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+251,2,9c21fd73-5701-4da0-9332-bb6b37fcbb81_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+252,1,4874fc77-a6ce-4f55-a35c-2ba2470f1ba1_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_music,
+252,2,4874fc77-a6ce-4f55-a35c-2ba2470f1ba1_1_0,tool_call,0.4571428596973419,partial,,1.0,0.5714285714285714,0.0,False,False,True,ai_assistant_music,
+253,1,eaa392dd-6e31-4fe4-b893-a0279a8f39ac_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_video,
+253,2,eaa392dd-6e31-4fe4-b893-a0279a8f39ac_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+254,1,af94e702-e723-402c-81d6-7a02eacf5966_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+254,2,af94e702-e723-402c-81d6-7a02eacf5966_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+255,1,cb2ce6b8-3b40-456d-962d-399674f8b531_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+255,2,cb2ce6b8-3b40-456d-962d-399674f8b531_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+256,1,fdcbef90-d464-49ef-98e9-5c84ef0a66bb_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+256,2,fdcbef90-d464-49ef-98e9-5c84ef0a66bb_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+257,1,a7b9cfb5-576a-41db-a20d-ba9ef9d45a22_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+257,2,a7b9cfb5-576a-41db-a20d-ba9ef9d45a22_1_0,tool_call,0.0,parse_or_type_error,ValueError: Expected native <tool_call> JSON output,0.0,0.0,0.0,False,False,False,ai_assistant_video,
+258,1,a402d027-fe1f-41ea-85b7-ffa30736ecd1_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+258,2,a402d027-fe1f-41ea-85b7-ffa30736ecd1_1_0,tool_call,0.0,parse_or_type_error,ValueError: Expected native <tool_call> JSON output,0.0,0.0,0.0,False,False,False,ai_assistant_video,
+259,1,0fa3160a-946b-4c43-94fe-542d3c0b4fa1_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+259,2,0fa3160a-946b-4c43-94fe-542d3c0b4fa1_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+260,1,11c0519d-51ef-4a74-b172-c80292f8639a_0_0,tool_call,0.22857142984867096,partial,,1.0,0.2857142857142857,0.0,False,False,True,ai_assistant_video,
+260,2,11c0519d-51ef-4a74-b172-c80292f8639a_1_0,tool_call,0.22857142984867096,partial,,1.0,0.2857142857142857,0.0,False,False,True,ai_assistant_video,
+261,1,cd8f98ad-fd6a-4bd6-b009-f528db983a4e_0_0,tool_call,0.6666666865348816,partial,,1.0,0.8333333333333334,0.0,False,False,True,ai_assistant_music,
+261,2,cd8f98ad-fd6a-4bd6-b009-f528db983a4e_1_0,tool_call,0.47999998927116394,partial,,1.0,0.6,0.0,False,False,True,ai_assistant_music,
+262,1,bd20b0ed-27bd-4aba-8e42-48da115c0880_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_aigc_image,
+262,2,bd20b0ed-27bd-4aba-8e42-48da115c0880_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_aigc_image,
+263,1,d2e7fc42-fc61-4197-bd83-2384b40bedee_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+263,2,d2e7fc42-fc61-4197-bd83-2384b40bedee_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+264,1,6e61011e-caa0-4c8e-959a-a9bd108a24bc_0_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_video,
+264,2,6e61011e-caa0-4c8e-959a-a9bd108a24bc_1_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_video,
+265,1,cf592e07-aa99-438a-80b6-a65d7992b1c2_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+265,2,cf592e07-aa99-438a-80b6-a65d7992b1c2_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+266,1,73465236-a115-4cdd-85b9-660b0f500495_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_video,
+266,2,73465236-a115-4cdd-85b9-660b0f500495_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_video,
+267,1,1cbf95c1-641e-4dc8-b323-13c24e2c2681_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+267,2,1cbf95c1-641e-4dc8-b323-13c24e2c2681_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+268,1,ffe0302f-614b-4ec3-812a-7bdcdbd4f442_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+268,2,ffe0302f-614b-4ec3-812a-7bdcdbd4f442_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+269,1,03b2f721-54bd-43e2-9aba-64c24ebb1947_0_0,tool_call,0.6518518328666687,partial,,1.0,0.8148148148148148,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+269,2,03b2f721-54bd-43e2-9aba-64c24ebb1947_1_0,tool_call,0.5538461804389954,partial,,1.0,0.6923076923076923,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+270,1,3d9b25d7-447e-427f-b184-85f17105d7c5_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"correct_or_not,hint"
+270,2,3d9b25d7-447e-427f-b184-85f17105d7c5_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"correct_or_not,hint"
+271,1,cff3567a-31fa-4592-a4ba-dc15c3e79666_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+271,2,cff3567a-31fa-4592-a4ba-dc15c3e79666_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+272,1,3695a873-d7a9-4d86-871d-70d40b5c7f6f_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_music,
+272,2,3695a873-d7a9-4d86-871d-70d40b5c7f6f_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_music,
+273,1,e66fb7e1-eca4-47a2-9eee-7bb0cb3e5862_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+273,2,e66fb7e1-eca4-47a2-9eee-7bb0cb3e5862_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+274,1,eeae390f-0028-4461-affd-9e0b6480cfc7_0_0,tool_call,0.22857142984867096,partial,,1.0,0.2857142857142857,0.0,False,False,True,ai_assistant_aigc_image,
+274,2,eeae390f-0028-4461-affd-9e0b6480cfc7_1_0,tool_call,0.22857142984867096,partial,,1.0,0.2857142857142857,0.0,False,False,True,ai_assistant_aigc_image,
+275,1,a9440ee8-70fe-48d1-935e-18947f4d729f_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+275,2,a9440ee8-70fe-48d1-935e-18947f4d729f_1_0,json,0.1599999964237213,partial,,1.0,0.2,0.0,False,False,False,,"advices,opening_remarks"
+276,1,7f74374c-b195-4f8f-8f5d-2ec769f5e42f_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+276,2,7f74374c-b195-4f8f-8f5d-2ec769f5e42f_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+277,1,67a0ee58-a132-40fe-9a51-3a6d7e6a3f87_0_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_video,
+277,2,67a0ee58-a132-40fe-9a51-3a6d7e6a3f87_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+278,1,3cbde868-26fb-4082-88cb-7cb7fd04281c_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+278,2,3cbde868-26fb-4082-88cb-7cb7fd04281c_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+279,1,b2024353-1901-48ed-8b8d-6ec24bd1677c_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+279,2,b2024353-1901-48ed-8b8d-6ec24bd1677c_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+280,1,23008be2-4c77-47db-bd86-bd0dfaa9ec98_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_music,
+280,2,23008be2-4c77-47db-bd86-bd0dfaa9ec98_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_music,
+281,1,8c179b40-c8a0-4efe-8800-a6b5f5d4398a_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_music,
+281,2,8c179b40-c8a0-4efe-8800-a6b5f5d4398a_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_music,
+282,1,c5eb1f1e-1357-4e43-8fd2-027a9ee3fd14_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+282,2,c5eb1f1e-1357-4e43-8fd2-027a9ee3fd14_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+283,1,3fa62c52-4ad3-4fa6-9c7c-4d7dd861f067_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+283,2,3fa62c52-4ad3-4fa6-9c7c-4d7dd861f067_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+284,1,a6b7f9dd-0a39-4a49-a096-1f541df97995_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_music,
+284,2,a6b7f9dd-0a39-4a49-a096-1f541df97995_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_music,
+285,1,2f59c7ce-cb1d-43c9-a980-29ed18a0ac33_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+285,2,2f59c7ce-cb1d-43c9-a980-29ed18a0ac33_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+286,1,8fc43a42-1b3b-49c3-b007-15a7194d4175_0_0,tool_call,0.13333334028720856,partial,,1.0,0.16666666666666666,0.0,False,False,True,ShoppingAdviceResponse,
+286,2,8fc43a42-1b3b-49c3-b007-15a7194d4175_1_0,tool_call,0.13333334028720856,partial,,1.0,0.16666666666666666,0.0,False,False,True,ShoppingAdviceResponse,
+287,1,7964ee2b-e666-497c-8384-4365710aca4c_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+287,2,7964ee2b-e666-497c-8384-4365710aca4c_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+288,1,bce162cc-6d84-470e-a19d-feb6b97d0bd8_0_0,tool_call,0.6769230961799622,partial,,1.0,0.8461538461538461,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+288,2,bce162cc-6d84-470e-a19d-feb6b97d0bd8_1_0,tool_call,0.7680000066757202,partial,,1.0,0.96,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+289,1,aed57524-f639-4ac5-a34c-e22307b8d401_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+289,2,aed57524-f639-4ac5-a34c-e22307b8d401_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+290,1,dc965970-f62f-49c4-9e07-49719e0d3b0e_0_0,tool_call,0.22857142984867096,partial,,1.0,0.2857142857142857,0.0,False,False,True,ai_assistant_aigc_image,
+290,2,dc965970-f62f-49c4-9e07-49719e0d3b0e_1_0,tool_call,0.22857142984867096,partial,,1.0,0.2857142857142857,0.0,False,False,True,ai_assistant_aigc_image,
+291,1,8570f9d4-3d74-483d-97e9-135771c91e7b_0_0,tool_call,0.6399999856948853,partial,,1.0,0.8,0.0,False,False,True,ai_assistant_music,
+291,2,8570f9d4-3d74-483d-97e9-135771c91e7b_1_0,tool_call,0.6399999856948853,partial,,1.0,0.8,0.0,False,False,True,ai_assistant_music,
+292,1,2760e9e8-5dd3-4f15-b67e-8e7f8150cc62_0_0,tool_call,0.4571428596973419,partial,,1.0,0.5714285714285714,0.0,False,False,True,tool_web_search_all,
+292,2,2760e9e8-5dd3-4f15-b67e-8e7f8150cc62_1_0,tool_call,0.6000000238418579,partial,,1.0,0.75,0.0,False,False,True,tool_web_search_all,
+293,1,ab496d5c-e043-4446-8007-03f333fb50d6_0_0,tool_call,0.4571428596973419,partial,,1.0,0.5714285714285714,0.0,False,False,True,ai_assistant_video,
+293,2,ab496d5c-e043-4446-8007-03f333fb50d6_1_0,tool_call,0.35555556416511536,partial,,1.0,0.4444444444444444,0.0,False,False,True,ai_assistant_video,
+294,1,a40e970f-ea96-4e15-8681-39b2725d8165_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,search_food,
+294,2,a40e970f-ea96-4e15-8681-39b2725d8165_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,search_food,
+295,1,99b1a5b3-da53-45f2-964e-d0a437dd771f_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+295,2,99b1a5b3-da53-45f2-964e-d0a437dd771f_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+296,1,4aa2b28d-0485-4a68-9733-9b4bdea03c6d_0_0,json,0.20000000298023224,partial,,1.0,0.25,0.0,False,False,False,,"advices,opening_remarks"
+296,2,4aa2b28d-0485-4a68-9733-9b4bdea03c6d_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+297,1,e0a7185a-4e0e-41ba-906c-356bde04911b_0_0,tool_call,0.2666666805744171,partial,,1.0,0.3333333333333333,0.0,False,False,True,ai_assistant_music,
+297,2,e0a7185a-4e0e-41ba-906c-356bde04911b_1_0,tool_call,0.6399999856948853,partial,,1.0,0.8,0.0,False,False,True,ai_assistant_music,
+298,1,93925f17-9aed-4e06-aca8-99bf3574d38c_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+298,2,93925f17-9aed-4e06-aca8-99bf3574d38c_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+299,1,c7876ace-b947-460c-84c1-8a5cb2945526_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+299,2,c7876ace-b947-460c-84c1-8a5cb2945526_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+300,1,c357f549-2c99-4f8e-ba4a-e07ee02fcf5f_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,search_food,
+300,2,c357f549-2c99-4f8e-ba4a-e07ee02fcf5f_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,search_food,
+301,1,3462e385-3dc3-44fc-937d-fe777b0046f3_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_music,
+301,2,3462e385-3dc3-44fc-937d-fe777b0046f3_1_0,tool_call,0.4571428596973419,partial,,1.0,0.5714285714285714,0.0,False,False,True,ai_assistant_music,
+302,1,4cbe5d6a-8548-4038-b893-b078824df051_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+302,2,4cbe5d6a-8548-4038-b893-b078824df051_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+303,1,a0c30ccd-0b05-437e-a471-e83860071e31_0_0,json,0.1599999964237213,partial,,1.0,0.2,0.0,False,False,False,,"advices,opening_remarks"
+303,2,a0c30ccd-0b05-437e-a471-e83860071e31_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+304,1,b3f8964a-4184-46f8-8b39-eeecba3175ec_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+304,2,b3f8964a-4184-46f8-8b39-eeecba3175ec_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+305,1,1032e3a1-a14f-4be0-9fef-cb383ae92a3e_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+305,2,1032e3a1-a14f-4be0-9fef-cb383ae92a3e_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_video,
+306,1,a01e6d77-57a1-4f64-a92d-f0b40874c041_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+306,2,a01e6d77-57a1-4f64-a92d-f0b40874c041_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+307,1,2d7b9ebd-af61-43ea-a979-fa24f2fb5e2a_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+307,2,2d7b9ebd-af61-43ea-a979-fa24f2fb5e2a_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+308,1,dde26e64-fbf0-485e-a738-c51b22c40b6c_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+308,2,dde26e64-fbf0-485e-a738-c51b22c40b6c_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+309,1,3d06678b-118e-4588-b66b-ff05469a1e97_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+309,2,3d06678b-118e-4588-b66b-ff05469a1e97_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+310,1,e080c65d-e702-4c5c-853b-92f69837ed03_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_music,
+310,2,e080c65d-e702-4c5c-853b-92f69837ed03_1_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_music,
+311,1,d6d14b25-a99f-4dc1-84a4-2212d0205dc1_0_0,tool_call,0.22857142984867096,partial,,1.0,0.2857142857142857,0.0,False,False,True,ai_assistant_video,
+311,2,d6d14b25-a99f-4dc1-84a4-2212d0205dc1_1_0,tool_call,0.22857142984867096,partial,,1.0,0.2857142857142857,0.0,False,False,True,ai_assistant_video,
+312,1,8007827d-81ea-48e1-b4de-ae39e0e399eb_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+312,2,8007827d-81ea-48e1-b4de-ae39e0e399eb_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+313,1,0262a593-583a-4d0b-9c2e-c8393485a5fa_0_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_music,
+313,2,0262a593-583a-4d0b-9c2e-c8393485a5fa_1_0,tool_call,0.2666666805744171,partial,,1.0,0.3333333333333333,0.0,False,False,True,ai_assistant_music,
+314,1,6ff24f4c-eebb-4e4f-9394-a9be80b23890_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"answer,source_lang"
+314,2,6ff24f4c-eebb-4e4f-9394-a9be80b23890_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"answer,source_lang"
+315,1,c6bc832c-a82c-4104-9273-2c7cbaee346f_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+315,2,c6bc832c-a82c-4104-9273-2c7cbaee346f_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+316,1,23837856-ba50-493a-b4d9-e46f5f186078_0_0,tool_call,0.4571428596973419,partial,,1.0,0.5714285714285714,0.0,False,False,True,ai_assistant_video,
+316,2,23837856-ba50-493a-b4d9-e46f5f186078_1_0,tool_call,0.22857142984867096,partial,,1.0,0.2857142857142857,0.0,False,False,True,ai_assistant_video,
+317,1,3c503b66-d9ec-460f-9be7-a8f5ab170db9_0_0,tool_call,0.6095238327980042,partial,,1.0,0.7619047619047619,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+317,2,3c503b66-d9ec-460f-9be7-a8f5ab170db9_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+318,1,d3c02c59-0c66-4d9e-ba7e-8191a17c8cb9_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_music,
+318,2,d3c02c59-0c66-4d9e-ba7e-8191a17c8cb9_1_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_music,
+319,1,0d853a4f-9031-4e0c-aec4-ec8c11160366_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+319,2,0d853a4f-9031-4e0c-aec4-ec8c11160366_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+320,1,d8c6255d-40ab-4a0f-ba13-c7341c8de1dd_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+320,2,d8c6255d-40ab-4a0f-ba13-c7341c8de1dd_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+321,1,3f28512c-9ff9-4197-b1a4-3d838bcff39e_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_music,
+321,2,3f28512c-9ff9-4197-b1a4-3d838bcff39e_1_0,tool_call,0.6666666865348816,partial,,1.0,0.8333333333333334,0.0,False,False,True,ai_assistant_music,
+322,1,22f12d7c-a3f5-4e83-b808-0eac32df4538_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+322,2,22f12d7c-a3f5-4e83-b808-0eac32df4538_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+323,1,4d4a66f0-349f-4824-a496-c8e979e1b0c5_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_video,
+323,2,4d4a66f0-349f-4824-a496-c8e979e1b0c5_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_video,
+324,1,67f027ae-ae54-4fa6-9dff-af92b6ca075c_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+324,2,67f027ae-ae54-4fa6-9dff-af92b6ca075c_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+325,1,6caeabd4-59e2-4305-9489-bd691ac81bda_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,search_food,
+325,2,6caeabd4-59e2-4305-9489-bd691ac81bda_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,search_food,
+326,1,6376bc1e-4cc6-4dda-a727-656b70095cdc_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+326,2,6376bc1e-4cc6-4dda-a727-656b70095cdc_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+327,1,86db01f3-0134-4f2c-bf54-eae5673aac68_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+327,2,86db01f3-0134-4f2c-bf54-eae5673aac68_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+328,1,cdb4f19b-dd4c-4870-a7cf-5491c7ba65ce_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+328,2,cdb4f19b-dd4c-4870-a7cf-5491c7ba65ce_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+329,1,6ff37fc4-9522-4367-a02f-f347325712a7_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_music,
+329,2,6ff37fc4-9522-4367-a02f-f347325712a7_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_music,
+330,1,6cdc36e7-1b9b-46d8-92b2-02f066ac9169_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+330,2,6cdc36e7-1b9b-46d8-92b2-02f066ac9169_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+331,1,94993ff4-7bf6-44be-b5bf-11c9e082d5e7_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_aigc_image,
+331,2,94993ff4-7bf6-44be-b5bf-11c9e082d5e7_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_aigc_image,
+332,1,25ee2cb4-ec58-490b-b6bc-8af7b14926be_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,tool_web_search_all,
+332,2,25ee2cb4-ec58-490b-b6bc-8af7b14926be_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,tool_web_search_all,
+333,1,5438fe70-ea06-4720-a330-34402ee34b6c_0_0,tool_call,0.7111111283302307,partial,,1.0,0.8888888888888888,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+333,2,5438fe70-ea06-4720-a330-34402ee34b6c_1_0,tool_call,0.7384615540504456,partial,,1.0,0.9230769230769231,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+334,1,e4275f84-4c8b-4bc9-9cd9-902dbf59a1e1_0_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_music,
+334,2,e4275f84-4c8b-4bc9-9cd9-902dbf59a1e1_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_music,
+335,1,0ce19063-3a7a-4bdb-9ee4-c6a9a8e5476e_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+335,2,0ce19063-3a7a-4bdb-9ee4-c6a9a8e5476e_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+336,1,fb024d98-ab47-426a-ab15-1428c901bbf1_0_0,tool_call,0.6857143044471741,partial,,1.0,0.8571428571428571,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+336,2,fb024d98-ab47-426a-ab15-1428c901bbf1_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+337,1,7737de76-0431-41bf-a6d3-2ea9e76ce96f_0_0,tool_call,0.4571428596973419,partial,,1.0,0.5714285714285714,0.0,False,False,True,ai_assistant_aigc_image,
+337,2,7737de76-0431-41bf-a6d3-2ea9e76ce96f_1_0,tool_call,0.22857142984867096,partial,,1.0,0.2857142857142857,0.0,False,False,True,ai_assistant_aigc_image,
+338,1,13494f02-5c31-4836-80bc-abad4b5d4d6b_0_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_aigc_image,
+338,2,13494f02-5c31-4836-80bc-abad4b5d4d6b_1_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_aigc_image,
+339,1,39a75a5f-96a0-4dde-bfd1-1cfb6b12344f_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_aigc_image,
+339,2,39a75a5f-96a0-4dde-bfd1-1cfb6b12344f_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_aigc_image,
+340,1,69e12a9f-188d-4238-ace4-dec67265ba00_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+340,2,69e12a9f-188d-4238-ace4-dec67265ba00_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+341,1,4cf5304b-8014-46b4-96b1-fd94621c5ff1_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+341,2,4cf5304b-8014-46b4-96b1-fd94621c5ff1_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+342,1,0e3a3e21-70aa-4581-9919-7819b53b7e9c_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+342,2,0e3a3e21-70aa-4581-9919-7819b53b7e9c_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+343,1,981a3eeb-7506-4043-b76d-83418399e27c_0_0,tool_call,0.6399999856948853,partial,,1.0,0.8,0.0,False,False,True,search_food,
+343,2,981a3eeb-7506-4043-b76d-83418399e27c_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,search_food,
+344,1,5b7aa10f-2c4b-4527-8176-5bec27b16f59_0_0,tool_call,0.20000000298023224,partial,,1.0,0.25,0.0,False,False,True,tool_web_search_all,
+344,2,5b7aa10f-2c4b-4527-8176-5bec27b16f59_1_0,tool_call,0.0,parse_or_type_error,ValueError: Expected native <tool_call> JSON output,0.0,0.0,0.0,False,False,False,tool_web_search_all,
+345,1,c6815c6b-6f0c-4217-9e5b-b93099fdeb48_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+345,2,c6815c6b-6f0c-4217-9e5b-b93099fdeb48_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+346,1,68d6c18c-eb7c-449f-aeba-ca0affd88193_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+346,2,68d6c18c-eb7c-449f-aeba-ca0affd88193_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+347,1,94ac8c12-c32b-430f-b110-d2732cec4c20_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+347,2,94ac8c12-c32b-430f-b110-d2732cec4c20_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+348,1,3c6df971-72fe-4b47-9ad4-4deda40a28a0_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+348,2,3c6df971-72fe-4b47-9ad4-4deda40a28a0_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+349,1,d9f537d4-cb2a-4a31-bdff-ac922bef0b41_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+349,2,d9f537d4-cb2a-4a31-bdff-ac922bef0b41_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+350,1,7854b1c1-59a0-4a47-be87-d4837fc48e48_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+350,2,7854b1c1-59a0-4a47-be87-d4837fc48e48_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+351,1,3cabea9c-731c-4b4a-8aa4-9be24d4a56ab_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+351,2,3cabea9c-731c-4b4a-8aa4-9be24d4a56ab_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+352,1,b70dbc1c-e081-48ab-8aa3-40ee0d11b0b6_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+352,2,b70dbc1c-e081-48ab-8aa3-40ee0d11b0b6_1_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_video,
+353,1,e33e5d6c-7c59-4a38-8a80-dcca9edc55e0_0_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_video,
+353,2,e33e5d6c-7c59-4a38-8a80-dcca9edc55e0_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+354,1,dbc618b2-41de-4444-af33-74413b8c1f1c_0_0,tool_call,0.6000000238418579,partial,,1.0,0.75,0.0,False,False,True,tool_web_search_all,
+354,2,dbc618b2-41de-4444-af33-74413b8c1f1c_1_0,tool_call,0.0,call_or_schema_rejected,,0.0,0.0,0.0,False,False,True,tool_web_search_all,
+355,1,a527b1c6-c7f9-443a-b4cb-d98a9a7098ee_0_0,tool_call,0.6095238327980042,partial,,1.0,0.7619047619047619,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+355,2,a527b1c6-c7f9-443a-b4cb-d98a9a7098ee_1_0,tool_call,0.6095238327980042,partial,,1.0,0.7619047619047619,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+356,1,367e3c11-b27d-4003-b299-563b3aac9e6b_0_0,tool_call,0.22857142984867096,partial,,1.0,0.2857142857142857,0.0,False,False,True,ai_assistant_video,
+356,2,367e3c11-b27d-4003-b299-563b3aac9e6b_1_0,tool_call,0.20000000298023224,partial,,1.0,0.25,0.0,False,False,True,ai_assistant_video,
+357,1,abe2ba3a-54f6-40f8-a637-7c524c2c4fc5_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+357,2,abe2ba3a-54f6-40f8-a637-7c524c2c4fc5_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+358,1,71eebb66-2c53-4986-88fb-bf521872b969_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"correct_or_not,hint"
+358,2,71eebb66-2c53-4986-88fb-bf521872b969_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"correct_or_not,hint"
+359,1,975dd265-09be-4f02-85b9-de2f9a9f2549_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+359,2,975dd265-09be-4f02-85b9-de2f9a9f2549_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+360,1,f80b3dcc-28b8-44c4-b44a-845bac3abe9a_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+360,2,f80b3dcc-28b8-44c4-b44a-845bac3abe9a_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+361,1,7e597521-92fb-4e37-acaf-f255fcbf95ad_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+361,2,7e597521-92fb-4e37-acaf-f255fcbf95ad_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+362,1,1482eb7f-0c75-488b-84dd-0868a3a7a564_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+362,2,1482eb7f-0c75-488b-84dd-0868a3a7a564_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+363,1,cc88fa07-8d64-4ce3-99d3-77a308f11ed2_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+363,2,cc88fa07-8d64-4ce3-99d3-77a308f11ed2_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+364,1,127fa513-6ebf-49b6-a202-3fe0099c5aa9_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+364,2,127fa513-6ebf-49b6-a202-3fe0099c5aa9_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+365,1,8b2a9740-5654-40ec-8bd5-9fe6c7f9411b_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_video,
+365,2,8b2a9740-5654-40ec-8bd5-9fe6c7f9411b_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_video,
+366,1,d923d045-617f-4390-8927-9c0e3273e4cd_0_0,tool_call,0.581818163394928,partial,,1.0,0.7272727272727273,0.0,False,False,True,ai_assistant_music,
+366,2,d923d045-617f-4390-8927-9c0e3273e4cd_1_0,tool_call,0.47999998927116394,partial,,1.0,0.6,0.0,False,False,True,ai_assistant_music,
+367,1,f9799ce5-7b0d-4ab7-b57b-bfd17a288d02_0_0,tool_call,0.6000000238418579,partial,,1.0,0.75,0.0,False,False,True,ai_assistant_music,
+367,2,f9799ce5-7b0d-4ab7-b57b-bfd17a288d02_1_0,tool_call,0.6000000238418579,partial,,1.0,0.75,0.0,False,False,True,ai_assistant_music,
+368,1,175ba81e-e215-4026-ac95-9b7206a7d667_0_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_music,
+368,2,175ba81e-e215-4026-ac95-9b7206a7d667_1_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_music,
+369,1,e2748d1e-e9a1-41f2-bf26-aec785eb3add_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+369,2,e2748d1e-e9a1-41f2-bf26-aec785eb3add_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+370,1,9844cf58-35bc-4e8d-a3d1-b1913c84c9ae_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+370,2,9844cf58-35bc-4e8d-a3d1-b1913c84c9ae_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+371,1,a4483ffb-6f78-4041-987a-f390598b0007_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_music,
+371,2,a4483ffb-6f78-4041-987a-f390598b0007_1_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_music,
+372,1,53947767-a8f9-4022-9033-bb43dd05aa19_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+372,2,53947767-a8f9-4022-9033-bb43dd05aa19_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_video,
+373,1,c0f687ef-7c78-4bea-b5d9-3cfb85f4e3e9_0_0,tool_call,0.6000000238418579,partial,,1.0,0.75,0.0,False,False,True,tool_web_search_all,
+373,2,c0f687ef-7c78-4bea-b5d9-3cfb85f4e3e9_1_0,tool_call,0.6000000238418579,partial,,1.0,0.75,0.0,False,False,True,tool_web_search_all,
+374,1,19b4f581-5f62-4422-8a22-b28d1aff1850_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+374,2,19b4f581-5f62-4422-8a22-b28d1aff1850_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+375,1,3ec961d2-c698-4475-817b-361cd3fd8292_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+375,2,3ec961d2-c698-4475-817b-361cd3fd8292_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+376,1,87962587-b6d0-4dda-9f57-292713f1fcc0_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+376,2,87962587-b6d0-4dda-9f57-292713f1fcc0_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+377,1,141a63d5-d82a-410f-abb3-ffe3fd8b6252_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_music,
+377,2,141a63d5-d82a-410f-abb3-ffe3fd8b6252_1_0,tool_call,0.3199999928474426,partial,,1.0,0.4,0.0,False,False,True,ai_assistant_music,
+378,1,97f87bb3-d421-4722-a34f-15d9f254e101_0_0,tool_call,0.4571428596973419,partial,,1.0,0.5714285714285714,0.0,False,False,True,ai_assistant_music,
+378,2,97f87bb3-d421-4722-a34f-15d9f254e101_1_0,tool_call,0.4571428596973419,partial,,1.0,0.5714285714285714,0.0,False,False,True,ai_assistant_music,
+379,1,92bbf165-ee6c-4c42-8e30-fc692827770a_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+379,2,92bbf165-ee6c-4c42-8e30-fc692827770a_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+380,1,05345c46-eaba-4bc1-a649-22e67f0e8be5_0_0,tool_call,0.47999998927116394,partial,,1.0,0.6,0.0,False,False,True,ai_assistant_music,
+380,2,05345c46-eaba-4bc1-a649-22e67f0e8be5_1_0,tool_call,0.4363636374473572,partial,,1.0,0.5454545454545454,0.0,False,False,True,ai_assistant_music,
+381,1,b5f073cd-56b7-4322-881e-5175119b2c0f_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+381,2,b5f073cd-56b7-4322-881e-5175119b2c0f_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+382,1,28982613-98cc-43ca-b6a9-d6b50ea0f504_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,reply
+382,2,28982613-98cc-43ca-b6a9-d6b50ea0f504_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,reply
+383,1,629bddf5-41d2-47b6-8a4b-e76a6f1d375d_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+383,2,629bddf5-41d2-47b6-8a4b-e76a6f1d375d_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+384,1,540f51c3-de95-4652-812d-ec17d05b65d8_0_0,tool_call,0.0,call_or_schema_rejected,,0.0,0.0,0.0,False,False,True,tool_city_recommendation_everyday,
+384,2,540f51c3-de95-4652-812d-ec17d05b65d8_1_0,tool_call,0.0,parse_or_type_error,ToolSchemaError: invalid_typed_value:recommend_areas,0.0,0.0,0.0,False,False,True,tool_city_recommendation_everyday,
+385,1,cda12470-4be4-4463-815c-66a5dc59e965_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+385,2,cda12470-4be4-4463-815c-66a5dc59e965_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+386,1,c1a4456e-12c3-4a14-8b06-561313466a57_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+386,2,c1a4456e-12c3-4a14-8b06-561313466a57_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+387,1,cd323b6b-0f25-4af4-881a-1570463322fc_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+387,2,cd323b6b-0f25-4af4-881a-1570463322fc_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+388,1,c49915df-7fae-490a-9f6c-c3dc65e7e6a7_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+388,2,c49915df-7fae-490a-9f6c-c3dc65e7e6a7_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+389,1,8de9ed01-1bbf-45e7-9ae7-49a5b3912a10_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+389,2,8de9ed01-1bbf-45e7-9ae7-49a5b3912a10_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+390,1,879fe182-07a8-498c-b988-540ed5e7ebad_0_0,tool_call,0.0,parse_or_type_error,ToolSchemaError: invalid_typed_value:recommend_areas,0.0,0.0,0.0,False,False,True,tool_city_recommendation_everyday,
+390,2,879fe182-07a8-498c-b988-540ed5e7ebad_1_0,tool_call,0.0,parse_or_type_error,ToolSchemaError: invalid_typed_value:recommend_areas,0.0,0.0,0.0,False,False,True,tool_city_recommendation_everyday,
+391,1,1f28aa26-7542-4b2e-9d37-c7e15f92e071_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+391,2,1f28aa26-7542-4b2e-9d37-c7e15f92e071_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+392,1,eacab3b3-f002-4be7-afaf-0d97a7a97625_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+392,2,eacab3b3-f002-4be7-afaf-0d97a7a97625_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+393,1,7984151a-4450-49bb-98d2-fd1c053e5b76_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,inspiration
+393,2,7984151a-4450-49bb-98d2-fd1c053e5b76_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,inspiration
+394,1,dfc38f9c-f427-4ba6-9bac-43de50fdbc7c_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+394,2,dfc38f9c-f427-4ba6-9bac-43de50fdbc7c_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+395,1,219aa165-b463-442f-9264-f4cd499ebd17_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+395,2,219aa165-b463-442f-9264-f4cd499ebd17_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+396,1,b90c7785-4efd-42a5-845c-ec76e528c81f_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+396,2,b90c7785-4efd-42a5-845c-ec76e528c81f_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+397,1,04485bc7-9569-4934-a2b1-703e2b2a8e18_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+397,2,04485bc7-9569-4934-a2b1-703e2b2a8e18_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+398,1,b8e79cdb-3b84-4e2f-ac1c-dd093b2bec28_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+398,2,b8e79cdb-3b84-4e2f-ac1c-dd093b2bec28_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+399,1,f3e992f6-336c-4b47-99f5-72b10fdfd51e_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+399,2,f3e992f6-336c-4b47-99f5-72b10fdfd51e_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+400,1,42883165-ad81-4973-a1a0-6fdcbb67fa96_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+400,2,42883165-ad81-4973-a1a0-6fdcbb67fa96_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,related_questions
+401,1,493a6509-4dbf-42bc-807a-3ba68a963d92_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+401,2,493a6509-4dbf-42bc-807a-3ba68a963d92_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,related_questions
+402,1,c71190a1-ec64-4e67-a67c-2b38b9218f69_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,selected_hotels
+402,2,c71190a1-ec64-4e67-a67c-2b38b9218f69_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,selected_hotels
+403,1,d2f3ba04-5f08-4173-9008-f6f684a6e9e3_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+403,2,d2f3ba04-5f08-4173-9008-f6f684a6e9e3_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+404,1,e7517b47-089e-43e9-af83-26250fe2bb66_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+404,2,e7517b47-089e-43e9-af83-26250fe2bb66_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+405,1,928cfbe3-37c0-438b-b09c-8167fcddd695_0_0,json,1.0,exact,,1.0,1.0,1.0,False,False,False,,"correct_or_not,hint"
+405,2,928cfbe3-37c0-438b-b09c-8167fcddd695_1_0,json,1.0,exact,,1.0,1.0,1.0,False,False,False,,"correct_or_not,hint"
+406,1,f4c729ca-1a22-4ce1-93f0-0f77e7cdc27f_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+406,2,f4c729ca-1a22-4ce1-93f0-0f77e7cdc27f_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+407,1,ccd41ef6-b1f1-408b-b41e-3e7e4783236a_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,True,,"data,err_message,succ_message"
+407,2,ccd41ef6-b1f1-408b-b41e-3e7e4783236a_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,True,,"data,err_message,succ_message"
+408,1,5864ee98-419f-47b5-a002-00f31dc91e87_0_0,json,0.5090909004211426,partial,,1.0,0.6363636363636364,0.0,False,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+408,2,5864ee98-419f-47b5-a002-00f31dc91e87_1_0,json,0.5090909004211426,partial,,1.0,0.6363636363636364,0.0,False,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+409,1,c8185746-a317-47c7-ba45-895d66bf5ae1_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+409,2,c8185746-a317-47c7-ba45-895d66bf5ae1_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+410,1,a383f655-7fc0-426d-9595-48bacb385776_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+410,2,a383f655-7fc0-426d-9595-48bacb385776_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+411,1,5dc139bb-5153-4b9d-a8a0-f21b4af23683_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+411,2,5dc139bb-5153-4b9d-a8a0-f21b4af23683_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+412,1,e105c8ee-bd90-4abf-9701-a618539ee2f4_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+412,2,e105c8ee-bd90-4abf-9701-a618539ee2f4_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+413,1,f91c4fbf-fa9b-4780-8354-de1c7721ac4e_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+413,2,f91c4fbf-fa9b-4780-8354-de1c7721ac4e_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+414,1,1832538a-1143-4a33-9cc8-db6e152b24db_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+414,2,1832538a-1143-4a33-9cc8-db6e152b24db_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+415,1,df804c70-d0ae-4578-b12a-cf8a79adfa29_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+415,2,df804c70-d0ae-4578-b12a-cf8a79adfa29_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+416,1,e1085f32-a06e-4ce2-b5c8-05d26185fd03_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+416,2,e1085f32-a06e-4ce2-b5c8-05d26185fd03_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+417,1,ada3341c-a0a4-4c48-8314-2060622c8d50_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+417,2,ada3341c-a0a4-4c48-8314-2060622c8d50_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+418,1,d48d48de-84ce-4d13-8d10-7f515d27c6c9_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+418,2,d48d48de-84ce-4d13-8d10-7f515d27c6c9_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+419,1,0370bf63-f836-4a11-a793-2ec1d7c5cbbd_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+419,2,0370bf63-f836-4a11-a793-2ec1d7c5cbbd_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+420,1,9e4eae6a-8dca-4e89-83fa-4e06e45242f1_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,True,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+420,2,9e4eae6a-8dca-4e89-83fa-4e06e45242f1_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,True,False,False,,"address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints"
+421,1,31b17077-d38a-415a-bf40-0f87e03655f4_0_0,tool_call,0.0,parse_or_type_error,ValueError: Expected native <tool_call> JSON output,0.0,0.0,0.0,False,False,False,ai_assistant_app_set,
+421,2,31b17077-d38a-415a-bf40-0f87e03655f4_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_app_set,
+422,1,4b736f5d-0095-44af-878c-4ca6b6f4f723_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"content,content_language"
+422,2,4b736f5d-0095-44af-878c-4ca6b6f4f723_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+423,1,2b1ac16b-c3e2-4935-bd59-55b6a3b286d0_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+423,2,2b1ac16b-c3e2-4935-bd59-55b6a3b286d0_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+424,1,e7fac39e-bcf4-40d3-9ccd-94dc2a1d9c90_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"content,content_language"
+424,2,e7fac39e-bcf4-40d3-9ccd-94dc2a1d9c90_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"content,content_language"
+425,1,28105600-b1ae-44fe-9568-523706b2273d_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+425,2,28105600-b1ae-44fe-9568-523706b2273d_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+426,1,fdea96a4-6184-43d6-8a49-586cc10bbd6b_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+426,2,fdea96a4-6184-43d6-8a49-586cc10bbd6b_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+427,1,f5ff7a8d-e7b0-48b3-b8f9-a91e346a5410_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+427,2,f5ff7a8d-e7b0-48b3-b8f9-a91e346a5410_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+428,1,10bee4ff-946d-45b0-9aed-ca8a93f6e4b5_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+428,2,10bee4ff-946d-45b0-9aed-ca8a93f6e4b5_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+429,1,12c0a191-ed3c-4074-8216-a3607d517fb6_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+429,2,12c0a191-ed3c-4074-8216-a3607d517fb6_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+430,1,d2bfe31f-cd85-49eb-bb55-3eb2ab249870_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+430,2,d2bfe31f-cd85-49eb-bb55-3eb2ab249870_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+431,1,3437f8f7-6fc3-4404-a53d-28c2c1726790_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+431,2,3437f8f7-6fc3-4404-a53d-28c2c1726790_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+432,1,cd552453-1364-4411-868f-39bdb92b65db_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+432,2,cd552453-1364-4411-868f-39bdb92b65db_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"content,content_language"
+433,1,3cc991d2-197d-49c2-adad-f7608e8b4236_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+433,2,3cc991d2-197d-49c2-adad-f7608e8b4236_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+434,1,69fd1b22-a5aa-4bab-8c49-812e630332bd_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+434,2,69fd1b22-a5aa-4bab-8c49-812e630332bd_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+435,1,03fe0dcf-ded4-4b52-8d83-6da3a5b4cedf_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+435,2,03fe0dcf-ded4-4b52-8d83-6da3a5b4cedf_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+436,1,e98a52cd-5566-4f10-aa36-bf4c186a158a_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+436,2,e98a52cd-5566-4f10-aa36-bf4c186a158a_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+437,1,e5acdd01-2f71-4aae-86a6-9b82603321f4_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+437,2,e5acdd01-2f71-4aae-86a6-9b82603321f4_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+438,1,9066680e-1a4f-424f-85d8-316712f67012_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+438,2,9066680e-1a4f-424f-85d8-316712f67012_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+439,1,d6215c56-f7ba-400d-95ec-e85eeb481248_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+439,2,d6215c56-f7ba-400d-95ec-e85eeb481248_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+440,1,e97a26b4-f835-46fb-a4ec-391359f88042_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+440,2,e97a26b4-f835-46fb-a4ec-391359f88042_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+441,1,f62fc776-6913-4b6c-901e-5f79f3ba1f68_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+441,2,f62fc776-6913-4b6c-901e-5f79f3ba1f68_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+442,1,0f4bfbbd-9150-44f7-8b8d-d1dd4f8aae32_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+442,2,0f4bfbbd-9150-44f7-8b8d-d1dd4f8aae32_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"content,content_language"
+443,1,9063b0d9-2aa7-4df5-8085-efa542b50fb5_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"content,content_language"
+443,2,9063b0d9-2aa7-4df5-8085-efa542b50fb5_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"content,content_language"
+444,1,4d88ecf7-e5f3-4872-ac56-85c5b5554f09_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"content,content_language"
+444,2,4d88ecf7-e5f3-4872-ac56-85c5b5554f09_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"content,content_language"
+445,1,d1045714-43b1-4668-848d-30db3b23ae74_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"content,content_language"
+445,2,d1045714-43b1-4668-848d-30db3b23ae74_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"content,content_language"
+446,1,5fe89e1c-2828-4176-a524-2cdee525d36b_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"content,content_language"
+446,2,5fe89e1c-2828-4176-a524-2cdee525d36b_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"content,content_language"
+447,1,00139aa0-2877-44e7-89e1-9542e986ab58_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+447,2,00139aa0-2877-44e7-89e1-9542e986ab58_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+448,1,6a3c3a22-ea7c-42ad-830c-dfd407f1bdda_0_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+448,2,6a3c3a22-ea7c-42ad-830c-dfd407f1bdda_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_video,
+449,1,fb9d3b28-5fb4-4eef-9cba-90ac306bfd39_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,search_food,
+449,2,fb9d3b28-5fb4-4eef-9cba-90ac306bfd39_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,search_food,
+450,1,d8797420-2bd1-4dd7-9791-1f53545ba129_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,ai_assistant_aigc_image,
+450,2,d8797420-2bd1-4dd7-9791-1f53545ba129_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,ai_assistant_aigc_image,
+451,1,362bbcea-bcef-4ac3-ad29-d7262896fd75_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_aigc_image,
+451,2,362bbcea-bcef-4ac3-ad29-d7262896fd75_1_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,ai_assistant_aigc_image,
+452,1,58fee809-66fa-43c5-a0f6-67928c90f389_0_0,tool_call,0.20000000298023224,partial,,1.0,0.25,0.0,False,False,True,ai_assistant_aigc_image,
+452,2,58fee809-66fa-43c5-a0f6-67928c90f389_1_0,tool_call,0.22857142984867096,partial,,1.0,0.2857142857142857,0.0,False,False,True,ai_assistant_aigc_image,
+453,1,bbe039ef-e016-4d0d-9b5f-a35a2e650337_0_0,tool_call,0.7272727489471436,partial,,1.0,0.9090909090909091,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+453,2,bbe039ef-e016-4d0d-9b5f-a35a2e650337_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+454,1,4830b51e-61ee-4fad-8aed-e52dc8ace220_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,mcp_taxi_generate_ride_app_link,
+454,2,4830b51e-61ee-4fad-8aed-e52dc8ace220_1_0,tool_call,0.7272727489471436,partial,,1.0,0.9090909090909091,0.0,False,False,True,mcp_taxi_generate_ride_app_link,
+455,1,06b597a8-cbbb-43b1-b04c-dd82915e2f64_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,amap_place_around,
+455,2,06b597a8-cbbb-43b1-b04c-dd82915e2f64_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,amap_place_around,
+456,1,6d6613d6-d550-41da-93e3-b97fb0795f88_0_0,tool_call,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,True,tool_web_search_all,
+456,2,6d6613d6-d550-41da-93e3-b97fb0795f88_1_0,tool_call,0.6000000238418579,partial,,1.0,0.75,0.0,False,False,True,tool_web_search_all,
+457,1,a8b6d556-35ee-4312-bee1-f1301231cdeb_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,tool_search_ski_resort,
+457,2,a8b6d556-35ee-4312-bee1-f1301231cdeb_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,tool_search_ski_resort,
+458,1,2eceebef-718b-4534-95af-67a360e5d529_0_0,tool_call,0.6857143044471741,partial,,1.0,0.8571428571428571,0.0,False,False,True,tool_web_search_all,
+458,2,2eceebef-718b-4534-95af-67a360e5d529_1_0,tool_call,0.4571428596973419,partial,,1.0,0.5714285714285714,0.0,False,False,True,tool_web_search_all,
+459,1,d90b95d2-60ba-467f-b65b-05224ca64a8c_0_0,tool_call,0.0,call_or_schema_rejected,,0.0,0.0,0.0,False,False,True,tool_web_search_all,
+459,2,d90b95d2-60ba-467f-b65b-05224ca64a8c_1_0,tool_call,0.4571428596973419,partial,,1.0,0.5714285714285714,0.0,False,False,True,tool_web_search_all,
+460,1,41a6789f-a320-443b-b687-3a73dc459e3e_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,tool_search_ski_resort,
+460,2,41a6789f-a320-443b-b687-3a73dc459e3e_1_0,tool_call,0.5333333611488342,partial,,1.0,0.6666666666666666,0.0,False,False,True,tool_search_ski_resort,
+461,1,3ddbe90a-ecdd-4501-a5d2-0d518f088f6d_0_0,tool_call,0.6000000238418579,partial,,1.0,0.75,0.0,False,False,True,tool_web_search_all,
+461,2,3ddbe90a-ecdd-4501-a5d2-0d518f088f6d_1_0,tool_call,0.0,parse_or_type_error,ValueError: Expected native <tool_call> JSON output,0.0,0.0,0.0,False,False,False,tool_web_search_all,
+462,1,7ed419ab-d1ff-47ba-a761-450361821e8a_0_0,tool_call,0.0,call_or_schema_rejected,,0.0,0.0,0.0,False,False,True,ProductInfoAndKeywordsResponse_v1,
+462,2,7ed419ab-d1ff-47ba-a761-450361821e8a_1_0,tool_call,0.0,call_or_schema_rejected,,0.0,0.0,0.0,False,False,True,ProductInfoAndKeywordsResponse_v1,
+463,1,18a2e23c-c642-4485-bcbf-cdadfb0b3179_0_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+463,2,18a2e23c-c642-4485-bcbf-cdadfb0b3179_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+464,1,3f18699f-b831-4daf-8d4a-0030751dbd95_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+464,2,3f18699f-b831-4daf-8d4a-0030751dbd95_1_0,json,0.0,parsed_zero,,1.0,0.0,0.0,False,False,False,,"advices,opening_remarks"
+465,1,bcf00d9a-632f-4df0-811f-bccb5ce97723_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,tool_update_nickname,
+465,2,bcf00d9a-632f-4df0-811f-bccb5ce97723_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,tool_update_nickname,
+466,1,45765797-6114-47c4-9756-8ef3c58ef6da_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,tool_update_nickname,
+466,2,45765797-6114-47c4-9756-8ef3c58ef6da_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,tool_update_nickname,
+467,1,a2985cf9-564f-4c79-a34f-9cd272401d90_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,tool_update_nickname,
+467,2,a2985cf9-564f-4c79-a34f-9cd272401d90_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,tool_update_nickname,
+468,1,f128430a-1263-4b5b-829f-960990433571_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,tool_update_nickname,
+468,2,f128430a-1263-4b5b-829f-960990433571_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,tool_update_nickname,
+469,1,fb240695-68b2-4cfe-b6fd-d2b52b8510b1_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,tool_update_nickname,
+469,2,fb240695-68b2-4cfe-b6fd-d2b52b8510b1_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,tool_update_nickname,
+470,1,139992cf-8320-4fd9-85f1-12ecdecd67d3_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,tool_update_nickname,
+470,2,139992cf-8320-4fd9-85f1-12ecdecd67d3_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,tool_update_nickname,
+471,1,4ba78d9d-2059-4acd-8074-16c0ddb0c25e_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,tool_update_nickname,
+471,2,4ba78d9d-2059-4acd-8074-16c0ddb0c25e_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,tool_update_nickname,
+472,1,6d1ab4bd-109d-418c-889c-58e336dea0db_0_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,tool_search_ski_resort,
+472,2,6d1ab4bd-109d-418c-889c-58e336dea0db_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,tool_search_ski_resort,
+473,1,ce8af7f2-f73c-42a7-bb1d-ae218154b30f_0_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+473,2,ce8af7f2-f73c-42a7-bb1d-ae218154b30f_1_0,json,0.4000000059604645,partial,,1.0,0.5,0.0,False,False,False,,"content,content_language"
+474,1,76983768-fc93-4b30-b19b-aecf46e22852_0_0,tool_call,0.0,parse_or_type_error,ToolSchemaError: invalid_typed_value:recommend_hotel_reasons,0.0,0.0,0.0,False,False,True,tool_city_recommendation_everyday,
+474,2,76983768-fc93-4b30-b19b-aecf46e22852_1_0,tool_call,0.2545454502105713,partial,,1.0,0.3181818181818182,0.0,False,False,True,tool_city_recommendation_everyday,
+475,1,fa43b9e1-e2bb-46d7-8cc3-e68a6fb3958f_0_0,tool_call,0.0,parse_or_type_error,ValueError: Expected native <tool_call> JSON output,0.0,0.0,0.0,False,False,False,tool_web_search_all,
+475,2,fa43b9e1-e2bb-46d7-8cc3-e68a6fb3958f_1_0,tool_call,0.0,parse_or_type_error,ValueError: Expected native <tool_call> JSON output,0.0,0.0,0.0,False,False,False,tool_web_search_all,
+476,1,a7f149f4-b8bc-4d1c-b99d-e17cad53da77_0_0,tool_call,0.6399999856948853,partial,,1.0,0.8,0.0,False,False,True,BookHotelInfo,
+476,2,a7f149f4-b8bc-4d1c-b99d-e17cad53da77_1_0,tool_call,1.0,exact,,1.0,1.0,1.0,False,False,True,BookHotelInfo,
+477,1,7a0cf9e1-e077-4497-9ba9-2d3d023eed41_0_0,tool_call,0.5714285969734192,partial,,1.0,0.7142857142857143,0.0,False,False,True,BookHotelInfo,
+477,2,7a0cf9e1-e077-4497-9ba9-2d3d023eed41_1_0,tool_call,0.5714285969734192,partial,,1.0,0.7142857142857143,0.0,False,False,True,BookHotelInfo,
+478,1,38d8cb30-93ca-4756-9e4a-b68a4b98894a_0_0,tool_call,0.0,parse_or_type_error,ValueError: Expected native <tool_call> JSON output,0.0,0.0,0.0,False,False,False,BookHotelInfo,
+478,2,38d8cb30-93ca-4756-9e4a-b68a4b98894a_1_0,tool_call,0.0,parse_or_type_error,ValueError: Expected native <tool_call> JSON output,0.0,0.0,0.0,False,False,False,BookHotelInfo,
+479,1,cfc8ec52-2b92-4403-bc2a-0e502ba34d93_0_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,True,,"arrival_airport_code,arrival_city,arrival_date_ranges,cabin_class,city_check_failed,departure_airport_code,departure_city,departure_date_ranges,departure_time,flight_type,max_price,min_price,return_date_ranges,trip_type"
+479,2,cfc8ec52-2b92-4403-bc2a-0e502ba34d93_1_0,json,0.0,parse_or_type_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),0.0,0.0,0.0,False,False,False,,"arrival_airport_code,arrival_city,arrival_date_ranges,cabin_class,city_check_failed,departure_airport_code,departure_city,departure_date_ranges,departure_time,flight_type,max_price,min_price,return_date_ranges,trip_type"

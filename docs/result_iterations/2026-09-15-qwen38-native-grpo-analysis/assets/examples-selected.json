@@ -1,0 +1,259 @@
+[
+  {
+    "step": 12,
+    "sample": 2,
+    "uid": "81da3238-0d15-40ff-8a06-188142c48a57_1_0",
+    "kind": "json",
+    "score": 0.0,
+    "category": "parse_or_type_error",
+    "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+    "format_valid": 0.0,
+    "field_accuracy": 0.0,
+    "acc": 0.0,
+    "response_wrapper": true,
+    "wrapper_inner_exact": true,
+    "xml_output": false,
+    "expected_tools": "",
+    "expected_keys": "address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints",
+    "output": "<response>\n{\"start_city\":\"\",\"start_name\":\"\", \"end_city\":\"\", \"end_name\":\"深圳大学\",\"end_detail_address\":\"\",\"waypoints\":\"深圳北站\",\"type\":\"\",\"address\":\"\",\"is_around\":\"\",\"end\":\"\",\"ask_message\":\"\"}\n</response>",
+    "expected": {
+      "address": "",
+      "ask_message": "",
+      "end": "",
+      "end_city": "",
+      "end_detail_address": "",
+      "end_name": "深圳大学",
+      "is_around": "",
+      "start_city": "",
+      "start_name": "",
+      "type": "",
+      "waypoints": "深圳北站"
+    },
+    "input": "system\n<extraction_task>\n    <instruction>\n        你是一个专业的自然语言处理助手，负责从导航场景的用户查询（Query）中精准提取特定参数。\n    </instruction>\n\n    <parameters>\n        <parameter name=\"start_city\">\n            起点城市。\n            注意：仅提取作为独立行政区划提及的城市名。如果城市名是起点地标的一部分（如“南山区人民医院”、“宝安机场”），严禁拆分，此处应返回 \"\"。\n        </parameter>\n        <parameter name=\"start_name\">\n            起点位置的具体名称。\n            注意：必须保持地标名的完整性。如果起点的名称自带城市/区位前缀，必须完整保留该前缀。\n            **翻译要求**：若提取到的是英文名称（如 \"Shenzhen University\"），必须将其翻译为中文（如 \"深圳大学\"）。\n            若未提及返回 \"\"。\n        </parameter>\n        <parameter name=\"end_city\">\n            终点城市。\n            注意：仅提取作为独立行政区划提及的城市名。如果城市名是终点地标的一部分（如“深圳北站”、“广州塔”），严禁拆分，此处应返回 \"\"。\n        </parameter>\n        <parameter name=\"end_name\">\n            终点位置的具体名称。\n            注意：必须保持地标名的完整性。如果终点的名称自带城市前缀，必须完整保留该前缀。\n            **翻译要求**：若提取到的是英文名称（如 \"Window of the World\"），必须将其翻译为中文（如 \"世界之窗\"）。\n            若未提及返回 \"\"。\n        </parameter>\n        <parameter name=\"end_detail_address\">\n            终点位置的详细地址。\n            注意：必须保持地址名的完整性。如果地址自带城市/区位前缀，必须完整保留该前缀。\n            **清洗要求**：若提取到的原始地址中包含括号及其内容（例如：“地址：南山区粤海街道某大厦(近深大地铁站C口)”），必须将括号及括号内的内容一并去除，仅提取括号前的核心地址字符串。\n            若未明确提及详细地址（通常见于“地址是...”描述中），必须返回空字符串 \"\"。\n        </parameter>\n        <parameter name=\"waypoints\">\n            途径点/中转点。\n            注意：必须保持地标名的完整性。若有多个途径点，按顺序提取并使用半角逗号“,”分隔。\n            **翻译要求**：若提取到的是英文名称，必须将其翻译为中文。\n            若未提及返回 \"\"。\n        </parameter>\n        <parameter name=\"type\">\n            出行方式枚举值（字符串格式）：\n            \"1\" - 步行 (关键词：走路、徒步、走过去)\n            \"2\" - 驾车 (关键词：开车、打车、导航到)\n            \"3\" - 公交 (关键词 : 坐车、公交车、地铁、乘车)\n            \"4\" - 骑行 (关键词：骑车、单车、自行车)\n            若未明确提及出行方式，必须返回空字符串 \"\"。\n        </parameter>\n        <parameter name=\"address\">\n            参照地址。\n            逻辑：仅当 Query 明确给出参照点 A（如“A附近的B”）时，提取 A 为 address。\n            **翻译要求**：若提取到的是英文名称，必须将其翻译为中文。\n            若 Query 仅提及“附近的B”而无具体参照点 A，则此字段必须为空字符串 \"\"。\n        </parameter>\n        <parameter name=\"is_around\">\n            特定实体/周边搜索标识。\n            逻辑：当存在相对位置描述（如“附近”、“周边”）或寻找特定品牌/店名实体时，返回 \"1\"；否则返回 \"\"。\n        </parameter>\n        <parameter name=\"end\">\n            目的地的经纬度坐标。\n            格式：经度,纬度（例如：\"114.050867,22.509343\"）。\n            注意：必须严格遵守“经度在前，纬度在后”的顺序，使用半角逗号分割，严禁包含任何空格。若未提及坐标，必须返回 \"\"。\n        </parameter>\n        <parameter name=\"ask_message\">\n            用户诉求回复话术。\n            逻辑：当 Query 中包含价格比较类诉求时（如“哪一家最便宜”“优先去便宜的那家”“哪个更划算”“比较一下价格”“哪个性价比高”等），需根据用户的具体诉求，生成一段委婉、礼貌的中文回复，告知用户当前暂不支持此类（价格比较/按价格筛选）功能。\n            注意：回复需自然贴合用户的原始诉求，不要生硬套用固定模板；回复内容中严禁包含换行符。\n            若 Query 中未出现此类价格比较诉求，必须返回空字符串 \"\"。\n        </parameter>\n    </parameters>\n\n    <rules>\n        <rule>\n            **价格诉求优先处理原则**：\n            当前系统暂不支持价格比较或按价格筛选目的地的功能。若 Query 中出现此类诉求（如“哪家最便宜”“优先去便宜的”“哪个更划算”），必须在 `ask_message` 字段中生成委婉的中文说明话术，告知用户暂不支持。此为最高优先级判断——只要识别到价格诉求，务必确保 ask_message 字段被正确填充。\n        </rule>\n        <rule>\n            **全局空值原则**：所有字段若在 Query 中未提及或不符合提取条件，统一返回严格的空字符串 \"\"。\n            注意：双引号内严禁包含任何空格、制表符或换行符，确保解析后的字符串长度为 0。\n        </rule>\n        <rule>\n            **多点导航逻辑**：若 Query 包含多个目的地或分步骤导航描述（如“先去 A，接着去 B，最后到 C”），必须将最后一个地点提取为 end_name，之前的所有地点按顺序提取为 waypoints，并用半角逗号“,”分隔。\n        </rule>\n        <rule>\n            **实体完整性原则（防过分割）**：\n            严禁将任何位置实体（起点、终点、途径点、详细地址或参照物）中的城市/行政区前缀拆分到城市字段中。\n            - 案例1：“从南山区人民医院到深圳北站” -> start_name=\"南山区人民医院\", start_city=\"\", end_name=\"深圳北站\", end_city=\"\"\n            - 案例2：“地址是深圳市福田区福强路2173号” -> end_detail_address=\"深圳市福田区福强路2173号\", end_city=\"\"\n        </rule>\n        <rule>\n            **语言翻译原则**：\n            针对 `start_name`、`end_name`、`waypoints` 和 `address` 字段，如果原始 Query 中提供的是英文地标、建筑物或地址名称，必须将其翻译为对应的中文名称后填入 JSON 字段。\n        </rule>\n        <rule>\n            **识别路径与位置结构**：\n            - 直接导航：“导航到 [地点X]” -> end_name=\"[地点X]\", address=\"\", is_around=\"\"。\n            - 详细属性导航：“导航去 [地点X]，地址是 [地址Y]([备注])，经纬度为 [坐标Z]” -> end_name=\"[地点X]\", end_detail_address=\"[地址Y]\" (注意：必须剔除括号及其内部备注内容), end=\"[坐标Z]\"。\n            - 多点导航：“先到 [地点A]，接着去 [地点B]，最后到 [地点C]” -> waypoints=\"[地点A],[地点B]\", end_name=\"[地点C]\"。\n            - 路径导航：“从 [起点A] 到 [终点B]” -> start_name=\"[起点A]\", end_name=\"[终点B]\"。\n            - 相对搜索：“在 [地点A] 附近找 [目的地B]” -> end_name=\"[目的地B]\", address=\"[地点A]\", is_around=\"1\"。\n            - 路径+相对搜索：“从 [起点A] 出发去 [地点C] 附近的 [目的地B]” -> start_name=\"[起点A]\", address=\"[地点C]\", end_name=\"[目的地B]\", is_around=\"1\"。\n            - 模糊相对搜索：“导航到附近的 [目的地B]” -> end_name=\"[目的地B]\", address=\"\", is_around=\"1\"。\n        </rule>\n        <rule>严格按照指定的 JSON 格式进行输出，包裹在 &lt;response&gt; 标签中，严禁输出任何解释性文字或原始 Query。</rule>\n    </rules>\n\n    <output_format>\n        请以下述标准的 JSON 格式返回结果（确保字段值中不包含冗余空格）：\n        <response>\n        {\"start_city\":\"\",\"start_name\":\"\", \"end_city\":\"\", \"end_name\":\"\",\"end_detail_address\":\"\",\"waypoints\":\"\",\"type\":\"\",\"address\":\"\",\"is_around\":\"\",\"end\":\"\",\"ask_message\":\"\"}\n        </response>\n    </output_format>\n</extraction_task>\nuser\n导航到深圳北站，再到深圳大学\nassistant\n<think>\n\n</think>\n\n",
+    "parsed": null
+  },
+  {
+    "step": 20,
+    "sample": 1,
+    "uid": "30ed0853-3640-45d0-b935-74972ff3dc09_0_0",
+    "kind": "json",
+    "score": 0.0,
+    "category": "parse_or_type_error",
+    "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+    "format_valid": 0.0,
+    "field_accuracy": 0.0,
+    "acc": 0.0,
+    "response_wrapper": true,
+    "wrapper_inner_exact": true,
+    "xml_output": false,
+    "expected_tools": "",
+    "expected_keys": "address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints",
+    "output": "<response>\n{\"start_city\":\"\",\"start_name\":\"\",\"end_city\":\"\",\"end_name\":\"南京站\",\"end_detail_address\":\"\",\"waypoints\":\"\",\"type\":\"\",\"address\":\"\",\"is_around\":\"\",\"end\":\"\",\"ask_message\":\"\"}\n</response>",
+    "expected": {
+      "address": "",
+      "ask_message": "",
+      "end": "",
+      "end_city": "",
+      "end_detail_address": "",
+      "end_name": "南京站",
+      "is_around": "",
+      "start_city": "",
+      "start_name": "",
+      "type": "",
+      "waypoints": ""
+    },
+    "input": "system\n<extraction_task>\n    <instruction>\n        你是一个专业的自然语言处理助手，负责从导航场景的用户查询（Query）中精准提取特定参数。\n    </instruction>\n\n    <parameters>\n        <parameter name=\"start_city\">\n            起点城市。\n            注意：仅提取作为独立行政区划提及的城市名。如果城市名是起点地标的一部分（如“南山区人民医院”、“宝安机场”），严禁拆分，此处应返回 \"\"。\n        </parameter>\n        <parameter name=\"start_name\">\n            起点位置的具体名称。\n            注意：必须保持地标名的完整性。如果起点的名称自带城市/区位前缀，必须完整保留该前缀。\n            **翻译要求**：若提取到的是英文名称（如 \"Shenzhen University\"），必须将其翻译为中文（如 \"深圳大学\"）。\n            若未提及返回 \"\"。\n        </parameter>\n        <parameter name=\"end_city\">\n            终点城市。\n            注意：仅提取作为独立行政区划提及的城市名。如果城市名是终点地标的一部分（如“深圳北站”、“广州塔”），严禁拆分，此处应返回 \"\"。\n        </parameter>\n        <parameter name=\"end_name\">\n            终点位置的具体名称。\n            注意：必须保持地标名的完整性。如果终点的名称自带城市前缀，必须完整保留该前缀。\n            **翻译要求**：若提取到的是英文名称（如 \"Window of the World\"），必须将其翻译为中文（如 \"世界之窗\"）。\n            若未提及返回 \"\"。\n        </parameter>\n        <parameter name=\"end_detail_address\">\n            终点位置的详细地址。\n            注意：必须保持地址名的完整性。如果地址自带城市/区位前缀，必须完整保留该前缀。\n            **清洗要求**：若提取到的原始地址中包含括号及其内容（例如：“地址：南山区粤海街道某大厦(近深大地铁站C口)”），必须将括号及括号内的内容一并去除，仅提取括号前的核心地址字符串。\n            若未明确提及详细地址（通常见于“地址是...”描述中），必须返回空字符串 \"\"。\n        </parameter>\n        <parameter name=\"waypoints\">\n            途径点/中转点。\n            注意：必须保持地标名的完整性。若有多个途径点，按顺序提取并使用半角逗号“,”分隔。\n            **翻译要求**：若提取到的是英文名称，必须将其翻译为中文。\n            若未提及返回 \"\"。\n        </parameter>\n        <parameter name=\"type\">\n            出行方式枚举值（字符串格式）：\n            \"1\" - 步行 (关键词：走路、徒步、走过去)\n            \"2\" - 驾车 (关键词：开车、打车、导航到)\n            \"3\" - 公交 (关键词 : 坐车、公交车、地铁、乘车)\n            \"4\" - 骑行 (关键词：骑车、单车、自行车)\n            若未明确提及出行方式，必须返回空字符串 \"\"。\n        </parameter>\n        <parameter name=\"address\">\n            参照地址。\n            逻辑：仅当 Query 明确给出参照点 A（如“A附近的B”）时，提取 A 为 address。\n            **翻译要求**：若提取到的是英文名称，必须将其翻译为中文。\n            若 Query 仅提及“附近的B”而无具体参照点 A，则此字段必须为空字符串 \"\"。\n        </parameter>\n        <parameter name=\"is_around\">\n            特定实体/周边搜索标识。\n            逻辑：当存在相对位置描述（如“附近”、“周边”）或寻找特定品牌/店名实体时，返回 \"1\"；否则返回 \"\"。\n        </parameter>\n        <parameter name=\"end\">\n            目的地的经纬度坐标。\n            格式：经度,纬度（例如：\"114.050867,22.509343\"）。\n            注意：必须严格遵守“经度在前，纬度在后”的顺序，使用半角逗号分割，严禁包含任何空格。若未提及坐标，必须返回 \"\"。\n        </parameter>\n        <parameter name=\"ask_message\">\n            用户诉求回复话术。\n            逻辑：当 Query 中包含价格比较类诉求时（如“哪一家最便宜”“优先去便宜的那家”“哪个更划算”“比较一下价格”“哪个性价比高”等），需根据用户的具体诉求，生成一段委婉、礼貌的中文回复，告知用户当前暂不支持此类（价格比较/按价格筛选）功能。\n            注意：回复需自然贴合用户的原始诉求，不要生硬套用固定模板；回复内容中严禁包含换行符。\n            若 Query 中未出现此类价格比较诉求，必须返回空字符串 \"\"。\n        </parameter>\n    </parameters>\n\n    <rules>\n        <rule>\n            **价格诉求优先处理原则**：\n            当前系统暂不支持价格比较或按价格筛选目的地的功能。若 Query 中出现此类诉求（如“哪家最便宜”“优先去便宜的”“哪个更划算”），必须在 `ask_message` 字段中生成委婉的中文说明话术，告知用户暂不支持。此为最高优先级判断——只要识别到价格诉求，务必确保 ask_message 字段被正确填充。\n        </rule>\n        <rule>\n            **全局空值原则**：所有字段若在 Query 中未提及或不符合提取条件，统一返回严格的空字符串 \"\"。\n            注意：双引号内严禁包含任何空格、制表符或换行符，确保解析后的字符串长度为 0。\n        </rule>\n        <rule>\n            **多点导航逻辑**：若 Query 包含多个目的地或分步骤导航描述（如“先去 A，接着去 B，最后到 C”），必须将最后一个地点提取为 end_name，之前的所有地点按顺序提取为 waypoints，并用半角逗号“,”分隔。\n        </rule>\n        <rule>\n            **实体完整性原则（防过分割）**：\n            严禁将任何位置实体（起点、终点、途径点、详细地址或参照物）中的城市/行政区前缀拆分到城市字段中。\n            - 案例1：“从南山区人民医院到深圳北站” -> start_name=\"南山区人民医院\", start_city=\"\", end_name=\"深圳北站\", end_city=\"\"\n            - 案例2：“地址是深圳市福田区福强路2173号” -> end_detail_address=\"深圳市福田区福强路2173号\", end_city=\"\"\n        </rule>\n        <rule>\n            **语言翻译原则**：\n            针对 `start_name`、`end_name`、`waypoints` 和 `address` 字段，如果原始 Query 中提供的是英文地标、建筑物或地址名称，必须将其翻译为对应的中文名称后填入 JSON 字段。\n        </rule>\n        <rule>\n            **识别路径与位置结构**：\n            - 直接导航：“导航到 [地点X]” -> end_name=\"[地点X]\", address=\"\", is_around=\"\"。\n            - 详细属性导航：“导航去 [地点X]，地址是 [地址Y]([备注])，经纬度为 [坐标Z]” -> end_name=\"[地点X]\", end_detail_address=\"[地址Y]\" (注意：必须剔除括号及其内部备注内容), end=\"[坐标Z]\"。\n            - 多点导航：“先到 [地点A]，接着去 [地点B]，最后到 [地点C]” -> waypoints=\"[地点A],[地点B]\", end_name=\"[地点C]\"。\n            - 路径导航：“从 [起点A] 到 [终点B]” -> start_name=\"[起点A]\", end_name=\"[终点B]\"。\n            - 相对搜索：“在 [地点A] 附近找 [目的地B]” -> end_name=\"[目的地B]\", address=\"[地点A]\", is_around=\"1\"。\n            - 路径+相对搜索：“从 [起点A] 出发去 [地点C] 附近的 [目的地B]” -> start_name=\"[起点A]\", address=\"[地点C]\", end_name=\"[目的地B]\", is_around=\"1\"。\n            - 模糊相对搜索：“导航到附近的 [目的地B]” -> end_name=\"[目的地B]\", address=\"\", is_around=\"1\"。\n        </rule>\n        <rule>严格按照指定的 JSON 格式进行输出，包裹在 &lt;response&gt; 标签中，严禁输出任何解释性文字或原始 Query。</rule>\n    </rules>\n\n    <output_format>\n        请以下述标准的 JSON 格式返回结果（确保字段值中不包含冗余空格）：\n        <response>\n        {\"start_city\":\"\",\"start_name\":\"\", \"end_city\":\"\", \"end_name\":\"\",\"end_detail_address\":\"\",\"waypoints\":\"\",\"type\":\"\",\"address\":\"\",\"is_around\":\"\",\"end\":\"\",\"ask_message\":\"\"}\n        </response>\n    </output_format>\n</extraction_task>\nuser\n导航去南京站\nassistant\n<think>\n\n</think>\n\n",
+    "parsed": null
+  },
+  {
+    "step": 11,
+    "sample": 2,
+    "uid": "551067f7-8f51-4202-8177-cf68a5b9e642_1_0",
+    "kind": "json",
+    "score": 0.0,
+    "category": "parsed_zero",
+    "error": "",
+    "format_valid": 1.0,
+    "field_accuracy": 0.0,
+    "acc": 0.0,
+    "response_wrapper": false,
+    "wrapper_inner_exact": false,
+    "xml_output": false,
+    "expected_tools": "",
+    "expected_keys": "selected_hotels",
+    "output": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
+    "expected": {
+      "selected_hotels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "input": "system\n# Instructions\n## Role\n一个帮助酒店预定平台进行结果筛选的AI助手\n\n## Goal\n从备选酒店方案中筛选出符合用户住宿需求的酒店\n\n## Constraints\n- 用户的其他需求不要管，你只关注他对酒店住宿的需求\n- 如果用户对于入住酒店的酒店名与地址有明确要求，那么你应该着重注意备选方案这两项信息是否符合要求。\n- **特别注意**:假如用户对酒店名有明确要求,但没有备选方案的酒店名符合要求，那就往列表中填入-1。如果用户对于入住酒店名没有明确要求，筛选后没有合适结果的话就填空列表\n- 星级,价格,好评数等等这些因素暂时不用考虑,哪怕用户明确表达了对这些属性的要求\nuser\n用户原本的询问: 帮我预订上海外滩酒店，今天入住，明天离店\n补充信息(不一定有用,仅在必要时参考):当前日期——2026-07-24 星期五; 当前位置——中国广东省深圳福田; 用户时区——Asia/Shanghai\n\n用户所在地(这个信息不一定有用，除非用户要求订他附近酒店): 中国广东省深圳福田\n\n当前找到的酒店方案如下:\n\n1. {\"酒店名称\": \"UrCove by Hyatt Shanghai on the Bund\", \"酒店地址\": \"2nd Road, 15 中山东路外滩浦东新区上海市中国200002\", \"酒店简介\": \"4星级酒店，评分4.6分, 14条评价\", \"每晚价格\": \"¥712\", \"酒店星级\": \"4 星级酒店\"}\n\n2. {\"酒店名称\": \"锦江都城南京东路外滩经典酒店\", \"酒店地址\": \"中国上海市黄浦区外滩南京东路98号 邮政编码: 200002\", \"酒店简介\": \"4星级酒店，评分4.5分, 81条评价，Wi-Fi、Restaurant\", \"每晚价格\": \"¥679\", \"酒店星级\": \"4 星级酒店\"}\n\n3. {\"酒店名称\": \"莫泰酒店上海浦东联洋新国际博览中心店\", \"酒店地址\": \"中国上海市黄浦区外滩上海市迎春丝巾厂 邮政编码: 200002\", \"酒店简介\": \"2星级酒店，评分1.0分, 1条评价，Wi-Fi、Restaurant\", \"每晚价格\": \"\", \"酒店星级\": \"2 星级酒店\"}\n\n4. {\"酒店名称\": \"极客家休闲旅咖\", \"酒店地址\": \"中国上海市黄浦区外滩金陵东路14号 邮政编码: 200001\", \"酒店简介\": \"\", \"每晚价格\": \"\", \"酒店星级\": \"\"}\n\n5. {\"酒店名称\": \"JinglaiHotel Bushe Shanghai Bund Scenic\", \"酒店地址\": \"Bund, 2 Jinling East Road, 外滩 Street, 上海市中国200002\", \"酒店简介\": \"评分4.1分, 18条评价\", \"每晚价格\": \"¥936\", \"酒店星级\": \"\"}\n\n6. {\"酒店名称\": \"MaxX By Steigenberger on the Bund Shanghai\", \"酒店地址\": \"No, 1 Jinling East Road, 上海市中国200002\", \"酒店简介\": \"5星级酒店，评分4.1分, 33条评价，Wi-Fi、Restaurant\", \"每晚价格\": \"¥1,232\", \"酒店星级\": \"5 星级酒店\"}\n\n7. {\"酒店名称\": \"汉庭酒店上海外滩延安东路店\", \"酒店地址\": \"中国上海市黄浦区外滩四川南路5号 邮政编码: 200002\", \"酒店简介\": \"3星级酒店，评分3.0分, 1条评价，Wi-Fi、Restaurant\", \"每晚价格\": \"¥764\", \"酒店星级\": \"3 星级酒店\"}\n\n8. {\"酒店名称\": \"上海曼哈顿（外滩）商务酒店\", \"酒店地址\": \"中国上海市黄浦区外滩滇池路81-85号 邮政编码: 200002\", \"酒店简介\": \"3星级酒店，评分3.8分, 13条评价，Wi-Fi、Restaurant\", \"每晚价格\": \"\", \"酒店星级\": \"3 星级酒店\"}\n\n9. {\"酒店名称\": \"锦江之星\", \"酒店地址\": \"中国上海市黄浦区外滩四川中路630号 邮政编码: 200080\", \"酒店简介\": \"2星级酒店，评分4.2分, 107条评价，Wi-Fi、Restaurant\", \"每晚价格\": \"\", \"酒店星级\": \"2 星级酒店\"}\n\n10. {\"酒店名称\": \"上海皓江旅馆\", \"酒店地址\": \"中国上海市黄浦区外滩四川中路126号 邮政编码: 200002\", \"酒店简介\": \"评分5.0分, 2条评价，Wi-Fi、Front desk\", \"每晚价格\": \"\", \"酒店星级\": \"\"}\nassistant\n<think>\n\n</think>\n\n",
+    "parsed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  {
+    "step": 200,
+    "sample": 1,
+    "uid": "50695d9c-0b17-4079-ac85-9de7ee1a1320_0_0",
+    "kind": "tool_call",
+    "score": 0.5333333611488342,
+    "category": "partial",
+    "error": "",
+    "format_valid": 1.0,
+    "field_accuracy": 0.6666666666666666,
+    "acc": 0.0,
+    "response_wrapper": false,
+    "wrapper_inner_exact": false,
+    "xml_output": true,
+    "expected_tools": "ai_assistant_video",
+    "expected_keys": "",
+    "output": "<tool_call>\n<function=ai_assistant_video>\n<parameter=prompt>\n古代战场两军对峙，史诗短视频，厚重写实风格，大范围航拍俯冲运镜配合慢动作\n</parameter>\n<parameter=style>\nRealistic\n</parameter>\n</function>\n</tool_call>",
+    "expected": [
+      {
+        "arguments": {
+          "prompt": "古代战场两军对峙，风格厚重写实，运镜使用大范围航拍俯冲配合慢动作",
+          "style": "Realistic"
+        },
+        "name": "ai_assistant_video"
+      }
+    ],
+    "input": "system\n# Tools\n\nYou have access to the following functions:\n\n<tools>\n{\"function\": {\"description\": \"打开AI绘图面板并预填充合适的绘图参数。除prompt外的参数值必须从option_list中的en_desc字段提取，确保大小写正确不遗漏任何字符，按枚举值返回。\", \"name\": \"ai_assistant_aigc_image\", \"parameters\": {\"properties\": {\"lens\": {\"description\": \"镜头视角，选填。从option_list中的en_desc值选择\", \"type\": \"string\"}, \"prompt\": {\"description\": \"绘图提示词，必填。用于指导生成图像。\", \"type\": \"string\"}, \"resolution\": {\"description\": \"画面比例，选填。从option_list中的en_desc值选择\", \"type\": \"string\"}, \"style\": {\"description\": \"绘图风格，选填。从option_list中的en_desc值选择\", \"type\": \"string\"}}, \"required\": [\"prompt\"], \"type\": \"object\"}}, \"type\": \"function\"}\n{\"function\": {\"description\": \"打开AI文生视频面板并预填充合适的视频生成参数。参数值必须从option_list中的en_desc字段提取，确保大小写正确。\", \"name\": \"ai_assistant_video\", \"parameters\": {\"properties\": {\"duration\": {\"description\": \"视频时长，选填。从option_list中的en_desc值选择\", \"type\": \"string\"}, \"prompt\": {\"description\": \"视频创意提示词，必填。用于指导视频生成。\", \"type\": \"string\"}, \"resolution\": {\"description\": \"视频比例，选填。从option_list中的en_desc值选择\", \"type\": \"string\"}, \"style\": {\"description\": \"视频风格，选填。从option_list中的en_desc值选择\", \"type\": \"string\"}}, \"required\": [\"prompt\"], \"type\": \"object\"}}, \"type\": \"function\"}\n{\"function\": {\"description\": \"打开AI文生音乐面板并预填充合适的音乐生成参数。参数值必须从option_list中的en_desc字段提取，确保大小写正确。\", \"name\": \"ai_assistant_music\", \"parameters\": {\"properties\": {\"emotion\": {\"description\": \"音乐情绪，选填。从option_list中的en_desc值选择\", \"type\": \"string\"}, \"language\": {\"description\": \"歌词语言，选填。从option_list中的en_desc值选择\", \"type\": \"string\"}, \"music_instrument\": {\"description\": \"主要乐器，选填。从option_list中的en_desc值选择\", \"type\": \"string\"}, \"prompt\": {\"description\": \"音乐创意提示词，必填。用于指导音乐生成。\", \"type\": \"string\"}, \"style\": {\"description\": \"音乐风格，选填。从option_list中的en_desc值选择\", \"type\": \"string\"}, \"vocal\": {\"description\": \"人声类型，选填。从option_list中的en_desc值选择\", \"type\": \"string\"}}, \"required\": [\"prompt\"], \"type\": \"object\"}}, \"type\": \"function\"}\n</tools>\n\nIf you choose to call a function ONLY reply in the following format with NO suffix:\n\n<tool_call>\n<function=example_function_name>\n<parameter=example_parameter_1>\nvalue_1\n</parameter>\n<parameter=example_parameter_2>\nThis is the value for the second parameter\nthat can span\nmultiple lines\n</parameter>\n</function>\n</tool_call>\n\n<IMPORTANT>\nReminder:\n- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags\n- Required parameters MUST be specified\n- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after\n- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls\n</IMPORTANT>\n\n# instruction\n\n作为助手UMI，你使用`ai_assistant_video`工具帮助用户打开AI文生视频面板。你的唯一任务是从用户的视频描述中提取最匹配的参数，调用工具打开文生视频面板并预填充这些参数。\n你始终使用`zh-CN`回复用户。\n\n## workflow\n\n1. 理解用户的视频创意需求\n2. 从参数列表中匹配style的en_desc值，无法匹配则不填\n3. 从参数列表中匹配resolution的en_desc值，无法匹配则不填\n4. 从参数列表中匹配duration的en_desc值，无法匹配则不填 \n5. 务必按照`zh-CN`语言提取具体视频内容描述，填入参数prompt，必填，如无则友好追问。\n6. 调用`ai_assistant_video`工具\n7. 确认面板已打开\n\n## rules\n\n1. 参数值必须严格来自option_list中的en_desc字段，保持大小写和空格完全一致\n2. 无法从列表中匹配对应的en_desc值时，该参数不填。\n3. 工具调用异常时用`zh-CN`语言给出友好的错误提示。\n4. 参数prompt为空时，禁止调用`ai_assistant_video`工具。\n5. prompt：从用户描述中提取主体对象、场景设定、动作描述、时间节奏等，用`zh-CN`组织成结构化描述。\n6. 若用户只表达了创作意图，完全没有提及视频内容，1-2句话追问。即使用户明确说明主题随意，你也应引导询问，注意语气平等温和。\n7. 严格遵循“忠实提取，零度创作”原则：仅从用户query中提取明确提及的元素，绝对禁止任何形式的发挥、脑补、扩写或润色。\n8. prompt中不重复包含正确匹配的style、resolution或duration参数。\n\n# context\n\n风格：{'option_list': [{'display': '写实', 'en_desc': 'Realistic'}, {'display': '卡通', 'en_desc': 'Cartoon'}, {'display': '科幻', 'en_desc': 'Sci-fi'}]}\n比例：{'option_list': [{'display': '16 : 9', 'en_desc': '16 : 9'}, {'display': '9 : 16', 'en_desc': '9 : 16'}, {'display': '1 : 1', 'en_desc': '1 : 1'}]}\n时长：{'option_list': [{'display': '10s', 'en_desc': '10s'}, {'display': '5s', 'en_desc': '5s'}, {'display': '15s', 'en_desc': '15s'}]}\nuser\n用户请求：制作一段表现古代战场两军对峙的史诗短视频，风格厚重写实，运镜使用大范围航拍俯冲配合慢动作。\n\n**只要有必填参数prompt就可以直接调用工具打开面板，其他参数无法匹配则不填。**\nassistant\n<think>\n\n</think>\n\n",
+    "parsed": [
+      {
+        "name": "ai_assistant_video",
+        "arguments": {
+          "prompt": "古代战场两军对峙，史诗短视频，厚重写实风格，大范围航拍俯冲运镜配合慢动作",
+          "style": "Realistic"
+        }
+      }
+    ]
+  },
+  {
+    "step": 44,
+    "sample": 1,
+    "uid": "1d24f897-dd54-4154-848d-90249e751f69_0_0",
+    "kind": "tool_call",
+    "score": 1.0,
+    "category": "exact",
+    "error": "",
+    "format_valid": 1.0,
+    "field_accuracy": 1.0,
+    "acc": 1.0,
+    "response_wrapper": false,
+    "wrapper_inner_exact": false,
+    "xml_output": true,
+    "expected_tools": "mcp_taxi_generate_ride_app_link",
+    "expected_keys": "",
+    "output": "<tool_call>\n<function=mcp_taxi_generate_ride_app_link>\n<parameter=car_price>\n\n</parameter>\n<parameter=car_type>\n[]\n</parameter>\n<parameter=departure>\n\n</parameter>\n<parameter=departure_split>\n[]\n</parameter>\n<parameter=destination>\n\n</parameter>\n<parameter=destination_split>\n[]\n</parameter>\n<parameter=is_departure_clear>\n\n</parameter>\n<parameter=is_destination_clear>\n\n</parameter>\n</function>\n</tool_call>",
+    "expected": [
+      {
+        "arguments": {
+          "car_price": "",
+          "car_type": [],
+          "departure": "",
+          "departure_split": [],
+          "destination": "",
+          "destination_split": [],
+          "is_departure_clear": "",
+          "is_destination_clear": ""
+        },
+        "name": "mcp_taxi_generate_ride_app_link"
+      }
+    ],
+    "input": "system\n# Tools\n\nYou have access to the following functions:\n\n<tools>\n{\"function\": {\"description\": \"接收用户的打车需求工具，包括出发地、目的地、车型等信息。\", \"name\": \"mcp_taxi_generate_ride_app_link\", \"parameters\": {\"properties\": {\"car_price\": {\"description\": \"用户打车的价格，如果未提及则默认为''。\", \"type\": \"string\"}, \"car_type\": {\"description\": \"用户打车的车型，如果未提及则默认为[]。\", \"items\": {\"type\": \"string\"}, \"type\": \"array\"}, \"departure\": {\"description\": \"用户打车的出发地，如果未提及则默认为空字符串。\", \"type\": \"string\"}, \"departure_split\": {\"description\": \"将用户输入的出发地（departure）按语义拆分成更细粒度的目的地列表，默认为[]。如：深圳北 ->['深圳北']; 深圳北东广场 -> ['深圳北','东广场']; Shenzhen North Station -> ['Shenzhen North Station']; East Plaza of Shenzhen North Station -> ['Shenzhen North Station','East Plaza']\", \"items\": {\"type\": \"string\"}, \"type\": \"array\"}, \"destination\": {\"description\": \"用户打车的目的地。\", \"type\": \"string\"}, \"destination_split\": {\"description\": \"将用户输入的目的地（destination）按语义拆分成更细粒度的目的地列表。如：深圳北 ->['深圳北']; 深圳北东广场 -> ['深圳北','东广场']; Shenzhen North Station -> ['Shenzhen North Station']; East Plaza of Shenzhen North Station -> ['Shenzhen North Station','East Plaza']\", \"items\": {\"type\": \"string\"}, \"type\": \"array\"}, \"is_departure_clear\": {\"description\": \"出发地是否明确，可选值为'是'或'否'，默认为空字符串。\", \"enum\": [\"是\", \"否\", \"\"], \"type\": \"string\"}, \"is_destination_clear\": {\"description\": \"目的地是否明确，可选值为'是'或'否'或''。\", \"enum\": [\"是\", \"否\", \"\"], \"type\": \"string\"}}, \"required\": [\"departure\", \"is_departure_clear\", \"departure_split\", \"destination\", \"is_destination_clear\", \"destination_split\", \"car_type\", \"car_price\"], \"type\": \"object\"}}, \"type\": \"function\"}\n</tools>\n\nIf you choose to call a function ONLY reply in the following format with NO suffix:\n\n<tool_call>\n<function=example_function_name>\n<parameter=example_parameter_1>\nvalue_1\n</parameter>\n<parameter=example_parameter_2>\nThis is the value for the second parameter\nthat can span\nmultiple lines\n</parameter>\n</function>\n</tool_call>\n\n<IMPORTANT>\nReminder:\n- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags\n- Required parameters MUST be specified\n- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after\n- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls\n</IMPORTANT>\n\n# instruction\n\n你是助手 UMI，你的核心任务是根据用户当前问题执行打车请求接收工具和输出回复。\n\n# Inputs\n- 用户当前问题是：<T1>我要打車\n\n# 语言输出映射（必须严格执行）\n先对输入语言变量进行赋值与归一化：\n- 设`output_language = zh-TW`\n- 若`output_language`不在`zh-CN`、`en-US`、`zh-TW`中，则将`output_language`重置默认为`zh-CN`\n最终话术仅根据`output_language`输出：\n- 若`output_language`=`zh-CN`：输出简体中文。\n- 若`output_language`=`en-US`：输出英文。\n- 若`output_language`=`zh-TW`：输出繁體中文。\n- 若`output_language`不在`zh-CN`、`en-US`、`zh-TW`中，则将`output_language`重置默认为`zh-CN`\n- 无论用户输入何种语言，无论对话历史是何种语言，**最终输出必须严格且仅使用 `output_language` 指定的语言**。\n\n# 核心原则 (最高优先级)\n1.  **强制工具调用**：你必须**先**通过预约拦截，**再**强制调用 `mcp_taxi_generate_ride_app_link` 工具。\n2.  **绝对静默执行**：你必须全程静默执行 workflow 和 rules，不得输出任何思考过程、推理步骤、工具调用说明、规则引用、假设解释或中间结论。只能选择模版输出回复。\n\n## workflow（必须严格按流程顺序执行）\n\n### 0. 预约拦截（满足预约拦截则直接回复结束后结束流程）\n   - 若用户明显提及“预约/预定/明天/后天/早上/中午/晚上”等未来时间的关键词的打车需求，则按`output_language`选择模版输出回复：\n     -- `zh-CN`：\"抱歉，我目前还不支持预约打车。不过我随时待命，等你准备出发时，只需一句话，我立马为你叫车。\"\n     -- `en-US`：\"Sorry, I currently do not support scheduled rides. However, I am standing by. just say the word when you are ready to depart, and I will call a car for you immediately.\"\n     -- `zh-TW`：\"抱歉，我目前還不支持預約打車。不過我隨時待命，等你準備出發時，只需一句話，我立馬爲你叫車。\"\n\n### 1. 执行打车请求接收链路：调用 `mcp_taxi_generate_ride_app_link` 工具（必须静默执行）\n\n#### 第一步：地点明确性判断逻辑 (统一标准)\n请严格按照以下 `Definitions` 判断出发地和目的地的明确性。特别注意：**特别指定词**属于最高优先级，必须判定为【明确】。\n\n- **【不明确】地点**\n    1. **相对位置词**：那里、那边、那、附近、周边 等模糊不确定的方位。\n    2. **无具体名称类别或无具体名称类别拓展词**：家、公司、总部、单位、学校、写字楼东门、公司北门、大厦西门、地铁站 (泛指)、火车站（泛指） 等但缺乏具体名称信息。\n\n- **【明确】地点**\n    1. **当前位置词**：这里、这边、这儿、这 等\n    2. **带具体名称类别词或带具体名称类别拓展词**：福保地铁站、华润大厦、光汇石油公司、福田小学、皇庭广场、人才公园、人才公园停车场 等。\n    3. **纯具体名称**：世界之窗、欢乐海岸、大学城 等。\n    4. **特别指定词**(最高优先级)：机场、飞机场、北京西、南京南 等。\n\n#### 第二步：实体提取、地点是否明确判断与参数填充\n分析用户输入，提取以下信息并填充参数：\n1.  **出发地 (`departure`)**：\n    - 提取用户提到的出发地文本。若未提及，则为\"\"。\n    - 出发地提取结果格式：`{ \"departure\": \"[提取值或'']\"}`\n\n2.  **出发地是否明确 (`is_departure_clear`)**：\n    - 根据 #### 第一步：地点明确性判断逻辑 (统一标准) 判断出发地是否明确。若明确则为'是'，若不明确则为'否'，若未提及则为\"\"。\n    - 提取结果格式：`{ \"is_departure_clear\": \"[是或否或'']\"}`\n\n3.  **目的地 (`destination`)**：\n    - 提取用户提到的目的地文本。若未提及，则为\"\"。\n    - 目的地地提取结果格式：`{ \"destination\": \"[提取值或'']\"}`\n\n4.  **目的地是否明确 (`is_destination_clear`)**：\n    - 根据 #### 第一步：地点明确性判断逻辑 (统一标准) 判断目的地是否明确。若明确则为'是'，若不明确则为'否'，若未提及则为\"\"。\n    - 提取结果格式：`{ \"is_destination_clear\": \"[是或否或'']\"}`\n\n5.  **车型 (`car_type`)**：\n    - **只允许选择的车型**：[\"特惠快车\",\"快车\",\"豪华车\",\"专车\",\"rideshare\",\"uberx\",\"uberxl\",\"uberblack\",\"suv\",\"taxi\"]\n    - 若未提及车型或未匹配**只允许选择的车型**，则**车型**值为[]。\n    - 若提及车型且匹配**只允许选择的车型**一个或多个车型，则**车型**值为列表包含一个或多个车型元素。\n    - 提取结果格式：`{ \"car_type\": \"[[车型1],[车型2],...]\"}`\n\n- **一般国内打车实体提取示例如下**：\n    \"打车\" -> `{\"departure\": \"\", \"is_departure_clear\": \"\", \"destination\": \"\", \"is_destination_clear\": \"\", \"car_type\": [] }`\n    \"打车[到/去/回]家\" -> `{\"departure\": \"\", \"is_departure_clear\": \"\", \"destination\": \"家\", \"is_destination_clear\": \"否\" , \"car_type\": [] }`\n    \"打车[到/去/回]公司\" -> `{\"departure\": \"\", \"is_departure_clear\": \"\", \"destination\": \"公司\", \"is_destination_clear\": \"否\", \"car_type\": [] }`\n    \"打车[到/去/回]机场\" -> `{\"departure\": \"\", \"is_departure_clear\": \"\", \"destination\": \"机场\", \"is_destination_clear\": \"是\", \"car_type\": [] }`\n    \"这里 打车[到/去/回]光汇石油公司\" -> `{\"departure\": \"这里\", \"is_departure_clear\": \"是\", \"destination\": \"光汇石油公司\", \"is_destination_clear\": \"是\", \"car_type\": [] }`\n    \"从家里打车\" -> `{\"departure\": \"家\", \"is_departure_clear\": \"否\", \"destination\": \"\", \"is_destination_clear\": \"\", \"car_type\": [] }`\n    \"从我家打车[到/去/回]公司\" -> `{\"departure\": \"家\", \"is_departure_clear\": \"否\", \"destination\": \"公司\", \"is_destination_clear\": \"否\", \"car_type\": [] }`\n    \"从家里（明珠花园）打车[到/去/回]公司\" -> `{\"departure\": \"明珠花园\",\"is_departure_clear\": \"是\", \"destination\": \"公司\", \"is_destination_clear\": \"否\", \"car_type\": [] }`\n    \"益田假日广场打车\" -> `{\"departure\": \"益田假日广场\",\"is_departure_clear\": \"是\", \"destination\": \"\", \"is_destination_clear\": \"\", \"car_type\": [] }`\n    \"打车从家里（上沙村）[到/去/回]公司（本元大厦）\" -> `{\"departure\": \"上沙村\",\"is_departure_clear\": \"是\", \"destination\": \"本元大厦\", \"is_destination_clear\": \"是\", \"car_type\": [] }`\n    \"打车[到/去/回]金光华广场\" -> `{\"departure\": \"\",\"is_departure_clear\": \"\", \"destination\": \"金光华广场\", \"is_destination_clear\": \"是\", \"car_type\": [] }`\n    \"打车[到/去/回]世界之窗\" -> `{\"departure\": \"\",\"is_departure_clear\": \"\", \"destination\": \"世界之窗\", \"is_destination_clear\": \"是\", \"car_type\": [] }`\n    \"我要从北京西打车[到/去/回]公司\" -> `{\"departure\": \"北京西\",\"is_departure_clear\": \"是\", \"destination\": \"公司\", \"is_destination_clear\": \"否\", \"car_type\": []  }`\n    \"从大学城地铁站打车[到/去/回]公司\" -> `{\"departure\": \"大学城地铁站\",\"is_departure_clear\": \"是\", \"destination\": \"公司\", \"is_destination_clear\": \"否\", \"car_type\": [] }`\n\n    \"打个特惠快车[到/去/回]北京西\" -> `{\"departure\": \"\",\"is_departure_clear\": \"\", \"destination\": \"北京西站\", \"is_destination_clear\": \"是\", \"car_type\":[\"特惠快车\"] }`\n    \"take/order a discounted express taxi to the Beijing West Station\" -> `{\"departure\": \"\",\"is_departure_clear\": \"\", \"destination\": \"Beijing West Station\", \"is_destination_clear\": \"是\", \"car_type\": [\"特惠快车\"] }`\n    \"打个快车[到/去/回]北京西站\" -> `{\"departure\": \"\",\"is_departure_clear\": \"\", \"destination\": \"北京西站\", \"is_destination_clear\": \"是\", \"car_type\": [\"快车\"] }`\n    \"take/order an express ride to Beijing West Railway Station\" -> `{\"departure\": \"\",\"is_departure_clear\": \"\", \"destination\": \"Beijing West Railway Station\", \"is_destination_clear\": \"是\", \"car_type\": [\"快车\"] }`\n    \"打个豪华车[到/去/回]北京西站\" -> `{\"departure\": \"\",\"is_departure_clear\": \"\", \"destination\": \"北京西站\", \"is_destination_clear\": \"是\", \"car_type\": [\"豪华车\"] }`\n    \"take/order a luxury car to Beijing West Railway Station\" -> `{\"departure\": \"\",\"is_departure_clear\": \"\", \"destination\": \"Beijing West Railway Station\", \"is_destination_clear\": \"是\", \"car_type\": \"[豪华车\"] }`\n    \"打个专车[到/去/回]北京西\" -> `{\"departure\": \"\",\"is_departure_clear\": \"\", \"destination\": \"北京西站\", \"is_destination_clear\": \"是\", \"car_type\":[\"专车\"] }`\n    \"take/order a private car to the Beijing West Station\" -> `{\"departure\": \"\",\"is_departure_clear\": \"\", \"destination\": \"Beijing West Station\", \"is_destination_clear\": \"是\", \"car_type\": [\"专车\"] }`\n\n- **一般国外打车实体提取示例如下**：\n    \"拼个车从时代广场[到/去/回]肯尼迪机场\" -> {\"departure\": \"时代广场\", \"is_departure_clear\": \"是\", \"destination\": \"肯尼迪机场\", \"is_destination_clear\": \"是\", \"car_type\": [\"rideshare\"] }\n    \"share a ride from Times Square to JFK Airport\" -> {\"departure\": \"Times Square\", \"is_departure_clear\": \"是\", \"destination\": \"JFK Airport\", \"is_destination_clear\": \"是\", \"car_type\": [\"rideshare\"] }\n    \"叫个UberX[到/去/回]中央公园\" -> {\"departure\": \"\", \"is_departure_clear\": \"\", \"destination\": \"中央公园\", \"is_destination_clear\": \"\", \"car_type\": [\"uberx\"] }\n    \"get an UberX to Central Park\" -> {\"departure\": \"\", \"is_departure_clear\": \"\", \"destination\": \"Central Park\", \"is_destination_clear\": \"是\", \"car_type\": [\"uberx\"] }\n    \"从金门大桥叫辆UberXL[到/去/回]渔人码头\" -> {\"departure\": \"金门大桥\", \"is_departure_clear\": \"是\", \"destination\": \"渔人码头\", \"is_destination_clear\": \"是\", \"car_type\": [\"uberxl\"] }\n    \"order an UberXL from the Golden Gate Bridge to Fisherman's Wharf\" -> {\"departure\": \"Golden Gate Bridge\", \"is_departure_clear\": \"是\", \"destination\": \"Fisherman's Wharf\", \"is_destination_clear\": \"是\", \"car_type\": [\"uberxl\"] }\n    \"打一辆Uber Black从比佛利山庄[到/去/回]洛杉矶国际机场\" -> {\"departure\": \"比佛利山庄\", \"is_departure_clear\": \"是\", \"destination\": \"洛杉矶国际机场\", \"is_destination_clear\": \"是\", \"car_type\": [\"uberblack\"] }\n    \"book an Uber Black from Beverly Hills to LAX\" -> {\"departure\": \"Beverly Hills\", \"is_departure_clear\": \"是\", \"destination\": \"LAX\", \"is_destination_clear\": \"是\", \"car_type\": [\"uberblack\"] }\n    \"打辆SUV[到/去/回]芝加哥联合车站\" -> {\"departure\": \"\", \"is_departure_clear\": \"\", \"destination\": \"芝加哥联合车站\", \"is_destination_clear\": \"是\", \"car_type\": [\"suv\"] }\n    \"get an SUV to Chicago Union Station\" -> {\"departure\": \"\", \"is_departure_clear\": \"\", \"destination\": \"Chicago Union Station\", \"is_destination_clear\": \"是\", \"car_type\": [\"suv\"] }\n    \"从伦敦塔桥打辆出租车[到/去/回]大英博物馆\" -> {\"departure\": \"伦敦塔桥\", \"is_departure_clear\": \"是\", \"destination\": \"大英博物馆\", \"is_destination_clear\": \"是\", \"car_type\": [\"taxi\"] }\n    \"take a taxi from Tower Bridge to the British Museum\" -> {\"departure\": \"Tower Bridge\", \"is_departure_clear\": \"是\", \"destination\": \"British Museum\", \"is_destination_clear\": \"是\", \"car_type\": [\"taxi\"] }\n\n\n#### 第三步：调用工具\n调用 `mcp_taxi_generate_ride_app_link` 工具，填入提取的参数。\nuser\n<T1>我要打車\nassistant\n<think>\n\n</think>\n\n",
+    "parsed": [
+      {
+        "name": "mcp_taxi_generate_ride_app_link",
+        "arguments": {
+          "car_price": "",
+          "car_type": [],
+          "departure": "",
+          "departure_split": [],
+          "destination": "",
+          "destination_split": [],
+          "is_departure_clear": "",
+          "is_destination_clear": ""
+        }
+      }
+    ]
+  },
+  {
+    "step": 402,
+    "sample": 1,
+    "uid": "c71190a1-ec64-4e67-a67c-2b38b9218f69_0_0",
+    "kind": "json",
+    "score": 0.0,
+    "category": "parsed_zero",
+    "error": "",
+    "format_valid": 1.0,
+    "field_accuracy": 0.0,
+    "acc": 0.0,
+    "response_wrapper": false,
+    "wrapper_inner_exact": false,
+    "xml_output": false,
+    "expected_tools": "",
+    "expected_keys": "selected_hotels",
+    "output": "[1]",
+    "expected": {
+      "selected_hotels": [
+        1
+      ]
+    },
+    "input": "system\n# Instructions\n## Role\n一个帮助酒店预定平台进行结果筛选的AI助手\n\n## Goal\n从备选酒店方案中筛选出符合用户住宿需求的酒店\n\n## Constraints\n- 用户的其他需求不要管，你只关注他对酒店住宿的需求\n- 如果用户对于入住酒店的酒店名与地址有明确要求，那么你应该着重注意备选方案这两项信息是否符合要求。\n- **特别注意**:假如用户对酒店名有明确要求,但没有备选方案的酒店名符合要求，那就往列表中填入-1。如果用户对于入住酒店名没有明确要求，筛选后没有合适结果的话就填空列表\n- 星级,价格,好评数等等这些因素暂时不用考虑,哪怕用户明确表达了对这些属性的要求\nuser\n用户原本的询问: 帮我预订汉庭酒店(深圳华强北燕南地铁站店)一晚。酒店地址：深圳市福田区燕南路96号，经纬度：22.546669, 114.093293。入住日期：2026-07-17，退房日期：2026-07-18，入住1晚。价格¥362/晚。\n补充信息(不一定有用,仅在必要时参考):当前日期——2026-07-17 星期五; 当前位置——中国广东省深圳福田; 用户时区——Asia/Shanghai\n\n用户所在地(这个信息不一定有用，除非用户要求订他附近酒店): 中国广东省深圳福田\n\n当前找到的酒店方案如下:\n\n1. {\"酒店名称\": \"汉庭酒店(深圳华强北燕南地铁站店)\", \"酒店地址\": \"中国广东省深圳市福田区燕南路96号 邮政编码: 518028\", \"酒店简介\": \"3星级酒店，评分5.0分, 1条评价，Wi-Fi、Restaurant\", \"每晚价格\": \"¥362\", \"酒店星级\": \"3 星级酒店\"}\n\n2. {\"酒店名称\": \"汉庭深圳华强北振兴路酒店\", \"酒店地址\": \"中国广东省深圳市福田区园岭华富路1048号 邮政编码: 518037\", \"酒店简介\": \"2星级酒店，评分4.2分, 158条评价，Wi-Fi、Restaurant\", \"每晚价格\": \"¥351\", \"酒店星级\": \"2 星级酒店\"}\n\n3. {\"酒店名称\": \"汉庭连锁酒店深圳华强中心公园店\", \"酒店地址\": \"中国深圳市福田区 邮政编码: 518039\", \"酒店简介\": \"2星级酒店，评分3.9分, 7条评价，Wi-Fi、Restaurant\", \"每晚价格\": \"¥310\", \"酒店星级\": \"2 星级酒店\"}\n\n4. {\"酒店名称\": \"汉庭酒店深圳东门乐园路店\", \"酒店地址\": \"No. 88 Zhongxing Road, Luohu District, 深圳市广东省中国\", \"酒店简介\": \"2星级酒店，评分3.0分, 1条评价，Breakfast、Front desk\", \"每晚价格\": \"¥267\", \"酒店星级\": \"2 星级酒店\"}\n\n5. {\"酒店名称\": \"汉庭酒店\", \"酒店地址\": \"中国广东省深圳市福田区振华路122号 邮政编码: 518037\", \"酒店简介\": \"2星级酒店，评分4.2分, 122条评价，Wi-Fi、Restaurant\", \"每晚价格\": \"\", \"酒店星级\": \"2 星级酒店\"}\n\n6. {\"酒店名称\": \"汉庭酒店\", \"酒店地址\": \"中国广东省深圳市福田区松岭路9号\", \"酒店简介\": \"评分4.0分, 1条评价\", \"每晚价格\": \"\", \"酒店星级\": \"\"}\n\n7. {\"酒店名称\": \"汉庭全季酒店\", \"酒店地址\": \"中国广东省深圳市福田区福中路17号 邮政编码: 518038\", \"酒店简介\": \"3星级酒店，评分3.0分, 5条评价，Wi-Fi、Restaurant\", \"每晚价格\": \"\", \"酒店星级\": \"3 星级酒店\"}\n\n8. {\"酒店名称\": \"汉庭酒店深圳万象城店\", \"酒店地址\": \"中国广东省深圳市罗湖区嘉宾路4023号\", \"酒店简介\": \"2星级酒店，评分3.5分, 68条评价，Kid-friendly、Air conditioning\", \"每晚价格\": \"\", \"酒店星级\": \"2 星级酒店\"}\n\n9. {\"酒店名称\": \"汉庭酒店\", \"酒店地址\": \"中国西乡街道三围社区汇庭居汇达阁1楼\", \"酒店简介\": \"2星级酒店，评分5.0分, 2条评价，Wi-Fi、Breakfast\", \"每晚价格\": \"¥267\", \"酒店星级\": \"2 星级酒店\"}\nassistant\n<think>\n\n</think>\n\n",
+    "parsed": [
+      1
+    ]
+  },
+  {
+    "step": 419,
+    "sample": 1,
+    "uid": "0370bf63-f836-4a11-a793-2ec1d7c5cbbd_0_0",
+    "kind": "json",
+    "score": 0.0,
+    "category": "parse_or_type_error",
+    "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+    "format_valid": 0.0,
+    "field_accuracy": 0.0,
+    "acc": 0.0,
+    "response_wrapper": true,
+    "wrapper_inner_exact": true,
+    "xml_output": false,
+    "expected_tools": "",
+    "expected_keys": "address,ask_message,end,end_city,end_detail_address,end_name,is_around,start_city,start_name,type,waypoints",
+    "output": "<response>\n{\"start_city\":\"\",\"start_name\":\"\",\"end_city\":\"\",\"end_name\":\"笔架山公园\",\"end_detail_address\":\"\",\"waypoints\":\"\",\"type\":\"4\",\"address\":\"\",\"is_around\":\"\",\"end\":\"\",\"ask_message\":\"\"}\n</response>",
+    "expected": {
+      "address": "",
+      "ask_message": "",
+      "end": "",
+      "end_city": "",
+      "end_detail_address": "",
+      "end_name": "笔架山公园",
+      "is_around": "",
+      "start_city": "",
+      "start_name": "",
+      "type": "4",
+      "waypoints": ""
+    },
+    "input": "system\n<extraction_task>\n    <instruction>\n        你是一个专业的自然语言处理助手，负责从导航场景的用户查询（Query）中精准提取特定参数。\n    </instruction>\n\n    <parameters>\n        <parameter name=\"start_city\">\n            起点城市。\n            注意：仅提取作为独立行政区划提及的城市名。如果城市名是起点地标的一部分（如“南山区人民医院”、“宝安机场”），严禁拆分，此处应返回 \"\"。\n        </parameter>\n        <parameter name=\"start_name\">\n            起点位置的具体名称。\n            注意：必须保持地标名的完整性。如果起点的名称自带城市/区位前缀，必须完整保留该前缀。\n            **翻译要求**：若提取到的是英文名称（如 \"Shenzhen University\"），必须将其翻译为中文（如 \"深圳大学\"）。\n            若未提及返回 \"\"。\n        </parameter>\n        <parameter name=\"end_city\">\n            终点城市。\n            注意：仅提取作为独立行政区划提及的城市名。如果城市名是终点地标的一部分（如“深圳北站”、“广州塔”），严禁拆分，此处应返回 \"\"。\n        </parameter>\n        <parameter name=\"end_name\">\n            终点位置的具体名称。\n            注意：必须保持地标名的完整性。如果终点的名称自带城市前缀，必须完整保留该前缀。\n            **翻译要求**：若提取到的是英文名称（如 \"Window of the World\"），必须将其翻译为中文（如 \"世界之窗\"）。\n            若未提及返回 \"\"。\n        </parameter>\n        <parameter name=\"end_detail_address\">\n            终点位置的详细地址。\n            注意：必须保持地址名的完整性。如果地址自带城市/区位前缀，必须完整保留该前缀。\n            **清洗要求**：若提取到的原始地址中包含括号及其内容（例如：“地址：南山区粤海街道某大厦(近深大地铁站C口)”），必须将括号及括号内的内容一并去除，仅提取括号前的核心地址字符串。\n            若未明确提及详细地址（通常见于“地址是...”描述中），必须返回空字符串 \"\"。\n        </parameter>\n        <parameter name=\"waypoints\">\n            途径点/中转点。\n            注意：必须保持地标名的完整性。若有多个途径点，按顺序提取并使用半角逗号“,”分隔。\n            **翻译要求**：若提取到的是英文名称，必须将其翻译为中文。\n            若未提及返回 \"\"。\n        </parameter>\n        <parameter name=\"type\">\n            出行方式枚举值（字符串格式）：\n            \"1\" - 步行 (关键词：走路、徒步、走过去)\n            \"2\" - 驾车 (关键词：开车、打车、导航到)\n            \"3\" - 公交 (关键词 : 坐车、公交车、地铁、乘车)\n            \"4\" - 骑行 (关键词：骑车、单车、自行车)\n            若未明确提及出行方式，必须返回空字符串 \"\"。\n        </parameter>\n        <parameter name=\"address\">\n            参照地址。\n            逻辑：仅当 Query 明确给出参照点 A（如“A附近的B”）时，提取 A 为 address。\n            **翻译要求**：若提取到的是英文名称，必须将其翻译为中文。\n            若 Query 仅提及“附近的B”而无具体参照点 A，则此字段必须为空字符串 \"\"。\n        </parameter>\n        <parameter name=\"is_around\">\n            特定实体/周边搜索标识。\n            逻辑：当存在相对位置描述（如“附近”、“周边”）或寻找特定品牌/店名实体时，返回 \"1\"；否则返回 \"\"。\n        </parameter>\n        <parameter name=\"end\">\n            目的地的经纬度坐标。\n            格式：经度,纬度（例如：\"114.050867,22.509343\"）。\n            注意：必须严格遵守“经度在前，纬度在后”的顺序，使用半角逗号分割，严禁包含任何空格。若未提及坐标，必须返回 \"\"。\n        </parameter>\n        <parameter name=\"ask_message\">\n            用户诉求回复话术。\n            逻辑：当 Query 中包含价格比较类诉求时（如“哪一家最便宜”“优先去便宜的那家”“哪个更划算”“比较一下价格”“哪个性价比高”等），需根据用户的具体诉求，生成一段委婉、礼貌的中文回复，告知用户当前暂不支持此类（价格比较/按价格筛选）功能。\n            注意：回复需自然贴合用户的原始诉求，不要生硬套用固定模板；回复内容中严禁包含换行符。\n            若 Query 中未出现此类价格比较诉求，必须返回空字符串 \"\"。\n        </parameter>\n    </parameters>\n\n    <rules>\n        <rule>\n            **价格诉求优先处理原则**：\n            当前系统暂不支持价格比较或按价格筛选目的地的功能。若 Query 中出现此类诉求（如“哪家最便宜”“优先去便宜的”“哪个更划算”），必须在 `ask_message` 字段中生成委婉的中文说明话术，告知用户暂不支持。此为最高优先级判断——只要识别到价格诉求，务必确保 ask_message 字段被正确填充。\n        </rule>\n        <rule>\n            **全局空值原则**：所有字段若在 Query 中未提及或不符合提取条件，统一返回严格的空字符串 \"\"。\n            注意：双引号内严禁包含任何空格、制表符或换行符，确保解析后的字符串长度为 0。\n        </rule>\n        <rule>\n            **多点导航逻辑**：若 Query 包含多个目的地或分步骤导航描述（如“先去 A，接着去 B，最后到 C”），必须将最后一个地点提取为 end_name，之前的所有地点按顺序提取为 waypoints，并用半角逗号“,”分隔。\n        </rule>\n        <rule>\n            **实体完整性原则（防过分割）**：\n            严禁将任何位置实体（起点、终点、途径点、详细地址或参照物）中的城市/行政区前缀拆分到城市字段中。\n            - 案例1：“从南山区人民医院到深圳北站” -> start_name=\"南山区人民医院\", start_city=\"\", end_name=\"深圳北站\", end_city=\"\"\n            - 案例2：“地址是深圳市福田区福强路2173号” -> end_detail_address=\"深圳市福田区福强路2173号\", end_city=\"\"\n        </rule>\n        <rule>\n            **语言翻译原则**：\n            针对 `start_name`、`end_name`、`waypoints` 和 `address` 字段，如果原始 Query 中提供的是英文地标、建筑物或地址名称，必须将其翻译为对应的中文名称后填入 JSON 字段。\n        </rule>\n        <rule>\n            **识别路径与位置结构**：\n            - 直接导航：“导航到 [地点X]” -> end_name=\"[地点X]\", address=\"\", is_around=\"\"。\n            - 详细属性导航：“导航去 [地点X]，地址是 [地址Y]([备注])，经纬度为 [坐标Z]” -> end_name=\"[地点X]\", end_detail_address=\"[地址Y]\" (注意：必须剔除括号及其内部备注内容), end=\"[坐标Z]\"。\n            - 多点导航：“先到 [地点A]，接着去 [地点B]，最后到 [地点C]” -> waypoints=\"[地点A],[地点B]\", end_name=\"[地点C]\"。\n            - 路径导航：“从 [起点A] 到 [终点B]” -> start_name=\"[起点A]\", end_name=\"[终点B]\"。\n            - 相对搜索：“在 [地点A] 附近找 [目的地B]” -> end_name=\"[目的地B]\", address=\"[地点A]\", is_around=\"1\"。\n            - 路径+相对搜索：“从 [起点A] 出发去 [地点C] 附近的 [目的地B]” -> start_name=\"[起点A]\", address=\"[地点C]\", end_name=\"[目的地B]\", is_around=\"1\"。\n            - 模糊相对搜索：“导航到附近的 [目的地B]” -> end_name=\"[目的地B]\", address=\"\", is_around=\"1\"。\n        </rule>\n        <rule>严格按照指定的 JSON 格式进行输出，包裹在 &lt;response&gt; 标签中，严禁输出任何解释性文字或原始 Query。</rule>\n    </rules>\n\n    <output_format>\n        请以下述标准的 JSON 格式返回结果（确保字段值中不包含冗余空格）：\n        <response>\n        {\"start_city\":\"\",\"start_name\":\"\", \"end_city\":\"\", \"end_name\":\"\",\"end_detail_address\":\"\",\"waypoints\":\"\",\"type\":\"\",\"address\":\"\",\"is_around\":\"\",\"end\":\"\",\"ask_message\":\"\"}\n        </response>\n    </output_format>\n</extraction_task>\nuser\n我要骑行去笔架山公园，开始导航。\nassistant\n<think>\n\n</think>\n\n",
+    "parsed": null
+  }
+]

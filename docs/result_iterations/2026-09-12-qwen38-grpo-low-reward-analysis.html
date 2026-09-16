@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Qwen3.8 LoRA GRPO 低奖励分析</title><style>body{margin:0;background:#f3f6fa;color:#1e293b;font:16px/1.8 system-ui,-apple-system,"Segoe UI",sans-serif}main{max-width:1000px;margin:36px auto;padding:40px 48px;background:white;border:1px solid #dce4ef;border-radius:16px}h1{font-size:30px;line-height:1.4;color:#102b4d}h2{margin-top:40px;font-size:23px;color:#174574;border-bottom:1px solid #dce4ef;padding-bottom:8px;scroll-margin-top:20px}a{color:#1766a9}p,li{overflow-wrap:anywhere}li{margin:8px 0}code{font-size:.9em;background:#eef3f8;padding:2px 5px;border-radius:4px}pre{background:#10243b;color:#e2edf9;padding:18px;border-radius:9px;overflow:auto;line-height:1.55}pre code{background:none;padding:0;color:inherit}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;margin:20px 0}th,td{padding:10px 14px;border:1px solid #dce4ef;text-align:left}th{background:#eaf2fb}tr:nth-child(even){background:#f8fafc}nav{background:#f0f6fc;border-left:4px solid #2372ad;padding:16px 22px;border-radius:6px}nav ul{columns:2;margin:8px 0;padding-left:20px}nav li{margin:3px 0;font-size:14px}footer{margin-top:36px;color:#64748b;font-size:13px}@media(max-width:700px){main{margin:0;padding:24px 18px;border:0;border-radius:0}h1{font-size:25px}nav ul{columns:1}}@media print{body{background:white}main{max-width:none;margin:0;padding:0;border:0}nav{display:none}h2{break-after:avoid}tr,pre{break-inside:avoid}}.evidence-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:24px 0}.evidence-card{background:#eef4fb;border-radius:10px;padding:18px 12px;text-align:center}.evidence-card b{display:block;font-size:29px;color:#b53636}.evidence-card span{font-size:13px}.chain{font-weight:700;background:#fff4e3;padding:14px;border-radius:8px}.evidence-img{width:100%;height:auto}.compare{display:grid;grid-template-columns:1fr 1fr;gap:16px}.compare>div{min-width:0}.compare pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:440px;overflow:auto;font-size:13px}.example{padding:14px 0;border-bottom:1px solid #dce4ef}@media(max-width:700px){.evidence-cards{grid-template-columns:repeat(2,1fr)}.compare{grid-template-columns:1fr}}@media print{.compare pre{max-height:none;overflow:visible}}</style></head><body><main><h1 id="report-title">Qwen3.8 LoRA GRPO 低奖励分析</h1><nav aria-label="目录"><strong>阅读导航</strong><ul><li><a href="#evidence">证据总览与实际样例</a></li><li><a href="#section-0">结论</a></li><li><a href="#section-1">数据来源与复核范围</a></li><li><a href="#section-2">关键统计</a></li><li><a href="#section-3">根因一：原生工具调用格式与奖励解析器冲突</a></li><li><a href="#section-4">根因二：自由文案被当成确定性字段精确匹配</a></li><li><a href="#section-5">根因三：JSON 外围文本导致整条回答归零</a></li><li><a href="#section-6">为什么奖励长期不涨：GRPO 组内信号消失</a></li><li><a href="#section-7">已检查的其他因素与限制</a></li><li><a href="#section-8">建议的修复与验证顺序</a></li><li><a href="#section-9">本次交付范围</a></li></ul></nav><section id="evidence"><h2>一眼看懂：证据总览</h2><div class="evidence-cards"><div class="evidence-card"><b>97.7%</b><span>回答零分</span></div><div class="evidence-card"><b>0.01216</b><span>平均 reward</span></div><div class="evidence-card"><b>98.2%</b><span>训练步组内同分</span></div><div class="evidence-card"><b>4 / 221</b><span>非零 advantage 步数</span></div></div><p class="chain">442 个回答 → 432 个零分 → 217 步组内同分 → 仅 4 步产生非零 advantage</p><img class="evidence-img" src="2026-09-12-qwen38-grpo-low-reward-analysis-assets/evidence-overview.svg" alt="零分比例、分类、逐步奖励和优势曲线"><p>图 A 为零分比例；图 B 为互斥分类；图 C 为不同训练样本上的逐步奖励；图 D 为 SwanLab 实测优势。范围固定为前 221 步。XML 分类只说明协议冲突，不保证这些回答全部语义正确。</p><div class="table-wrap"><table><thead><tr><th>互斥分类</th><th>回答数</th><th>占比</th></tr></thead><tbody><tr><td>工具：XML 协议冲突</td><td>180</td><td>40.7%</td></tr><tr><td>工具：未匹配到调用块</td><td>34</td><td>7.7%</td></tr><tr><td>JSON：解析失败</td><td>152</td><td>34.4%</td></tr><tr><td>JSON：解析成功但零分</td><td>66</td><td>14.9%</td></tr><tr><td>JSON：正分</td><td>10</td><td>2.3%</td></tr></tbody></table></div><h3>实际样例：输出与参考并排对照</h3><article class="example"><h3>第 5 步 · 回答 1 · 实际 reward = 0.0</h3><p>解释文字和代码块使整个输出不是纯 JSON，在字段评分前就归零。</p><div class="compare"><div><strong>模型完整输出</strong><pre><code>Based on the tool result, this Friday is **2026-07-10**. The user wants a meeting with Sarah at noon (12:00). All required fields are available:
+
+- **title**: &quot;Meeting with Sarah&quot;
+- **start_date**: 2026-07-10
+- **start_time**: 12:00 (noon)
+- **type**: add
+
+This is a future date, so no past-time intercept is triggered.
+
+```json
+{
+  &quot;data&quot;: [
+    {
+      &quot;type&quot;: &quot;add&quot;,
+      &quot;start_date&quot;: &quot;2026-07-10&quot;,
+      &quot;start_time&quot;: &quot;12:00&quot;,
+      &quot;end_date&quot;: &quot;&quot;,
+      &quot;end_time&quot;: &quot;&quot;,
+      &quot;title&quot;: &quot;Meeting with Sarah&quot;,
+      &quot;location&quot;: &quot;&quot;,
+      &quot;repeat_type&quot;: &quot;&quot;,
+      &quot;repeat_end_date&quot;: &quot;&quot;,
+      &quot;remind_type&quot;: &quot;&quot;,
+      &quot;reminder_time&quot;: &quot;&quot;
+    }
+  ],
+  &quot;succ_message&quot;: &quot;Sure, I&#x27;ve scheduled your Meeting with Sarah at 12:00 on July 10, 2026. A good tip: confirm the agenda with Sarah beforehand so the meeting stays on track.&quot;,
+  &quot;err_message&quot;: &quot;&quot;
+}
+```</code></pre></div><div><strong>参考结构</strong><pre><code>{
+  &quot;data&quot;: [
+    {
+      &quot;end_date&quot;: &quot;&quot;,
+      &quot;end_time&quot;: &quot;&quot;,
+      &quot;location&quot;: &quot;&quot;,
+      &quot;remind_type&quot;: &quot;&quot;,
+      &quot;reminder_time&quot;: &quot;&quot;,
+      &quot;repeat_end_date&quot;: &quot;&quot;,
+      &quot;repeat_type&quot;: &quot;&quot;,
+      &quot;start_date&quot;: &quot;2026-07-10&quot;,
+      &quot;start_time&quot;: &quot;12:00&quot;,
+      &quot;title&quot;: &quot;meeting with Sarah&quot;,
+      &quot;type&quot;: &quot;add&quot;
+    }
+  ],
+  &quot;err_message&quot;: &quot;&quot;,
+  &quot;succ_message&quot;: &quot;Sure, I&#x27;ve scheduled a meeting with Sarah on July 10, 2026 at 12:00. Don&#x27;t forget to prepare any necessary materials beforehand!&quot;
+}</code></pre></div></div></article><article class="example"><h3>第 37 步 · 回答 1 · 实际 reward = 0.0</h3><p>仅一个空格差异，当前字段比较仍判为不相等。</p><div class="compare"><div><strong>模型完整输出</strong><pre><code>```json
+{
+  &quot;keywords&quot;: &quot;出租屋 必备用品&quot;
+}
+```</code></pre></div><div><strong>参考结构</strong><pre><code>{
+  &quot;keywords&quot;: &quot;出租屋必备用品&quot;
+}</code></pre></div></div></article><article class="example"><h3>第 174 步 · 回答 2 · 实际 reward = 0.0</h3><p>工具名及三个参数值与参考一致；模板要求 XML，但奖励函数按 JSON 解析。</p><div class="compare"><div><strong>模型完整输出</strong><pre><code>&lt;tool_call&gt;
+&lt;function=ai_assistant_video&gt;
+&lt;parameter=prompt&gt;
+水果在盘子里自己切好摆盘，镜头垂直俯拍
+&lt;/parameter&gt;
+&lt;parameter=resolution&gt;
+1 : 1
+&lt;/parameter&gt;
+&lt;parameter=duration&gt;
+15s
+&lt;/parameter&gt;
+&lt;/function&gt;
+&lt;/tool_call&gt;</code></pre></div><div><strong>参考结构</strong><pre><code>[
+  {
+    &quot;arguments&quot;: {
+      &quot;duration&quot;: &quot;15s&quot;,
+      &quot;prompt&quot;: &quot;水果在盘子里自己切好摆盘，镜头垂直俯拍&quot;,
+      &quot;resolution&quot;: &quot;1 : 1&quot;
+    },
+    &quot;name&quot;: &quot;ai_assistant_video&quot;
+  }
+]</code></pre></div></div></article><h3>证据数据下载</h3><ul><li><a download href="2026-09-12-qwen38-grpo-low-reward-analysis-assets/step-evidence.csv">逐步证据 CSV</a></li><li><a download href="2026-09-12-qwen38-grpo-low-reward-analysis-assets/answer-evidence.csv">逐回答证据 CSV</a></li><li><a download href="2026-09-12-qwen38-grpo-low-reward-analysis-assets/examples.json">完整生成样例 JSON</a></li><li><a download href="2026-09-12-qwen38-grpo-low-reward-analysis-assets/summary.json">统计摘要 JSON</a></li><li><a download href="2026-09-12-qwen38-grpo-low-reward-analysis-assets/swanlab-metrics.json">SwanLab 指标快照 JSON</a></li><li><a download href="2026-09-12-qwen38-grpo-low-reward-analysis-assets/evidence-overview.svg">矢量证据图 SVG</a></li></ul></section><p>分析日期：2026-09-12（UTC）  <br>分析范围：本次实验前 221 步，共 442 个回答；不是整个训练的最终结果。  <br>实验：Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward</p>
+<h2 id="section-0">结论</h2>
+<p>奖励规则与模型原生工具调用格式、任务内容不匹配，使绝大多数回答得到零分。每个 prompt 只采样两个回答，组内奖励又几乎总是相同，导致 GRPO 几乎没有任务奖励驱动的学习信号。继续延长当前训练或单独调大学习率，无法解决这些已确认的问题。</p>
+<p>本报告依据 SwanLab 实际指标、本地生成记录和当前奖励函数代码。分析过程中未修改训练代码、奖励规则，也未停止训练。</p>
+<h2 id="section-1">数据来源与复核范围</h2>
+<ul><li><a href="https://swanlab.cn/@yyq90/GRPO-Qwen3.8-Smoke/v1/lo7lkd/runs/r0u5ljmm/chart">SwanLab 实验页面</a>：读取时状态为 RUNNING。</li><li>本地回答：<code>logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/{1..221}.jsonl</code>。每步两个回答，包含 input、output、gts、score、step、uid。</li><li>奖励代码：<code>/shared/users/yangyq/data/recipe_v2_fixed/tf_rl/reward.py</code>。</li><li>输入与采样代码：同目录的 <code>rendering.py</code>、<code>dataset.py</code>、<code>agent_loop.py</code>。</li><li>GRPO 实现：<code>verl/trainer/ppo/core_algos.py</code>，<code>compute_grpo_outcome_advantage</code>。</li><li>代码基点：个人分支提交 <code>d5d24f87</code>，父提交 <code>89dad2d7</code>。外部 recipe 文件不包含在此提交中，报告反映分析时读取的文件内容。</li></ul>
+<p>已离线复算成功解析的 JSON 回答，其重算分数与记录分数在 1e-5 容差内一致。此项验证支持当前 JSON 评分逻辑能解释日志中的分数；没有对所有工具调用完成兼容解析后的重评分。</p>
+<h2 id="section-2">关键统计</h2>
+<div class="table-wrap"><table><thead><tr><th>指标</th><th>前 221 步结果</th></tr></thead><tbody><tr><td>回答总数</td><td>442</td></tr><tr><td>平均 reward</td><td>0.01216044</td></tr><tr><td>零分回答</td><td>432 / 442（97.7%）</td></tr><tr><td>正分回答</td><td>10 / 442（2.3%）</td></tr><tr><td>工具调用任务</td><td>214 个回答，全部零分</td></tr><tr><td>JSON 任务</td><td>228 个回答，218 个零分</td></tr><tr><td>组内奖励相同</td><td>217 / 221 步（98.2%）</td></tr><tr><td>advantage 和 pg_loss 非零</td><td>仅第 5、6、7、36 步</td></tr><tr><td>学习率</td><td>全程为 3e-6</td></tr><tr><td>观测到的最长响应</td><td>1154 tokens，未达到 4096 上限</td></tr></tbody></table></div>
+<div class="table-wrap"><table><thead><tr><th>步数窗口</th><th>平均 reward</th><th>正分回答数</th></tr></thead><tbody><tr><td>1–50</td><td>0.03774916</td><td>6 / 100</td></tr><tr><td>51–100</td><td>0</td><td>0 / 100</td></tr><tr><td>101–150</td><td>0.00800000</td><td>2 / 100</td></tr><tr><td>151–200</td><td>0.00800000</td><td>2 / 100</td></tr><tr><td>201–221</td><td>0</td><td>0 / 42</td></tr></tbody></table></div>
+<p>配置为 <code>data.shuffle=False</code>，这些窗口对应不同训练样本，不能据此认定模型能力随时间下降。是否提升应通过固定验证集比较。</p>
+<h2 id="section-3">根因一：原生工具调用格式与奖励解析器冲突</h2>
+<p>实际输入模板要求在 <code>&lt;tool_call&gt;</code> 内使用 <code>&lt;function=...&gt;</code> 和 <code>&lt;parameter=...&gt;</code>。<code>rendering.py</code> 第 35 行调用模型自己的 <code>apply_chat_template</code>；实际 rollout 的 input 可以直接确认该要求。</p>
+<p>模型输出示例：</p>
+<pre><code>&lt;tool_call&gt;
+&lt;function=ai_assistant_video&gt;
+&lt;parameter=duration&gt;
+15s
+&lt;/parameter&gt;
+&lt;/function&gt;
+&lt;/tool_call&gt;</code></pre>
+<p>但 <code>reward.py</code> 第 37–55 行只接受工具调用内部为 JSON；第 47 行直接执行 <code>strict_json(m.group(1))</code>。它期望的格式是：</p>
+<pre><code>{&quot;name&quot;:&quot;ai_assistant_video&quot;,&quot;arguments&quot;:{&quot;duration&quot;:&quot;15s&quot;}}</code></pre>
+<p>这段 JSON 必须包在 <code>&lt;tool_call&gt;</code> 标签内。解析器还禁止标签外出现解释文字，而实际模板允许在工具调用前出现自然语言解释，两者也存在冲突。</p>
+<p>214 个工具任务回答中，180 个包含 XML 工具调用，34 个没有匹配到解析器要求的工具调用块；全部得到零分。180 个回答并不因此都被判定为语义正确，但其 XML 格式本身已足以导致当前解析失败。</p>
+<p>明确样例：第 174 步第二个回答调用 <code>ai_assistant_video</code>，视频 prompt、duration=<code>15s</code>、resolution=<code>1 : 1</code> 均与参考答案一致，且没有额外解释文字，仍因 XML 与 JSON 格式冲突得到 0 分。</p>
+<h2 id="section-4">根因二：自由文案被当成确定性字段精确匹配</h2>
+<p><code>reward.py</code> 第 110–115 行将预测和参考 JSON 拆成叶子字段，仅当字段路径和值完全相等时计分：</p>
+<pre><code>agreement = 2 × 匹配叶子数 / (预测叶子数 + 参考叶子数)
+score = 0.8 × agreement + 0.2 × 完全一致标记</code></pre>
+<p>字符串必须整段一致，数组还按元素位置比较。JSON 包装并不意味着内部内容有唯一标准答案。实际样本包含 <code>related_questions</code>、<code>advices</code>、<code>inspiration</code>、<code>opening_remarks</code> 等开放文案字段，合理改写也可能完全没有匹配叶子。</p>
+<p>228 个 JSON 任务回答中，76 个成功解析；其中 66 个仍为零分，10 个为正分。成功解析且零分的样本包括购物建议、相关问题、创意提示等，不能仅凭零分推断其业务质量差。</p>
+<p>明确样例：第 37 步输出 <code>{&quot;keywords&quot;:&quot;出租屋 必备用品&quot;}</code>，参考为 <code>{&quot;keywords&quot;:&quot;出租屋必备用品&quot;}</code>。仅一个空格差异，当前规则即给 0 分。</p>
+<p>第 4 步的日程 JSON 则展示了部分分：结构化日期与时间一致，即使确认语不同仍能得分。这说明规则对确定性字段有作用，但对几乎全由自由文案构成的 JSON 不适合直接照搬。</p>
+<h2 id="section-5">根因三：JSON 外围文本导致整条回答归零</h2>
+<p>228 个 JSON 任务回答中，152 个未通过当前解析要求，其中 143 个报 JSON 起始解析错误，8 个输出了 XML 工具调用，1 个报额外数据错误。解析错误原因与具体输出内容需结合查看，不能将所有失败统一归为代码块问题。</p>
+<p>第 5 步的一个实际回答先解释日程信息，再在 Markdown 代码块中给出 JSON。当前样本 <code>allow_fence=False</code>，解析器要求整个最终文本直接是 JSON，因而整条回答归零。</p>
+<p>这类格式失败会在字段比较前截断奖励。仅提高答案字段准确性，仍可能完全得不到分。部分样本还有重复工具调用、输出结构不符等行为问题，需要与纯封装格式错误区分。</p>
+<h2 id="section-6">为什么奖励长期不涨：GRPO 组内信号消失</h2>
+<p>当前设置为 <code>train_batch_size=1</code>、<code>rollout.n=2</code>、<code>norm_adv_by_std_in_grpo=True</code>。GRPO 对同一 prompt 的两个回答做相对奖励归一化：</p>
+<pre><code>advantage = (reward - 组内平均 reward) / (组内标准差 + ε)</code></pre>
+<p>两个回答同为零分，或者同为相同的正分，advantage 都为零。217 个训练步满足这一条件。SwanLab 中 advantage 的最大值、最小值及 pg_loss 只有第 5、6、7、36 步非零，第 37–221 步全部为零，与本地奖励统计相符。</p>
+<p>梯度范数和 KL loss 在这些步仍非零，不意味着存在有效的任务奖励学习信号。配置启用了 KL 正则；即使奖励对应的策略梯度为零，KL 项仍可产生梯度，也不能据此声称所有参数更新完全停止。</p>
+<h2 id="section-7">已检查的其他因素与限制</h2>
+<ul><li>未发现达到 4096 token 响应长度上限：前 221 步最长响应为 1154 tokens。该上限不是当前零分的主要解释，但这不排除其他输出完整性问题。</li><li><code>response_length/clip_ratio</code> 显示 0.5–1，不能直接解释为一半或全部回答达到配置上限。<code>verl/trainer/ppo/metric_utils.py</code> 使用 <code>responses.shape[-1]</code> 作为比较长度；结合实际长度，批次张量宽度可能影响其含义。</li><li>学习率一直为 3e-6。没有证据将本轮主要问题归因于学习率，而零优势与解析冲突已有直接证据。</li><li>参考答案标注为 <code>unverified_teacher_after_targeted_checks</code>；当前分数衡量参考一致性，不等价于独立验证的业务成功率。</li><li>结论对应前 221 步快照。训练继续运行后，应另行采集新的指标；本报告不把 RUNNING 状态当作持续正常运行的保证。</li></ul>
+<h2 id="section-8">建议的修复与验证顺序</h2>
+<ol><li><strong>统一工具协议。</strong> 支持当前模型原生 XML 调用，将工具名及参数转换为统一结构，再进行 schema 与字段验证。保留参数类型、必填项及多调用语义，明确调用前解释文字是否允许；不要只替换标签或吞掉所有异常。</li><li><strong>按任务定义奖励。</strong> 对日期、工具名、数值、枚举等确定性字段做规则验证。对自由文案使用合适的语义评价，或先从规则奖励训练中移除；不要要求所有建议、提示语逐字复刻教师答案。</li><li><strong>明确输出格式契约。</strong> 让提示、示例、解析器对代码块和附加解释的要求一致。若业务必须纯 JSON，应通过明确提示、格式示例或先行 SFT 提高格式成功率；不要靠任意抽取 JSON 掩盖错误行为。</li><li><strong>先离线重评分。</strong> 使用已有 442 个回答，对照修复前后解析成功率、各任务正分率、奖励分布和组内不同分比例。加入正确 XML、错误工具名、参数类型错误、合理文案改写等有区分度的用例。</li><li><strong>再做短训练与固定验证。</strong> 奖励正确后，结合显存预算尝试增加 rollout.n 和训练 batch；观察有效组比例、advantage、pg_loss 及固定验证集的任务成功率。不要把增加采样数当作协议修复的替代。</li></ol>
+<p>建议补充记录 <code>format_valid</code>、<code>field_accuracy</code>、解析失败原因、任务类型、组内奖励标准差和零优势组比例。本次可读的本地 JSONL 仅有汇总 score 等字段，没有这些奖励诊断分项，需离线解析才能定位。</p>
+<h2 id="section-9">本次交付范围</h2>
+<p>本次完成指标读取、前 221 步回答统计、JSON 分数复算和代码核对。尚未实施解析器修复、奖励重设计、重新训练或固定验证集评测。修复后的分数提升需要与真实任务质量提升分开验证。</p><footer>分析快照：2026-09-12 · 前 221 步 · 同目录提供 Markdown 版本</footer></main></body></html>

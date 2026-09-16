@@ -1,0 +1,22 @@
+{
+  "note": "Counterfactual packaging-only diagnostic, not a deployed reward change or semantic validation",
+  "n": 958,
+  "before_mean": 0.2907409528134262,
+  "after_mean": 0.3896679131182571,
+  "positive_after": 630,
+  "different_groups_after": 147,
+  "by_mode": {
+    "response_wrapper": {
+      "n": 106,
+      "positive_after": 106,
+      "exact_after": 57,
+      "changed": 106
+    },
+    "whole_fence": {
+      "n": 140,
+      "positive_after": 7,
+      "exact_after": 3,
+      "changed": 7
+    }
+  }
+}

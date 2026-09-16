@@ -1,0 +1,58 @@
+[
+  {
+    "step": 5,
+    "sample": 1,
+    "kind": "json",
+    "score": 0.0,
+    "output": "Based on the tool result, this Friday is **2026-07-10**. The user wants a meeting with Sarah at noon (12:00). All required fields are available:\n\n- **title**: \"Meeting with Sarah\"\n- **start_date**: 2026-07-10\n- **start_time**: 12:00 (noon)\n- **type**: add\n\nThis is a future date, so no past-time intercept is triggered.\n\n```json\n{\n  \"data\": [\n    {\n      \"type\": \"add\",\n      \"start_date\": \"2026-07-10\",\n      \"start_time\": \"12:00\",\n      \"end_date\": \"\",\n      \"end_time\": \"\",\n      \"title\": \"Meeting with Sarah\",\n      \"location\": \"\",\n      \"repeat_type\": \"\",\n      \"repeat_end_date\": \"\",\n      \"remind_type\": \"\",\n      \"reminder_time\": \"\"\n    }\n  ],\n  \"succ_message\": \"Sure, I've scheduled your Meeting with Sarah at 12:00 on July 10, 2026. A good tip: confirm the agenda with Sarah beforehand so the meeting stays on track.\",\n  \"err_message\": \"\"\n}\n```",
+    "expected": {
+      "data": [
+        {
+          "end_date": "",
+          "end_time": "",
+          "location": "",
+          "remind_type": "",
+          "reminder_time": "",
+          "repeat_end_date": "",
+          "repeat_type": "",
+          "start_date": "2026-07-10",
+          "start_time": "12:00",
+          "title": "meeting with Sarah",
+          "type": "add"
+        }
+      ],
+      "err_message": "",
+      "succ_message": "Sure, I've scheduled a meeting with Sarah on July 10, 2026 at 12:00. Don't forget to prepare any necessary materials beforehand!"
+    },
+    "category": "json_parse_failure"
+  },
+  {
+    "step": 37,
+    "sample": 1,
+    "kind": "json",
+    "score": 0.0,
+    "output": "```json\n{\n  \"keywords\": \"出租屋 必备用品\"\n}\n```",
+    "expected": {
+      "keywords": "出租屋必备用品"
+    },
+    "category": "json_parse_failure"
+  },
+  {
+    "step": 174,
+    "sample": 2,
+    "kind": "tool_call",
+    "score": 0.0,
+    "output": "<tool_call>\n<function=ai_assistant_video>\n<parameter=prompt>\n水果在盘子里自己切好摆盘，镜头垂直俯拍\n</parameter>\n<parameter=resolution>\n1 : 1\n</parameter>\n<parameter=duration>\n15s\n</parameter>\n</function>\n</tool_call>",
+    "expected": [
+      {
+        "arguments": {
+          "duration": "15s",
+          "prompt": "水果在盘子里自己切好摆盘，镜头垂直俯拍",
+          "resolution": "1 : 1"
+        },
+        "name": "ai_assistant_video"
+      }
+    ],
+    "category": "tool_xml_protocol_mismatch"
+  }
+]

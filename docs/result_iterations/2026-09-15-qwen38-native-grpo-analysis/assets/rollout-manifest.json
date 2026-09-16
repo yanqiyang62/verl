@@ -1,0 +1,3842 @@
+[
+  {
+    "step": 1,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/1.jsonl",
+    "bytes": 46686,
+    "sha256": "9ea7ab60984777ea9fdb5f9f213148a34c6a6b8463fe86eeac545b4b9fb0efe5",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 2,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/2.jsonl",
+    "bytes": 46781,
+    "sha256": "4e9cc512b0246cce68d6a28140dc976b5c943c283d3f05b92c9bde6068d8ff00",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 3,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/3.jsonl",
+    "bytes": 46266,
+    "sha256": "06a08dbc2d211beb8ceb74fe7b94ea2441a1b0d877bf711077fa4ee92eeee364",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 4,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/4.jsonl",
+    "bytes": 46816,
+    "sha256": "3f4b088c6013c63d69fe3c23016d2e45c2db34f72c06cb73bd809d493b7a3b0d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 5,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/5.jsonl",
+    "bytes": 47654,
+    "sha256": "42ead5e95f3086c157b534c559371c79d6d15e3214bf63ab915fb64b7f252655",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 6,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/6.jsonl",
+    "bytes": 55729,
+    "sha256": "0fa376ad71a83b70077cfa5772a2e236a3f4f1d7bccbe4ac216edfbcf0378c48",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 7,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/7.jsonl",
+    "bytes": 47590,
+    "sha256": "d7d3037908cc82f6c4cfaed643a3cfd00ba381629a6bee85c40c224a1e3484e2",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 8,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/8.jsonl",
+    "bytes": 74557,
+    "sha256": "af49066fe4870955922eae64e72fc07bc24df6525567b0587c203e71c4176504",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 9,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/9.jsonl",
+    "bytes": 19080,
+    "sha256": "daa7d862d1125fdf42f15f653f62afbf22e940c3f1d1fbf813369be1d0b92139",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 10,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/10.jsonl",
+    "bytes": 20213,
+    "sha256": "72ea123c22522ad0d3e9e6511ac451af1f3aaa5ff19b6fd71b85135efe19c60b",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 11,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/11.jsonl",
+    "bytes": 8864,
+    "sha256": "2c0953c8fb89328ad7db35c30eb4f7edadbd1bdbd6201c200ae463047bb79ee7",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 12,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/12.jsonl",
+    "bytes": 19171,
+    "sha256": "4a48c235157a991463f9c41e6ce97fc711aa3e7e6b5c487f94f3c81e324d1d8a",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 13,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/13.jsonl",
+    "bytes": 19446,
+    "sha256": "ea3d5927ee8862d62156e77fdeaaf1134f7d37bb1320a3e98425e06597801230",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 14,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/14.jsonl",
+    "bytes": 19140,
+    "sha256": "9003bb9aee02dbe76b80258626fd432008fc1845866fcba46ef0e4a5dec264ec",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 15,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/15.jsonl",
+    "bytes": 19118,
+    "sha256": "06badb350171b9c6ce92230bd73b9397fa66bb10eb5cbcb79d2fb9d2e6a2d738",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 16,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/16.jsonl",
+    "bytes": 19763,
+    "sha256": "5624971668e4c8b3c90f5a6bb5c64c9593d4e1700b2158f705330198d4410055",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 17,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/17.jsonl",
+    "bytes": 19208,
+    "sha256": "f830079efb019991920eb28211bb909d74a9080377faf3777df29e14ed23853b",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 18,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/18.jsonl",
+    "bytes": 19190,
+    "sha256": "45fdbefdc8b594a02d9d8828f255594872a11ad433eccfc93d0b868861351414",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 19,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/19.jsonl",
+    "bytes": 19044,
+    "sha256": "322549b9d150524ae6506a1c8e60b770adf6c8865c8f91f2bb4bc76569017e43",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 20,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/20.jsonl",
+    "bytes": 19061,
+    "sha256": "3ea0992592dba8fdb180df0dd2df661738110adee3b5b19c195fb0d294f9e05b",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 21,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/21.jsonl",
+    "bytes": 19546,
+    "sha256": "05b3675af23a032308d899c26e2287374bcbfbf85550627ab2d079feb06e7b48",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 22,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/22.jsonl",
+    "bytes": 19726,
+    "sha256": "ed14806282014569ff19788d9a6b54df743f790b85b54c131e50d78490317b35",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 23,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/23.jsonl",
+    "bytes": 19130,
+    "sha256": "e8b1146a4b559ccd9fef70a1fe5641550d53bccb31ebde370406e1545daf1fcd",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 24,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/24.jsonl",
+    "bytes": 19114,
+    "sha256": "234fcab9ca8f48c99a1be1480a3afec6aed6a9c4b7eaa18424a86dffb05158ea",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 25,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/25.jsonl",
+    "bytes": 19112,
+    "sha256": "6cf1cfbcf0b48c6c038a39426a9839a1acb1e10f99118938b5fc8dd4f7642aee",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 26,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/26.jsonl",
+    "bytes": 19064,
+    "sha256": "30db65d6cba1702d0084a3a504f80af0c8f4b030dd47779af84fba9f4bef72db",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 27,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/27.jsonl",
+    "bytes": 19136,
+    "sha256": "ae047ed9117c4b1e8320206956012f37e0ee9dec1a1c66127e67170a0076298e",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 28,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/28.jsonl",
+    "bytes": 19320,
+    "sha256": "3ce240d97030c57a08a8205aeaa90de28193adf7c6b43c625284aabf4a1b63af",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 29,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/29.jsonl",
+    "bytes": 19193,
+    "sha256": "b047e32103f0a61c88b0873cb5b8dd73b1ba6d49fdbc36614c8adc50cd1c5022",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 30,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/30.jsonl",
+    "bytes": 19159,
+    "sha256": "17be4d27b0bee5f344dd16bdd7b51b5ea4580aa0137b8375f15786d36d0dd248",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 31,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/31.jsonl",
+    "bytes": 19176,
+    "sha256": "31f89462877fa4444cc10e2995a1aa29b32ccad9dc84bfdd665213d499e2798d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 32,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/32.jsonl",
+    "bytes": 19128,
+    "sha256": "547122eafdea9d387a74e464a930ac62059978ccd11ffecef6dc646893d7826a",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 33,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/33.jsonl",
+    "bytes": 19127,
+    "sha256": "0c5a56f8abee7de823d387943ee19a9ca2d14a2281f190530a3e723882cc4cb5",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 34,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/34.jsonl",
+    "bytes": 19179,
+    "sha256": "eaed40124225a8c4638ed2fb7962585c29e023769853761287c325765f42f578",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 35,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/35.jsonl",
+    "bytes": 43768,
+    "sha256": "6dbba9ffa39b545ef0d9aa31bff49fc132cf26c8bf16c334aefd855bc7d601cc",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 36,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/36.jsonl",
+    "bytes": 44084,
+    "sha256": "6a4fab9e87b148caf6c2a3a0e55fedda252bf1102a00c8bb1dcf3c25cac19285",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 37,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/37.jsonl",
+    "bytes": 5000,
+    "sha256": "da450b2dd4d2fcf3be7208234058b215a7c23a79c9c6f2d4e3524c81d5acdacd",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 38,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/38.jsonl",
+    "bytes": 8163,
+    "sha256": "0ec23abc39618848717e5df209e9fa7628ec71c430c36a41eae86038b83ee83a",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 39,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/39.jsonl",
+    "bytes": 19081,
+    "sha256": "232c576336cf5193517e6342b951a3f16c5fb5163d448ba103845e7026580b2b",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 40,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/40.jsonl",
+    "bytes": 19110,
+    "sha256": "aa67395ac4bf51244d58709d27c3e4828e7abe924c547a6f1a8a7f51c609dc4b",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 41,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/41.jsonl",
+    "bytes": 19786,
+    "sha256": "de32f12919b5ef7d6bba66c4eb8862041eec70189de74363d852f9f4118b5e9b",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 42,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/42.jsonl",
+    "bytes": 8459,
+    "sha256": "72fac5a9b1589c7b334cc7306d9bde2cb89b7516ec0e14ea0fa5059fdeeb8aab",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 43,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/43.jsonl",
+    "bytes": 13337,
+    "sha256": "c510608914d82cd504467a22cf384fcc5e6dd3c261242b94a362a34afe601b9c",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 44,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/44.jsonl",
+    "bytes": 36404,
+    "sha256": "d2c9bf55770e8288ff4f74546278c4b49c372fad57658c6c05bde38f3079940a",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 45,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/45.jsonl",
+    "bytes": 19816,
+    "sha256": "06ddd21d99ad5b496d0773e8d5c54e1ade1093804034f293bf9e74c121471931",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 46,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/46.jsonl",
+    "bytes": 12001,
+    "sha256": "f48a3805619f8d2c937ff0157773caf64e0e2cde983cfe94136a3b1c5e74165b",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 47,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/47.jsonl",
+    "bytes": 36795,
+    "sha256": "99b82a79586c0def1ac29b27c57362435d8334957c2c6394930f915727a9a889",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 48,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/48.jsonl",
+    "bytes": 19219,
+    "sha256": "957c5e45dfaf5c44775b2bf692485326d912caabcf54a21162fc01b5f7ef3ce4",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 49,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/49.jsonl",
+    "bytes": 29084,
+    "sha256": "1281e10068b63a54b3d83a44301933a7c2310995054bc7483088f1676a3dc05e",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 50,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/50.jsonl",
+    "bytes": 18578,
+    "sha256": "d222f1aaff253d2359b584f7dce0af4a29fae053921f8b7462c3b9c6b4094955",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 51,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/51.jsonl",
+    "bytes": 18522,
+    "sha256": "717e003755f69563b1061f9c8d3648ea7f18f1fef8d815750cfd7570a8af8059",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 52,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/52.jsonl",
+    "bytes": 19276,
+    "sha256": "7672315889046a005ba6c1cd934131a72eee9096087f83d75f507c999a72b6b6",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 53,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/53.jsonl",
+    "bytes": 36629,
+    "sha256": "686ee0708b0613ecf4901b0324822805be03c3240689d453a2bce4908513d1e2",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 54,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/54.jsonl",
+    "bytes": 19152,
+    "sha256": "36fb07b00cdfb791d278c27b7033b863eab55204f1ca3eb0f9ddeac1ef26bb78",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 55,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/55.jsonl",
+    "bytes": 19080,
+    "sha256": "2753b69ffe3a83b5f3f963bdc24af63edd1a329ba1c3d5114327829ca460834b",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 56,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/56.jsonl",
+    "bytes": 20498,
+    "sha256": "aecf71cd038ecfe6677e698ed1ca8953a0cfc09fac41f71cad9183537b75634c",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 57,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/57.jsonl",
+    "bytes": 19711,
+    "sha256": "a6e389b8046710d976c40e626184409b1a9350f669253b4a96edad5d19ef54ba",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 58,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/58.jsonl",
+    "bytes": 19793,
+    "sha256": "54f84d16480ebf5140c1b272fc37508c21242f3d48d84146b51b7285af9b9a94",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 59,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/59.jsonl",
+    "bytes": 19045,
+    "sha256": "2bda85db99dc471d7ad2252f6d4f63d3189b1dd11db9da01b4281c3bd39df8f9",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 60,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/60.jsonl",
+    "bytes": 18530,
+    "sha256": "7ef7f130a126803277a2cf90373d4590635694677dba35ccd84f0552fccec1dd",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 61,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/61.jsonl",
+    "bytes": 20085,
+    "sha256": "887653dec1880af5de5f4d841c86a2c1a0f122c86e4b66191eee07be1818aa70",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 62,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/62.jsonl",
+    "bytes": 17810,
+    "sha256": "769658fbd88b2a9216fc55042411b3c473e8b25dbb424f6bd19eec5e383de5a3",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 63,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/63.jsonl",
+    "bytes": 19539,
+    "sha256": "dfa6739350ef38509febf6975bb950b73dde423b70513be8b6b845ef27ba40af",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 64,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/64.jsonl",
+    "bytes": 16883,
+    "sha256": "3080637617e7ac23fa6db7c60186d1bf248e8b4e64844395fc5d8ba18dfef0f5",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 65,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/65.jsonl",
+    "bytes": 36657,
+    "sha256": "66b92456cce0f84c3c74062404aa489deea5bfb4283f765aed8288c9254f4874",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 66,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/66.jsonl",
+    "bytes": 38319,
+    "sha256": "f532c93c6b5ef3d0a1f633495727f88e9eab861a8d200c8e4c3025463a94f93f",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 67,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/67.jsonl",
+    "bytes": 36641,
+    "sha256": "ddf634b2d55dae239205f6ce8421101304796343353c08a2273d9027dacf3f26",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 68,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/68.jsonl",
+    "bytes": 18346,
+    "sha256": "7b9ac796b19b27f0993aefe0467f9f328d766ecc83b18b83edfeac74c554b2df",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 69,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/69.jsonl",
+    "bytes": 32766,
+    "sha256": "5ef915b0eb7a3f5060910c521bd2a17cae78fd8cd8af5c2f510ca66f5638d8d7",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 70,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/70.jsonl",
+    "bytes": 17284,
+    "sha256": "b324d01543001198294c18ac5e9a981d7b55a2bca0eb711288129baf68108f0d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 71,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/71.jsonl",
+    "bytes": 21205,
+    "sha256": "5222652bdbbdf19c658927d7752459568b05cd4dbf1c45f1cb62a2526b55ce70",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 72,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/72.jsonl",
+    "bytes": 74185,
+    "sha256": "d095eeac52e6aa68564a78806cc4301249725063a25967b4528b63764068d763",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 73,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/73.jsonl",
+    "bytes": 19244,
+    "sha256": "c048d7db5e68697623145d2ad0f2ddb53d748ae539ebd0ba51a58c77c327df1c",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 74,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/74.jsonl",
+    "bytes": 58276,
+    "sha256": "aab5dd0e0ed7c1f9b108d3106712161959a6a9eecaab73f6ad85ed35705c5641",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 75,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/75.jsonl",
+    "bytes": 52151,
+    "sha256": "91f7340d88d85ec7cc6aa44da3054a36f695e614c989bc3704a2709a199f3c67",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 76,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/76.jsonl",
+    "bytes": 22571,
+    "sha256": "32a47bf9cec8821b18478c19415c20623cb76c85bf928ff6d1ed52f117e968cc",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 77,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/77.jsonl",
+    "bytes": 54558,
+    "sha256": "fec7a50b06e41f71998e85aca051df14cf00a198b8b83d263da942fbe93d658e",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 78,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/78.jsonl",
+    "bytes": 20593,
+    "sha256": "1cba959c4f5a2ded816d39b5b63b5b7d8be0865e0d8e744041ff896faa0926af",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 79,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/79.jsonl",
+    "bytes": 12606,
+    "sha256": "e725dd058a2eb5082537677fdcf307ccc93f3c5e28ab139be180fce1e76d21c1",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 80,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/80.jsonl",
+    "bytes": 4578,
+    "sha256": "e06e65b57a1bbaeb3bcfbc870d365668fccf82f68855321014a1506308c2ed9d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 81,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/81.jsonl",
+    "bytes": 4620,
+    "sha256": "266865d05f5d2a4b4c70283de7ac94e6f348ff4ac0e81c8e0ebbb1df3223a7ab",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 82,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/82.jsonl",
+    "bytes": 4587,
+    "sha256": "063f738d32ea289d07a61821df8281f5d0ccc1e34716db7905a0e21aa983211e",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 83,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/83.jsonl",
+    "bytes": 17285,
+    "sha256": "f27b6d2e98570463796d59cdfc537bcece6acc0d5f6088031cc3aeef664a214f",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 84,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/84.jsonl",
+    "bytes": 4620,
+    "sha256": "815e0ea38bfd2f0f157575ffd95fb10742bc579c2b512573b776c428bf649605",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 85,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/85.jsonl",
+    "bytes": 4665,
+    "sha256": "320b8cb0ce96998a9c5c497fa56bcd05a92deba803c7fe1d9809e8c8defbe887",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 86,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/86.jsonl",
+    "bytes": 16709,
+    "sha256": "9d24a09e6e5f5e6ce2c5bd622a9fca6214c7f8f1de62494aa2372e26d1e53976",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 87,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/87.jsonl",
+    "bytes": 17826,
+    "sha256": "505ee65ccb465377e9545f86f0050ba78fb6d4a6bc46dc5a46ae95b016608715",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 88,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/88.jsonl",
+    "bytes": 41499,
+    "sha256": "a44dec8b718fab283c71849d8e2e204c001556c7913a129188d89a1ecaff9ee4",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 89,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/89.jsonl",
+    "bytes": 12029,
+    "sha256": "39f844802bc4eac1624f695efb55a90aae8794e8b7b565d158214129a6a63997",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 90,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/90.jsonl",
+    "bytes": 18496,
+    "sha256": "9f25c1481276b36b2d203b1c5fddaf1180760cb5a00bdad5a3049ec48446032f",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 91,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/91.jsonl",
+    "bytes": 10301,
+    "sha256": "8b74682f9b688a7d498b01e73991d903290eabdf57783e6057d37d9280781057",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 92,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/92.jsonl",
+    "bytes": 18565,
+    "sha256": "5d4abd7eeaf78ce93315368231f583b912f31c4d4e0cfaf3f06edee51d06d4f7",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 93,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/93.jsonl",
+    "bytes": 17955,
+    "sha256": "ffedc47af7456a25f981bd69946e198dbb3670e797521a73290245d6254ee565",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 94,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/94.jsonl",
+    "bytes": 20074,
+    "sha256": "2c2a993c99367a7fa705ff3367f5ee00d6182c49b84cd28010303ab4dbe0ecb2",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 95,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/95.jsonl",
+    "bytes": 17659,
+    "sha256": "398161e2e7948861e15f0e15b6b3711eeefa53909205d396db87926846f9d65c",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 96,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/96.jsonl",
+    "bytes": 12790,
+    "sha256": "5c662e3563307dac17e98ba811f0333c5d0e1e7622468c0264b65b0b4377ce9e",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 97,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/97.jsonl",
+    "bytes": 13483,
+    "sha256": "252e97ab1c064cf81d7f337eb25f918ddff6a987e0e80b28791d4c8bd5b5b826",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 98,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/98.jsonl",
+    "bytes": 5301,
+    "sha256": "a0fc863efefcdbc864a3c1099939d8bccb576a129cbe8dccfbf7e5734764bef6",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 99,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/99.jsonl",
+    "bytes": 17941,
+    "sha256": "7d38256f053191bcfae4103fc0f3015dd93bb68cf31416c64a0bf4cd39a40fb6",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 100,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/100.jsonl",
+    "bytes": 4942,
+    "sha256": "d7ce6cbfb46a504e6cd34c6c7429386b5365aafcfa1da08ad9fedd4db4356ace",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 101,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/101.jsonl",
+    "bytes": 36999,
+    "sha256": "35a878978327453c46d599ffcd9e70702ce09d5526c60d387ed21dd7ef702e66",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 102,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/102.jsonl",
+    "bytes": 18565,
+    "sha256": "51c32188d7e8a91a69ef323e3a2d980226e3ea608db5083a6259584060bd612f",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 103,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/103.jsonl",
+    "bytes": 4642,
+    "sha256": "f90f9621a14bcf8de8521d975f4b3e3fd5790e0f834d1bac1f5af81a686dbd30",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 104,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/104.jsonl",
+    "bytes": 20131,
+    "sha256": "aed6171950b3a65d6148a101638c6c057f20e991f9f5a22bddb01e7a5c5a82c0",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 105,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/105.jsonl",
+    "bytes": 37061,
+    "sha256": "0d5969c58cf03bee69976fdcb8c94186a3a7691523a90c2ef3e57c71c0f1bbec",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 106,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/106.jsonl",
+    "bytes": 18939,
+    "sha256": "068dacd58030ecc87ad13e6538b6aa7cb0cff0244fb41a554903fac5bc2acbc9",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 107,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/107.jsonl",
+    "bytes": 4316,
+    "sha256": "02ecbe230f4e73518944326f5616e4b24cc3093eb612a11ca2c813e8ee54aa7b",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 108,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/108.jsonl",
+    "bytes": 37214,
+    "sha256": "c3b1efdc29b5d024b8b2561525719882a7883062efc470f3c3312ce6d3b08279",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 109,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/109.jsonl",
+    "bytes": 17730,
+    "sha256": "7a3eca5c37557b40dcb2497b9c52c252ebb6d8305307120222a54e407c89cf82",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 110,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/110.jsonl",
+    "bytes": 20497,
+    "sha256": "09447f278181556181cb4e4657286dce60014a095fbe380e3cd8668c03b9521d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 111,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/111.jsonl",
+    "bytes": 18270,
+    "sha256": "f5b987933319a01c9c7508e2a93d9cfbf3e4305bc61dbb5cc0b7fea98afb1ee0",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 112,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/112.jsonl",
+    "bytes": 37033,
+    "sha256": "25c4790168a581e055ce375dc5a8260fcf20b80f3a79ae90524e5d37a311333f",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 113,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/113.jsonl",
+    "bytes": 4469,
+    "sha256": "69073b936f55f722774a9b6c023fd42a9548797aa8e133693188e12cb81b78c7",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 114,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/114.jsonl",
+    "bytes": 18191,
+    "sha256": "3e1e759a89600580fa6271d384469c51da9042fe349c8db252561f1b36235634",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 115,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/115.jsonl",
+    "bytes": 18915,
+    "sha256": "526d6cfa117aba3771a3747e0506600b5ecabba5221d950b5b83b2c3b7fee151",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 116,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/116.jsonl",
+    "bytes": 19959,
+    "sha256": "2e8b543384c5328ec3ce13a7ac081c2c0d9884c0fe4b883b002ea6fff7c8abdc",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 117,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/117.jsonl",
+    "bytes": 12760,
+    "sha256": "2b13114f9a1935f1f56f9435585ab6af38d087e7ef3f4782a13a9692c8c652ed",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 118,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/118.jsonl",
+    "bytes": 18354,
+    "sha256": "6dce8089e90087d77aa127683bd23a0cbcc05cc477d8790b721b85259d1d7a09",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 119,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/119.jsonl",
+    "bytes": 17653,
+    "sha256": "df8af5b30458bfa6a5580153d6420b60d4bee7e1a2f1dd229f038c925099b104",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 120,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/120.jsonl",
+    "bytes": 18866,
+    "sha256": "f37affb7671241934cc2d86296d2809dd90e21ca45753e8e8c4848f57ab7e6e0",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 121,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/121.jsonl",
+    "bytes": 19843,
+    "sha256": "aa8adf51ee2603cbe46c47887ff3b996f8a408f60d758e85213e80485238a1e8",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 122,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/122.jsonl",
+    "bytes": 4763,
+    "sha256": "0868b178c15c2d12d60741f026286889064f5c1e736bd6bbd8aced5a2adb1bef",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 123,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/123.jsonl",
+    "bytes": 17799,
+    "sha256": "edd5fe753b6992e8b5098dbc82ec37b2736e2615722ef0e7ea3d9a84f65f213a",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 124,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/124.jsonl",
+    "bytes": 14493,
+    "sha256": "c1c4a5be2030141a7da378dab2f380ff537b9d1f2744807b35b6a23bc0d29340",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 125,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/125.jsonl",
+    "bytes": 13416,
+    "sha256": "523aa2b876f0fbb33ac94f025143c7570bad6b3cced74249170f3fc2d259dc06",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 126,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/126.jsonl",
+    "bytes": 20369,
+    "sha256": "25e743d2b72c9b3cda7f3f4764e38595df07769696cde17929236160dcbac8fb",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 127,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/127.jsonl",
+    "bytes": 4429,
+    "sha256": "4a7a27658cfb8d5d3e232b67c616a3fda653a4aeba0d27d55894deefadc6fcff",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 128,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/128.jsonl",
+    "bytes": 41386,
+    "sha256": "a27efbd8a926a45aaec664c684844d372036419bc2b3331e225bc2cd4423f6e6",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 129,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/129.jsonl",
+    "bytes": 17253,
+    "sha256": "9368fddfeaf0e531827ef841182ca907d8fcba6928ef03887dc46fef2674fdcc",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 130,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/130.jsonl",
+    "bytes": 17769,
+    "sha256": "f7e648f4a97d85236143c20bea6f38edd22d1ff2dcf446dc3ddcca2054537616",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 131,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/131.jsonl",
+    "bytes": 18009,
+    "sha256": "3f1e00d421068f02f09b0c4bc17bf4c73c90da92899261c601dfe9716541fe3d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 132,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/132.jsonl",
+    "bytes": 9118,
+    "sha256": "811fb22ef232b1cbb3e389463d355221474302808bbebccef8cfb2ab2fbab6cf",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 133,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/133.jsonl",
+    "bytes": 4843,
+    "sha256": "0503c3c25b3aa0a37e15e1747954b9d22a8de11bdb9c672ab18061914723c125",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 134,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/134.jsonl",
+    "bytes": 37268,
+    "sha256": "95ef94a584d62e2916b102015cee585efff92be3baa94301dc9b77802f3dcf03",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 135,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/135.jsonl",
+    "bytes": 4606,
+    "sha256": "9a88e616cdb475763489490281a59b9611434fb83779cc8f718b00b944411d98",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 136,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/136.jsonl",
+    "bytes": 20158,
+    "sha256": "9a06490ba83dc1fdf878055a19478d4b029aec4071b14b01d88258de651932cf",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 137,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/137.jsonl",
+    "bytes": 16765,
+    "sha256": "cfadba4381622637faa3a7e1f005b26c62240c1a56fb2d5cfe90bbf962c4642a",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 138,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/138.jsonl",
+    "bytes": 17405,
+    "sha256": "7ceb5eec9b196de67004143d15ec9db4c7b01ac038a20aff1003de5ce1cc3fa4",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 139,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/139.jsonl",
+    "bytes": 17779,
+    "sha256": "02fa93209f6ee8ad236e45952315b73b1254648b0fb5ba1fe401d25889ba4f3b",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 140,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/140.jsonl",
+    "bytes": 17509,
+    "sha256": "44893dc197d4c8fe57cae76621be8908074cb6823f0e63cae77b8f5b9403903c",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 141,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/141.jsonl",
+    "bytes": 41456,
+    "sha256": "c491a49b39ab2d89c5a57a0a8aa3acabd7f7027fcd8a1de8ad2b9257f38e1bf1",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 142,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/142.jsonl",
+    "bytes": 17265,
+    "sha256": "3232490fa4a96b737c22515877ab34b9446277ecf57d379fb5eac496e6d3b93a",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 143,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/143.jsonl",
+    "bytes": 12196,
+    "sha256": "b5e2c5b54da942360bb3ba74348020d57247917922244b21fbb7415840544948",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 144,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/144.jsonl",
+    "bytes": 18471,
+    "sha256": "9ecb079c4d101f24e96f4dd10727e2fa7751503845cb91776f01ba700e15a588",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 145,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/145.jsonl",
+    "bytes": 20476,
+    "sha256": "c2f10a1ff4b7e45df6c41c3ba7f352ec9ff21d5f963ba67830e8586c9dd47a1c",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 146,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/146.jsonl",
+    "bytes": 17239,
+    "sha256": "bfe9b8ea67eea6edd632043af86036b6916d7a51d63c2acb6391bdd088ee510d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 147,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/147.jsonl",
+    "bytes": 20489,
+    "sha256": "f1750ce3677983860ab737ddade03b0bba93cf355352ba30825f349ede859819",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 148,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/148.jsonl",
+    "bytes": 41022,
+    "sha256": "f434f6c4298665e4df2899832f72f6656373837c2617e7ed1ceca87611b2d974",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 149,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/149.jsonl",
+    "bytes": 41376,
+    "sha256": "0cbb5c52207fb50fc0af2638b1e319dd32ecc9e85e9a53e319662bf8b8f73a2a",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 150,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/150.jsonl",
+    "bytes": 4533,
+    "sha256": "0ec41c2222726414675acef16bd9c994ac26a2ba78c45def805c8a796e0b2017",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 151,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/151.jsonl",
+    "bytes": 18472,
+    "sha256": "213f7e17065bc574487f275c47e451a8c019c175aee77cc7033b69ddfe7ecb88",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 152,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/152.jsonl",
+    "bytes": 16834,
+    "sha256": "fcc521a4d2718e4501dcf156a94c4c450062015e77087e74f9cdfb707281f1b8",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 153,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/153.jsonl",
+    "bytes": 18204,
+    "sha256": "59ff50bc40030dd4164ca102f8e1c1139cd1bc07979a8607e8bbfabd1647c097",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 154,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/154.jsonl",
+    "bytes": 17792,
+    "sha256": "7aa63542a6a95773b99fac4099501bc1be3b9cd4cc962ab20678db6e4b4cb1cb",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 155,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/155.jsonl",
+    "bytes": 10430,
+    "sha256": "84e060de25a0db197f8c5b4c7ff18e2e1cf1aac9396cd5ffa7a07e54e7a9e991",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 156,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/156.jsonl",
+    "bytes": 9768,
+    "sha256": "a905b33ac7493ea0116f66eb685306f37cc2cffc563ed4fd217c41025e0216d2",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 157,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/157.jsonl",
+    "bytes": 11949,
+    "sha256": "22cecb15eb665fd5d2339975869069a1bae1762aee6fd1bca7494315d1f97aad",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 158,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/158.jsonl",
+    "bytes": 8901,
+    "sha256": "db932f1a4ad3759eb6a72dc7c0f31c578b26bf05ed5052b09921fb2ec59342ec",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 159,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/159.jsonl",
+    "bytes": 4552,
+    "sha256": "822138294999c29e1c664d5f63e7cc64276c84d1b9355d38538f44619cff40e4",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 160,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/160.jsonl",
+    "bytes": 20739,
+    "sha256": "70d2cfbbeeef24a44a508464dd6eb9b49050d13c249ac7ce0f84509c8d5d9a7b",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 161,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/161.jsonl",
+    "bytes": 41404,
+    "sha256": "4c719a8089cb92ee7787a3496c05c1b7e7e500f2e34890585ae6bffa0f41b6ea",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 162,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/162.jsonl",
+    "bytes": 20481,
+    "sha256": "cf1f644f5e0927272ec48cdee0f18071268d49a72b4f7c91a8aaf71d948ee3c9",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 163,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/163.jsonl",
+    "bytes": 17662,
+    "sha256": "ff224e94e566e4be83ce4601563c54b9b36adce4b340dbd4736ea398507017fb",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 164,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/164.jsonl",
+    "bytes": 12575,
+    "sha256": "abdd25378c5780269103e6a88a2981d1e306d4115afd106269c3210d0e879ab6",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 165,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/165.jsonl",
+    "bytes": 17423,
+    "sha256": "adac4fbfa770ca4edd3b91796fbf98d93bbf85c6c5b3933a4ca148c11e213311",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 166,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/166.jsonl",
+    "bytes": 17720,
+    "sha256": "65593abc227a9da95dd0870e99126ee597813de68e0cbe0ff4471b6dd9a255a6",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 167,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/167.jsonl",
+    "bytes": 4878,
+    "sha256": "1c2533558bd224acf5b3b963ea5265a3992664674f824c474329d33d5a400233",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 168,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/168.jsonl",
+    "bytes": 37036,
+    "sha256": "8ed4e1741809e067bcc789386a04a14e5d552384e3ccd0dfb6c752ea7d27efbb",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 169,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/169.jsonl",
+    "bytes": 14547,
+    "sha256": "b4f9568db9be2fe295558580369189214ede3bda93592bb7634328be6061a5d8",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 170,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/170.jsonl",
+    "bytes": 41410,
+    "sha256": "7bec6b3edb9627f05c2a287bcc67d193e310e3497fa8018cc4a54cd7b45d63be",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 171,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/171.jsonl",
+    "bytes": 37255,
+    "sha256": "5e4399228050f208bf3cca588b71e7216b3566f72075b546c5be0ebafa5ff37d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 172,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/172.jsonl",
+    "bytes": 4529,
+    "sha256": "9350dc962780d5ff2c8baba9983c1b1e982aab4d7cc8d6703b59394e63ccf63f",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 173,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/173.jsonl",
+    "bytes": 20657,
+    "sha256": "cd27b46e1c38e39f4b614fdcf0160617523d8b134b3aa4a63f53495df17f5cb0",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 174,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/174.jsonl",
+    "bytes": 17352,
+    "sha256": "ef4fc2370892af33ec1da34e10770027062478879028c0126de11b8bdf5b736c",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 175,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/175.jsonl",
+    "bytes": 17443,
+    "sha256": "a8980b20f5408add52f16ccc5dd862ee257de31c9a94de7009165a498b6496a4",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 176,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/176.jsonl",
+    "bytes": 20573,
+    "sha256": "9b57da7614102d80c5059e6c4be13542a5e52ac51b2b7a658a7a2290c5a8a6d7",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 177,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/177.jsonl",
+    "bytes": 41456,
+    "sha256": "56b85c595d5c46a15a3f0a22812b3140916d16f2f41aaa24951025046015b055",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 178,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/178.jsonl",
+    "bytes": 4862,
+    "sha256": "b3ed7b9e75e48a7b50a3d56d2a0635896020ad4d94c5e2f5c8a6286c894dbb15",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 179,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/179.jsonl",
+    "bytes": 4748,
+    "sha256": "8baea84cd920fd8d09da5bfedeedb0f9ed5ffa5f337231475474627d35cc9a2f",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 180,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/180.jsonl",
+    "bytes": 20464,
+    "sha256": "0887d7505733e3a82b11251de4f2b03cc80145ae6e1ff452a9714ae8d53f3f07",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 181,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/181.jsonl",
+    "bytes": 17644,
+    "sha256": "fd9aa064e5bae06c9f1dd55af753bf048a13e063d377c426575f5d7c63815fe2",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 182,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/182.jsonl",
+    "bytes": 4605,
+    "sha256": "93e7cfc1ab2487c86337aad1a9b417474816597c02dc2f2c3f7740bd71355a3e",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 183,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/183.jsonl",
+    "bytes": 9098,
+    "sha256": "62c8166923c22f4ad7dac6684cccde6cfb06a90c5115a6be76f75ae72db2f715",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 184,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/184.jsonl",
+    "bytes": 12250,
+    "sha256": "2161b81cd83608644c56a936e02796cce9c0933ec417b43a4dd05266bc438d88",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 185,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/185.jsonl",
+    "bytes": 17838,
+    "sha256": "65e39986533800637e8b0051438a10d18421ce47779acdd18b9562a980a4ae85",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 186,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/186.jsonl",
+    "bytes": 4858,
+    "sha256": "1a381a8ae8bc05206198d7d4af0aa295dc28d1334a0818f96dbd543843e6115c",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 187,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/187.jsonl",
+    "bytes": 17206,
+    "sha256": "a3f6346e4c6187918d9384a0378f8fda9eeeffdeb2a6fc90515781d991ece72f",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 188,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/188.jsonl",
+    "bytes": 4571,
+    "sha256": "bd5097e241781271d436e278b3a7344f6bc9f83972833877b065ddf386bed56c",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 189,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/189.jsonl",
+    "bytes": 18044,
+    "sha256": "9b658440131487ada44698120f66346687aa88d4d8e6106212d56f7baa0f2719",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 190,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/190.jsonl",
+    "bytes": 36588,
+    "sha256": "984e00cbbf1a392e45c6da8c07dd24f5c8c35bd696c9c0d5566c304e7ecee5b5",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 191,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/191.jsonl",
+    "bytes": 17918,
+    "sha256": "53b0395030412db309cc5a03c996e8d24ee97ffb9bee84526a50146c54b7f924",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 192,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/192.jsonl",
+    "bytes": 17140,
+    "sha256": "8c087b1cdbef85f04755aed5cc18859d5e9cce5440e8649a48192ef9e0f63c5d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 193,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/193.jsonl",
+    "bytes": 9236,
+    "sha256": "cf8b11360fd5b8ecd58330f6809f11f5175e1a990518b022d32469946f7f3a03",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 194,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/194.jsonl",
+    "bytes": 20238,
+    "sha256": "2605f369c792ec1f527400780c6538b2a75325ffdeb055662f27576e52f25ae2",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 195,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/195.jsonl",
+    "bytes": 12726,
+    "sha256": "f85d18bd2ce74eb4e3998c91cdcd127ccba1467b3fe6d98b37316e11de17f098",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 196,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/196.jsonl",
+    "bytes": 4657,
+    "sha256": "47aaae590da89b57ef11275fc929c62a55051a3a2838a687805d791e1d31bcda",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 197,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/197.jsonl",
+    "bytes": 4637,
+    "sha256": "b63698a80e99bd8a344ad2a03d18e24d4e22f3a73df14ad93b6009c71b03397a",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 198,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/198.jsonl",
+    "bytes": 14154,
+    "sha256": "a69da56e0f3efab280be980612419e61967cf5e301481bf762df534abf0dd302",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 199,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/199.jsonl",
+    "bytes": 4633,
+    "sha256": "ee8bd1ccbf3219e09a374cdbfb5e0d598edf34d8509a912b470f0d7800a5994a",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 200,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/200.jsonl",
+    "bytes": 17321,
+    "sha256": "cea5a7bff2c52972e32272aa94d029872f6f959c81164de213bae373d2c420c9",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 201,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/201.jsonl",
+    "bytes": 37145,
+    "sha256": "309fb0c457eb9cf5e8dd0e55103ffa8533646ac51aa481b543cca4cf96bef952",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 202,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/202.jsonl",
+    "bytes": 4454,
+    "sha256": "3e5c215df7b3062ebbc45e914da76472dc4007e962f11286c5d37244780eae27",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 203,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/203.jsonl",
+    "bytes": 17548,
+    "sha256": "1f868014b16a548dd567cdc1a4f5be7728c948beab9809b1fbe2b0f1ff015c22",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 204,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/204.jsonl",
+    "bytes": 20445,
+    "sha256": "c207ce46f888f65fa178f19cb559b687e0d59019ccc23838d788dcccd9af0b4e",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 205,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/205.jsonl",
+    "bytes": 4640,
+    "sha256": "9dcbf0de68d9de71149cb8c1a4f173ed2298057efdd469c417ef0843b9c41161",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 206,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/206.jsonl",
+    "bytes": 4453,
+    "sha256": "ebe292c3f532ce286d073e7f788045a011ac5d6ca415534e5e057070357cf988",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 207,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/207.jsonl",
+    "bytes": 17130,
+    "sha256": "0b31a84c42d1916656aaf30211f26f9439e0a3a2a4b40349e97f8e0c6a841999",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 208,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/208.jsonl",
+    "bytes": 13243,
+    "sha256": "b1cc6fc8f2fc8894e8f3cc176d22357227c015806c0fa553f583c1aa8b3fb572",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 209,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/209.jsonl",
+    "bytes": 7213,
+    "sha256": "d05792cf556162c80501fdaf6f13ff945a1453bd1e58be1c3556fdfd32e1664a",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 210,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/210.jsonl",
+    "bytes": 14475,
+    "sha256": "8732260f3c653cfdb704e72bcb588b02ae59d6c0aeeb4e00d8bc24e320b17f2f",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 211,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/211.jsonl",
+    "bytes": 12871,
+    "sha256": "218e925a77de14ae35f96fc76f8ce0bd10c9c9c9448fe7257a768a2593013ac8",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 212,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/212.jsonl",
+    "bytes": 17080,
+    "sha256": "3dd1bffcd72c5901ed3c63686f490728d9ce142bf1fcf43dfd949d5d61191bf9",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 213,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/213.jsonl",
+    "bytes": 18051,
+    "sha256": "b07d2e466bfa961a43a81d5de679b23a6af8e62a585371a9981f9b33c50e13ae",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 214,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/214.jsonl",
+    "bytes": 19630,
+    "sha256": "3c5478b473d3d0a0f08d3877db56eceab35ba8abcf8f562955b9fbca3525162f",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 215,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/215.jsonl",
+    "bytes": 4795,
+    "sha256": "19b85fc30bd30780526a297648e7224e00584c1947a6034c7cd1f15c5cc556fb",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 216,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/216.jsonl",
+    "bytes": 4554,
+    "sha256": "effd87028cf117c7912ca05b332e561edb65ba72518c06a58b464253c0f6aa77",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 217,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/217.jsonl",
+    "bytes": 4703,
+    "sha256": "0dedf3889de13e36c4c764c63a2178c6851d88431f148a5fc88dc5d7196d51d9",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 218,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/218.jsonl",
+    "bytes": 13028,
+    "sha256": "e1368d831cc95199c2176e347790fc4f2442dfaf97266916b3c8e99ca2372c82",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 219,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/219.jsonl",
+    "bytes": 17080,
+    "sha256": "f95619bc720728ecc6f49b22c6c6a1b061800e60a241df453a8b79e1fbb1050a",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 220,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/220.jsonl",
+    "bytes": 4490,
+    "sha256": "dc99bb5d1b322522457423298ced92771cddda8e6e674f411ccd02161c349116",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 221,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/221.jsonl",
+    "bytes": 37126,
+    "sha256": "90074519894683aef369e70d3ea2a86bfde2e30f8a8d5a3a64506ae76aecb023",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 222,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/222.jsonl",
+    "bytes": 7368,
+    "sha256": "172beccb4451fc16fe6f9b7c6aafbe26a3ba1c799dcf54f4c40ed1216ff58b80",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 223,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/223.jsonl",
+    "bytes": 10056,
+    "sha256": "d3d7fddd3e9934831c32ca30202a53715e9113c659c9f64646a1ca86f554a4ae",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 224,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/224.jsonl",
+    "bytes": 17713,
+    "sha256": "8367fca9a0b454ddf251cf7ce8b20c22ba4ec91e3797a4d76fbeb1b723da63d4",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 225,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/225.jsonl",
+    "bytes": 18604,
+    "sha256": "f6174f5bd4599243f32d142822d848901a1125f43d475cd9e8a519361681c363",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 226,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/226.jsonl",
+    "bytes": 36885,
+    "sha256": "2ee004a782bdc6932d84f0cc53ed42b5ef9a5bef71bd7ac8256e258547e6870a",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 227,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/227.jsonl",
+    "bytes": 17654,
+    "sha256": "d316aca2fb601585ea48e62e767aeb508325dded7e6566ccc0eeac15f19c48c9",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 228,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/228.jsonl",
+    "bytes": 9093,
+    "sha256": "580bb9f7fafc5c028fe18d4683774ff4bfb6e140282de3265c39f2d2a8124836",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 229,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/229.jsonl",
+    "bytes": 4654,
+    "sha256": "a5c1d940ccecfc1f1456ad0488d59c040be66e97bbaa3b2ecf15de64dc0e9779",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 230,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/230.jsonl",
+    "bytes": 5129,
+    "sha256": "ec9324bacd35b6e81fa60db21a6ee13ae0af312bb59520d8daee3939218c4995",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 231,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/231.jsonl",
+    "bytes": 4747,
+    "sha256": "4678a62bcb66b43dec21bed604c68e84f62322bc967f875edee9df9e7236c775",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 232,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/232.jsonl",
+    "bytes": 17010,
+    "sha256": "5656589d7337ab2d3af78dc1a1f37a76a077f8db74a9fb05b20d7834c5bb1bfc",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 233,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/233.jsonl",
+    "bytes": 4575,
+    "sha256": "83869b4a2f7b724f05beaed5c62f6c78ec753e90fcfb9355d328adf67149f4f6",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 234,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/234.jsonl",
+    "bytes": 37380,
+    "sha256": "db6136de0607710d3199dc172d7fdb461c00451af8ff1e915746ebb8242d0d81",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 235,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/235.jsonl",
+    "bytes": 20208,
+    "sha256": "14cccc27439d0f9874ba7c1e9c5d9bc16d8ffb12b4805375fd632cff84596d22",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 236,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/236.jsonl",
+    "bytes": 16900,
+    "sha256": "f1110c49025a890a6043d80e2b19f32ac6894e48396f071ed58ab1caa8f4daab",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 237,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/237.jsonl",
+    "bytes": 14361,
+    "sha256": "b5d4f7eeeea0201b54448d680203fe05dadcde5b034368df5e26539bb9a1b47a",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 238,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/238.jsonl",
+    "bytes": 16873,
+    "sha256": "0ccc1718bf884610bc2475d57a73a2a0c9af67f422c39c80cba3b201af0c2ef5",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 239,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/239.jsonl",
+    "bytes": 14798,
+    "sha256": "a5d2216c43aac539479e596ea379fa207690e0c0cf0008e80fbf4e45dcdf17b4",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 240,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/240.jsonl",
+    "bytes": 12714,
+    "sha256": "ff11f30a3c082f6e4a64d74bb230a4d2e396ed4b94294e69ce91a5375288d88c",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 241,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/241.jsonl",
+    "bytes": 17077,
+    "sha256": "7b3ad58c4a68b48f29a5628059e404197180e54b74c9dab9d029ee6619c9f55d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 242,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/242.jsonl",
+    "bytes": 5044,
+    "sha256": "a1463f4e1ebf98ed62b33420e23e61f28b9ecf081d19b92580fdf9e590488bc9",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 243,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/243.jsonl",
+    "bytes": 4569,
+    "sha256": "7e4319ddcca5c0df226eab337f9a8c0cba2f330432647a9e0b794916440cf259",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 244,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/244.jsonl",
+    "bytes": 4517,
+    "sha256": "c1adcb0c23ac3c482da11a2d8784bda6116321008421939b1bdee3e7afe5f1ae",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 245,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/245.jsonl",
+    "bytes": 19995,
+    "sha256": "b0b559695341700a57bce566a9b3486d9ac5c64876a85c42d14c97dc2d090e87",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 246,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/246.jsonl",
+    "bytes": 12020,
+    "sha256": "730afd902c9ebc04ab2072838ba33d17a09b8fcaeaa1e8af9814451ff5d8e1c8",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 247,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/247.jsonl",
+    "bytes": 20539,
+    "sha256": "50a5deb81f81d94296d005c08c6796e75f636dec497961699369158bcbb9805d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 248,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/248.jsonl",
+    "bytes": 13741,
+    "sha256": "0e797d9b0c6ee9f3c4939bd0a85efccf35df8a2de08b4c7a954308f2a1033a35",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 249,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/249.jsonl",
+    "bytes": 18486,
+    "sha256": "a213a2b5b4856793bc342e0f52b1fa028222863006b6ea30bf7cecb4b7914c3b",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 250,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/250.jsonl",
+    "bytes": 17786,
+    "sha256": "ab523e6e321be6aba1b5e589a6477c3c05b72a13d9ec1a882f0236018fde58b8",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 251,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/251.jsonl",
+    "bytes": 13355,
+    "sha256": "c9095a83fda6e40cdb19a7e9768d88c0e1650ee70f0000738c0be4d5e66551f7",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 252,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/252.jsonl",
+    "bytes": 19918,
+    "sha256": "977c5f6ba7d267b97f31c430f902d5a91b402680da7b5260bfb49e134f48c60b",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 253,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/253.jsonl",
+    "bytes": 17032,
+    "sha256": "9bf4ab3815bc48267e2f54de27f0c5cf0bcd3b12a07c058e097cf487865ef2d7",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 254,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/254.jsonl",
+    "bytes": 13537,
+    "sha256": "11fb90d85d011babbfc290e89d5d2b948a2452e26b3e7b0dfc951ff63347515f",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 255,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/255.jsonl",
+    "bytes": 4478,
+    "sha256": "72813ff04b86aa24b3ab13bfadfebf1e98f4c0939b64feb9a5c455ce4fd41db8",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 256,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/256.jsonl",
+    "bytes": 18175,
+    "sha256": "731ffb8d11b7354fe9881c1433d4b5ff1f8da3f490076e10f40d3bf3a0f2d956",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 257,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/257.jsonl",
+    "bytes": 17729,
+    "sha256": "203d565856781a67bd58c8dab1bfc2a0d69292a0126f73870043d695c4e495da",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 258,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/258.jsonl",
+    "bytes": 16961,
+    "sha256": "0d3a25ad1b61901101f557980a9a1393a28a63c397217c65508d4f1a06b3bbd1",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 259,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/259.jsonl",
+    "bytes": 17874,
+    "sha256": "b660778f821e28ccaf833bc7ab1ac987f00b8e8abc7e0af415ef6b6c77e262f0",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 260,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/260.jsonl",
+    "bytes": 17812,
+    "sha256": "219429d98286a43e570d567c836ac7cdc2eb02908c36d668e837605d37742e99",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 261,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/261.jsonl",
+    "bytes": 20420,
+    "sha256": "763a853691fd8d488b3ac894906517827a024ac76bebe1abd37104dc9ba07e26",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 262,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/262.jsonl",
+    "bytes": 19740,
+    "sha256": "211fa7db7ae16cc3e19d2a862924bed2beac42b2eabffaff7e7d96c14c3f4aac",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 263,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/263.jsonl",
+    "bytes": 11799,
+    "sha256": "0574a1ca61f30b4938e4d8262a0f950ed38df82988f4b837043b28e06d558a68",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 264,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/264.jsonl",
+    "bytes": 17119,
+    "sha256": "9f8b5b3f02f51d0519eebca4a85d2c9495b5796705f80be932214f499f1f6c60",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 265,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/265.jsonl",
+    "bytes": 4770,
+    "sha256": "a86ee52afc21a3980a4afa0f60d3046887534ef08122b9e1faa5bcb8865f99bc",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 266,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/266.jsonl",
+    "bytes": 17208,
+    "sha256": "5b0f217d946978f285f776b1179183eb7b1c7581bc5169897a214aab2a7d988f",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 267,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/267.jsonl",
+    "bytes": 5066,
+    "sha256": "61a6a94f78e6ee59d631ff995659d6cb91070085ff855af40f872c11b3909461",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 268,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/268.jsonl",
+    "bytes": 13587,
+    "sha256": "3e82ed476e7334c7ef0875b2c34edb7f0770671887d303c35ab0ed39b806cf0d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 269,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/269.jsonl",
+    "bytes": 41498,
+    "sha256": "8fbde62892e6ffc440f500bb84bbac27e4be8c005b21b792733c8f833d602a80",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 270,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/270.jsonl",
+    "bytes": 9674,
+    "sha256": "9c8be7836e746961ab4cfbe80b031ac1db79c245edb4501269dc48fbb91317db",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 271,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/271.jsonl",
+    "bytes": 16741,
+    "sha256": "5f3402e77507f5a7c5bd456b8cfb1f061ac0d474d7f60138a170561e59dbc821",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 272,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/272.jsonl",
+    "bytes": 20248,
+    "sha256": "8dce2da2773edfb77c3f26f0641b963f6d16e5124f93704656119f5389634c92",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 273,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/273.jsonl",
+    "bytes": 17374,
+    "sha256": "668a6866de56fb560354055b470d13cb2dee3f72ccc565eb3f65513f2569bc99",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 274,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/274.jsonl",
+    "bytes": 22198,
+    "sha256": "81305b0c29be59057d75748e4a0e8bd33ec3c16f1efb104a9c3dbd1c4a41569c",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 275,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/275.jsonl",
+    "bytes": 11505,
+    "sha256": "8b2d83f7e862de7f9ccc1fdab7eaf02de65ce1952491766cdda3ccf2684bba19",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 276,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/276.jsonl",
+    "bytes": 17128,
+    "sha256": "539bcf4b4ac9729a2e8ed3b02be5a894143156065220f5bf4fdd605d9573036a",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 277,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/277.jsonl",
+    "bytes": 17480,
+    "sha256": "2f40a33b78d0718905a7d9d06a8844cda3545e7722170313b5b27462ee3f6cbd",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 278,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/278.jsonl",
+    "bytes": 15183,
+    "sha256": "b6a590a84634c8b89e202746561d0f0ca93656ccd108d918a16a203a0782242a",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 279,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/279.jsonl",
+    "bytes": 17679,
+    "sha256": "36906f9cdb5f862221e03aa9a36bdcfac935e231b6b0920e2f92f1f6f7e5b4bd",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 280,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/280.jsonl",
+    "bytes": 20367,
+    "sha256": "135ad41fa06c9ddc05990fdafa0b92a2636286e8b299b9d412ac6d8231751436",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 281,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/281.jsonl",
+    "bytes": 19542,
+    "sha256": "418dceb1a8f1ec5eb3e33e6b28c4f7d40eedd986ad158f244a90e30727f36c03",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 282,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/282.jsonl",
+    "bytes": 17661,
+    "sha256": "cad757b7fa34fb558257a1382d6f5d9ebe0573e9015e2f41b12e9e1782f1ac9b",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 283,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/283.jsonl",
+    "bytes": 17158,
+    "sha256": "a2c7f1fd39a09606a24e71e38615cf3f2166116dbbef269bd3e1b5510e25abc9",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 284,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/284.jsonl",
+    "bytes": 20070,
+    "sha256": "6d35d13621fd9caaf8a54418659c064d566a42fa484a69b68c06df5629703c4c",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 285,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/285.jsonl",
+    "bytes": 17350,
+    "sha256": "9cddc8e5c23629188dd452cc12199e78405f43df43393a98d2f3678485aa8199",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 286,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/286.jsonl",
+    "bytes": 14434,
+    "sha256": "cfa0d5c0c78b6db77c4b660164364a3c7e56e5bbc93aedd8754f06bb79c86efe",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 287,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/287.jsonl",
+    "bytes": 4649,
+    "sha256": "3af7430a58bc3fe00980c073e2eb157c704268ed822ed8ec34fd024d09602750",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 288,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/288.jsonl",
+    "bytes": 41929,
+    "sha256": "a2909894bdd7d3f505b8722a8d31990873e638334439985d9922f20eca459718",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 289,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/289.jsonl",
+    "bytes": 17278,
+    "sha256": "43449313eb146879e70a1b788bdf6e4e4e8aef1522b89799ab453514a7df54cf",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 290,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/290.jsonl",
+    "bytes": 23395,
+    "sha256": "a085c7090c38974f27796e409c83939a349800f2770e823794af64083d945c99",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 291,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/291.jsonl",
+    "bytes": 20720,
+    "sha256": "0b200b0354291647202497e158a8b6b59f311fe20e602e3207a8feb7c1c16cef",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 292,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/292.jsonl",
+    "bytes": 34412,
+    "sha256": "8b336795800efe071a64966491eb32e0fc01f1ddaa80a038cb2a5422a994212d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 293,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/293.jsonl",
+    "bytes": 17584,
+    "sha256": "d64d0c1a65c04a78099dd0f3d41a21684fa3112ec331e6f40f5bf18147140097",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 294,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/294.jsonl",
+    "bytes": 7226,
+    "sha256": "9276995ee26241b8a91bf79712ba17dab240e866054d5309a57d95e2f01fbe13",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 295,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/295.jsonl",
+    "bytes": 13197,
+    "sha256": "aa3444b75d6dad2b0340272d0c1090192efb2d7f095650d65256fa29174ebedf",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 296,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/296.jsonl",
+    "bytes": 13014,
+    "sha256": "7e76eb015cfea8bac70c488bec3ea9deff80cb483d5f40f6ba7180a18e193921",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 297,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/297.jsonl",
+    "bytes": 20238,
+    "sha256": "c5a9099c154a93932298ebdab2658abb03aa43adf51c386da16f50fca408a795",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 298,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/298.jsonl",
+    "bytes": 12982,
+    "sha256": "93d40e49c685bf86f4a5aaa495e7ad689e2a9b411e50c10190fe4939235e6730",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 299,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/299.jsonl",
+    "bytes": 11049,
+    "sha256": "8312ae7c09d3992b8af833956628e780fb39c3d5c50bd08d93b3e9a0db1e7310",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 300,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/300.jsonl",
+    "bytes": 7272,
+    "sha256": "620ed73d02025f8520bdcd95c6c5c39054aa1f5cbcc1af4dd47cf965e1eefcaa",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 301,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/301.jsonl",
+    "bytes": 20500,
+    "sha256": "92e4a4c616acaa3441a3f8ccee96aaada519be3a161ea4577c1955bf908a7c0a",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 302,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/302.jsonl",
+    "bytes": 4510,
+    "sha256": "a362b3fe508c9b6e6c07d97e5a79a55a21330d4425b29f464d9c8cfdc652761c",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 303,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/303.jsonl",
+    "bytes": 13916,
+    "sha256": "aea861b167830fe9818b264288b618c2179f5fb6c99ca5d5922b1c76756f3909",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 304,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/304.jsonl",
+    "bytes": 4478,
+    "sha256": "aa7ba97b67c05af4933ac8dd0dd256d766a750741ebf9d9d8b0a02fb272d5d2d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 305,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/305.jsonl",
+    "bytes": 17156,
+    "sha256": "f5e3ab99ccb030aa61061d7b986a2fb68847ba5ca453e3d4d4dfe1bdd716c490",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 306,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/306.jsonl",
+    "bytes": 17107,
+    "sha256": "cc4a0d7d3a53a12112f5fbe682fc7107b4d1f2bbf85f43fe7b61c5a59e83bd47",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 307,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/307.jsonl",
+    "bytes": 4588,
+    "sha256": "c0c830f3c17363643a4653391ed23da4a79632c13e906cc5b6934c8d0780d436",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 308,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/308.jsonl",
+    "bytes": 16972,
+    "sha256": "0fefbf386ba28c798499840df66efaf08ea3b8bda39e007a249635acda9c435e",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 309,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/309.jsonl",
+    "bytes": 16846,
+    "sha256": "68193b1850750a6c9d2fe93b6126f9653a098bf019cf2ce84c3c3fada46287ac",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 310,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/310.jsonl",
+    "bytes": 20081,
+    "sha256": "a64369335ef15c124a8020074a521b63b3cb184a9a360b72a90fd24b4c8e513f",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 311,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/311.jsonl",
+    "bytes": 17479,
+    "sha256": "dead40be7a27ea09a3eecde15725f380b362e3ac3d9575d715cca415c3301271",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 312,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/312.jsonl",
+    "bytes": 4622,
+    "sha256": "18d86ef2bc7f5fdd9d8af6e510715e85c95c83a5320f2db3f9d6693e0ed379e1",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 313,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/313.jsonl",
+    "bytes": 20576,
+    "sha256": "2d4bebfdb6db33dd3a55602b55c41e65bb0dac899aea7dca6bb552e608b6c29c",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 314,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/314.jsonl",
+    "bytes": 5524,
+    "sha256": "67eeaa08190d4dbed2ddfe244fee41c567e71b8cab38d8ae703501ad61e03eb4",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 315,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/315.jsonl",
+    "bytes": 4513,
+    "sha256": "ac636fb1b2dffa9803c189e6d864cd72a6d999e6933bb28f90bbc5ff4182ce85",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 316,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/316.jsonl",
+    "bytes": 17280,
+    "sha256": "691fa028aa77d4c7f442f3e7d7034ef08b790435f7d2c97e1b99a256c8a59aa2",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 317,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/317.jsonl",
+    "bytes": 37195,
+    "sha256": "0e7d075f5cdd4008981d707cb8b99e7fadc431eb81b1a262da315a6256099c51",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 318,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/318.jsonl",
+    "bytes": 20396,
+    "sha256": "8655b279a775eb2fbae306800ef0e355b00eed84b891461551a4ef1250fe16dc",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 319,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/319.jsonl",
+    "bytes": 36566,
+    "sha256": "b22c0d1e772b94139390c64db72e4a77f6ce668146be416714bd9218ddab4b27",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 320,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/320.jsonl",
+    "bytes": 17207,
+    "sha256": "7f169f37a364eaaf95dd1982899a0b7e64265815151e13734e21eb51bc341244",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 321,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/321.jsonl",
+    "bytes": 20865,
+    "sha256": "0eaedb64632cfad3f266b06ffd66879df115d872c022c3b62f07aef6b22b2cc5",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 322,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/322.jsonl",
+    "bytes": 17101,
+    "sha256": "9dccebd95ddf8b296b455f68c74f416211e293791117b255ee8ddd7d9369c3b2",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 323,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/323.jsonl",
+    "bytes": 16864,
+    "sha256": "94069c1bc0c7b19051f2fa008cbe754cdd009140a00ff526cdebcbbcf52f513a",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 324,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/324.jsonl",
+    "bytes": 4706,
+    "sha256": "e66c9b5abe866da97ffa0fd8dafbe96e5f8b28075ff72071e915b9bbcabc9788",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 325,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/325.jsonl",
+    "bytes": 7726,
+    "sha256": "ee08d3d6e70a04e26127a3eaf4a8ddef5efba012e315bb45d2869d967e522161",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 326,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/326.jsonl",
+    "bytes": 17546,
+    "sha256": "4acb088011525fac9b3d27cf438060182897db4caad34ac51f56328f626ea143",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 327,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/327.jsonl",
+    "bytes": 13807,
+    "sha256": "64e0dc40afde0ed288acb8e0cc0018be296f41d7689c63d8699cb566f0c54962",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 328,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/328.jsonl",
+    "bytes": 4598,
+    "sha256": "97884dfe6d83ce2f0cb907a4cacd9a23af53a6b4adc979aee843736379971032",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 329,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/329.jsonl",
+    "bytes": 19873,
+    "sha256": "47d086991e266d1a341cee7ae676e7900fbfb91eefb9cca0522c6af39dc2ead2",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 330,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/330.jsonl",
+    "bytes": 4721,
+    "sha256": "db6b7a713cc5abb14a6f25eb863bbc2605fbf80e50ef4425cb13b23cd4d2168f",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 331,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/331.jsonl",
+    "bytes": 18518,
+    "sha256": "d141c80f50677bc10725443fc4043b11e3e58d62f5b6c152ff3cddaddac0d618",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 332,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/332.jsonl",
+    "bytes": 34611,
+    "sha256": "dfacbde84b48bd3f148940c0da730edbd0faae3b47b602fde4dbec6e05d88f5e",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 333,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/333.jsonl",
+    "bytes": 41486,
+    "sha256": "cd3f5a014d58c957334cc4ca73cd3e4079873963c718de3fd07df3f997237898",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 334,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/334.jsonl",
+    "bytes": 19586,
+    "sha256": "e6cfe6835f2557ac612b37943636137854798b3c0a5646f167708eea39fa5d1e",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 335,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/335.jsonl",
+    "bytes": 13795,
+    "sha256": "526bea0f7703df792747854be5d73e45de95a7d322105f5431ec56c0b5174469",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 336,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/336.jsonl",
+    "bytes": 37149,
+    "sha256": "a0f802e75262769187f77ff82245aefd008ba6c113733c6307bbb346e143369e",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 337,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/337.jsonl",
+    "bytes": 19961,
+    "sha256": "8b24e35e32a6fb1257ec22152cc1ee156e12adfabe0e6e73004056ec8c4ac7db",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 338,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/338.jsonl",
+    "bytes": 18488,
+    "sha256": "dcc5984c49515df1f0486a516be877ceaa11d0ee91c0057a9a0e74333636fdd7",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 339,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/339.jsonl",
+    "bytes": 20240,
+    "sha256": "3372c5eb62220a17b7ddcb30d54d8f8e7b30fe8b1771955f6d9c0e11f1b0dbca",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 340,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/340.jsonl",
+    "bytes": 17059,
+    "sha256": "bb5b05777b6c7e667a0e02bfcc33ce9b020b19093f7eeb7d9f7f0cc25e155f06",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 341,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/341.jsonl",
+    "bytes": 9989,
+    "sha256": "ac16635659062e40f82a4c3bea3a90add98f036671983aaa8cec1a3a02574985",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 342,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/342.jsonl",
+    "bytes": 4551,
+    "sha256": "a6a458dca9190482d99fd9e3f63297865dd2607cbc655a87660e8fe4b27adba0",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 343,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/343.jsonl",
+    "bytes": 7499,
+    "sha256": "3c7f6e9a7acf75858815bf3d19a9fca40f285b6fc12401aa58717fd238a326f0",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 344,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/344.jsonl",
+    "bytes": 31019,
+    "sha256": "c304f7cc590918f91744a6c164596ab0605f3a19c85440af3b73b6ff726b64f9",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 345,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/345.jsonl",
+    "bytes": 4799,
+    "sha256": "ad0b2b919bfc0b63001149bb8bb4a462f12d294ba275866fb4b6e9a7e0de9ee2",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 346,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/346.jsonl",
+    "bytes": 4692,
+    "sha256": "a645b9eb69f47045e50919462a6b51ab8a37cabbaa026bd64d1ed9def7c4580f",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 347,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/347.jsonl",
+    "bytes": 12251,
+    "sha256": "9391c039c3f1d3375b1a35d7e0dd072a847952ca0e7e5a0d793390a125dfd283",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 348,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/348.jsonl",
+    "bytes": 17125,
+    "sha256": "f9d247355e12f86199e1d843e9f11d76de54e58cd9110f071d248c76875215b0",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 349,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/349.jsonl",
+    "bytes": 17440,
+    "sha256": "a495ddd977f2b68e67a6110582e54f975c87a16869c8dc38e58dd3981d946128",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 350,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/350.jsonl",
+    "bytes": 4906,
+    "sha256": "884ba94fd2963bdfbfd6bfe6a1778640e9bf08bd1264225582ac9efbd8c66c78",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 351,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/351.jsonl",
+    "bytes": 4563,
+    "sha256": "55eedf34b56b6fa84ee31e0c34cccc4309631a97f4e32f74e764520831198716",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 352,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/352.jsonl",
+    "bytes": 17575,
+    "sha256": "2e8997fcca1938bb0562aeef8486e30367087f56fd0ca69e9ae8ef23488a5d21",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 353,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/353.jsonl",
+    "bytes": 17374,
+    "sha256": "cba1c1282b4a26b757aeff20d92ddd46b030d521bfd50f469efc214b5ef17dc9",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 354,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/354.jsonl",
+    "bytes": 34594,
+    "sha256": "2c80753a074223f846e170a19b820fb633dcfa9eec8ad96ab45469c1683a6338",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 355,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/355.jsonl",
+    "bytes": 36922,
+    "sha256": "ff84c2465adb8e7d4c318b20289fdceb3f86950ad10d36f4e1d4b6e69149760d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 356,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/356.jsonl",
+    "bytes": 17940,
+    "sha256": "01d9a9c138b83c28d967a31ab83e97a3e69fbfab98341c1128a8b375e999430e",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 357,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/357.jsonl",
+    "bytes": 17296,
+    "sha256": "ab6450637b442414ceb0ed621eaeeea3b0d33016475470c184b0957208b2f94f",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 358,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/358.jsonl",
+    "bytes": 9133,
+    "sha256": "5aba7d70c2c18c29a0e44dfa168b1b459b391092ebd8cd62bdb9c485a3aac915",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 359,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/359.jsonl",
+    "bytes": 4616,
+    "sha256": "fd5876ec3597a3bf90c09d4d4d335e700905d095f29f2c4c13c3f39d90781872",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 360,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/360.jsonl",
+    "bytes": 17797,
+    "sha256": "c50c9ff2c47e7d7c55fe63c7421fed5099c71d8a9846264bfaa2a1f03273b050",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 361,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/361.jsonl",
+    "bytes": 19767,
+    "sha256": "267cfce2c446738f94473c9b0d1681f96a13eae19b76c6c8bb42e4cbe16d426c",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 362,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/362.jsonl",
+    "bytes": 13622,
+    "sha256": "becbb1ba19c06237a959653c1a9f857128e69ec09b4e46df275f35b42bb2d294",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 363,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/363.jsonl",
+    "bytes": 16990,
+    "sha256": "dee90df5a0ecdffd4ade1486d704030d4fba5bf5af0927c2a933289266bc4c7e",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 364,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/364.jsonl",
+    "bytes": 17641,
+    "sha256": "6237a13773a2cdcd38e1146f07b45fdf681d99bf364fe40e66a41b7159a29abe",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 365,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/365.jsonl",
+    "bytes": 18272,
+    "sha256": "851cbbee1778739fcd057e8765f42a7f7071b0e4735ef118322c601b5849f898",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 366,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/366.jsonl",
+    "bytes": 20769,
+    "sha256": "ca74a5b8d47f081cfdbe8b9c4868eb6e0547a86ce23b8453d8de3c1ca67a9f45",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 367,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/367.jsonl",
+    "bytes": 20230,
+    "sha256": "4e32fe23dafe5137ccd60a48efc40496ffb38c546b50abcd54ea28f370a0f018",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 368,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/368.jsonl",
+    "bytes": 19617,
+    "sha256": "179764400872d0ec2a2f025f349578dddfc1255f2dd65227a525b1414b68aeea",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 369,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/369.jsonl",
+    "bytes": 17422,
+    "sha256": "a3a321cb872bf15e71e0b79d1c8f6ff31bd7b7c68948e607db8deb716422540d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 370,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/370.jsonl",
+    "bytes": 17179,
+    "sha256": "99b3a1437452350dac5eb9208d71ac25482846cd135e2e55d2ba5b3af7bb20e7",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 371,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/371.jsonl",
+    "bytes": 19857,
+    "sha256": "2b3a5ab2eb9e975385fc270d7070db66bc4c74de4b01049a3d89da4dfd6826d5",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 372,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/372.jsonl",
+    "bytes": 17553,
+    "sha256": "ebf14bde6de646ffcc02bfd92e06fff483f7ac807935f8fdf64f12547d66be5a",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 373,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/373.jsonl",
+    "bytes": 33353,
+    "sha256": "c03ca8066ad5781f8538ab8541a0c7869facefe6c7c31c6a70713807544681fd",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 374,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/374.jsonl",
+    "bytes": 11587,
+    "sha256": "7fadb59777acd508f4f68d3c15ba8e9e02933ca5e31c3057f84399cab7cdbac3",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 375,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/375.jsonl",
+    "bytes": 4720,
+    "sha256": "44be8bdafb4e1c733c5fd21b0df13287889b944760467949c22f256bfa478d06",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 376,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/376.jsonl",
+    "bytes": 15221,
+    "sha256": "1e1e22a30cd1db85e787315c2b8e50dd85d615845b405264740f83ae1e3b82c0",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 377,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/377.jsonl",
+    "bytes": 20102,
+    "sha256": "9ac33206f2cab915cb20a82fd4ccd47ea0085d88c3546525c653fb75a1c5e4e1",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 378,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/378.jsonl",
+    "bytes": 20496,
+    "sha256": "7faf2dd2f4e7dd1ece68771ce28793862d11420c322f1b3936076d4cf1efb5b7",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 379,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/379.jsonl",
+    "bytes": 4906,
+    "sha256": "1e0a581189d92e10fde04dd33d40b3c1b587eed378e582a5d89c2f63d36dc593",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 380,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/380.jsonl",
+    "bytes": 20342,
+    "sha256": "9f58f7a492e542be35bfcc127678154097d3aa573bc83feda68ccd277fe5d626",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 381,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/381.jsonl",
+    "bytes": 5199,
+    "sha256": "aace77f5113177e35d1d1013381215fcd7e61cee88fcb58ed86597213c6125b2",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 382,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/382.jsonl",
+    "bytes": 13082,
+    "sha256": "d96e3564f0a913ce826e600f440ad2231460b5bd1998c3d7c8bbb5ce4067f036",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 383,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/383.jsonl",
+    "bytes": 4715,
+    "sha256": "4b683ed73ec3c6b9fe451adda5bdccbcfee9f7729de29a5236a8f68ce12445f0",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 384,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/384.jsonl",
+    "bytes": 66078,
+    "sha256": "80f8ccd6670cb28adfce30cf715f1859db1adeab8570b4fe085949399c6e3a7f",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 385,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/385.jsonl",
+    "bytes": 4631,
+    "sha256": "3c2298e9dc1bf69178546fb1e3a9841d9a14c371ccf1b3dcb7e0cfdf598e407b",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 386,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/386.jsonl",
+    "bytes": 4577,
+    "sha256": "1bbde7b5a92eec7b06624358e39f38c58d2bfd390fce9de627e4319cc629938b",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 387,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/387.jsonl",
+    "bytes": 4775,
+    "sha256": "d9f20f5029e61e1b6eadc57e0ee83786bb090dc1d08c2acec5945f36a95ce59a",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 388,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/388.jsonl",
+    "bytes": 4959,
+    "sha256": "b0ce5e27f04dbdb34bd00cb71e27dc2ebbb9e22124d65087bbee88127da89600",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 389,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/389.jsonl",
+    "bytes": 4828,
+    "sha256": "7e383849170635f8ac067f683d5b4f5ba54c1d79ca2c066fb52064345ffbf809",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 390,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/390.jsonl",
+    "bytes": 76853,
+    "sha256": "75382efea83680cda5a959423df96ed09e5d0384f40b6947ebfc457a840aacf1",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 391,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/391.jsonl",
+    "bytes": 4770,
+    "sha256": "79e3adeead2045607640747c795192eff0ca7b4041473d49da8157d474e2bfbf",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 392,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/392.jsonl",
+    "bytes": 4629,
+    "sha256": "17f271bb7a25a3157b356e2e1865bb5e764032403b6527502fac8254f4ff59cb",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 393,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/393.jsonl",
+    "bytes": 10021,
+    "sha256": "b797b637ca677bb875eb3b919301dc441f4bc50bf977959aba396c0b241cdee6",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 394,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/394.jsonl",
+    "bytes": 4817,
+    "sha256": "0cebcd16c29bc406bc67ab317510c65184a1d44313c33ac4d772e8989914f510",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 395,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/395.jsonl",
+    "bytes": 4906,
+    "sha256": "7c6837f05d2442110fd450c83807ad9a19895c6d04e774ca8b7a91649dee0015",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 396,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/396.jsonl",
+    "bytes": 4499,
+    "sha256": "d29df7557d2fd4c2a66d33ac26376ed0e6f459a76848c1695b4fc3a12636a1b2",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 397,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/397.jsonl",
+    "bytes": 4647,
+    "sha256": "5de4d3c1ffa77d41047be3875f6aa15fa8fd8c051ad492f295e59fee8f9ac142",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 398,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/398.jsonl",
+    "bytes": 4717,
+    "sha256": "dc63b69d9f7eadc16ea0b355d53ccfcafd7c4923e0d19e9ed3e4efb7391a8a92",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 399,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/399.jsonl",
+    "bytes": 40902,
+    "sha256": "8d6e50b2518903620de3adb4455ff3eeb4c522cef68ee2c54e042ee7657f4284",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 400,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/400.jsonl",
+    "bytes": 4611,
+    "sha256": "3e77af473ac4fc4f0ad7967fff13068533f2093edad9eb04299e37e95acce2da",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 401,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/401.jsonl",
+    "bytes": 4723,
+    "sha256": "2a8e2e9ed9ad4336a1d5d4830a17c654bc5c6dbba20d9773bec1815d12e5b2ea",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 402,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/402.jsonl",
+    "bytes": 8560,
+    "sha256": "fcfecdbaaab421746306aa7126d9fabbc8807b158c417c6585cda6b63c369c38",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 403,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/403.jsonl",
+    "bytes": 19900,
+    "sha256": "2c5d08c21e2b0efe440456b9df9b6414a5084a3efd711e2894dcc5e9d327ac20",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 404,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/404.jsonl",
+    "bytes": 19099,
+    "sha256": "42f9322fd9c7040d32fffa9986616144f7be203adcd2b09e177cb6334a8ba51c",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 405,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/405.jsonl",
+    "bytes": 8876,
+    "sha256": "80260c597c494828f31a1a77beeae041d7857e21e79915a9f6367b58a495d125",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 406,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/406.jsonl",
+    "bytes": 19093,
+    "sha256": "bb908f0dfc84a4b4850a617f2a489084e0700d6be05c0729e610918943b8684b",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 407,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/407.jsonl",
+    "bytes": 48638,
+    "sha256": "3f5338fa283a9aad40c97a2bc54f53c11ecb33830030b44dd21694440c78e0af",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 408,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/408.jsonl",
+    "bytes": 19327,
+    "sha256": "ed925a86261d8b9a5dbcdec06c4b98f746f07440c684f920a21738971e74286d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 409,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/409.jsonl",
+    "bytes": 19250,
+    "sha256": "d3ef332412fe906c1e69a0a87a4f3bc40a60334146def7b56d8770dfb3903c2f",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 410,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/410.jsonl",
+    "bytes": 19223,
+    "sha256": "8ccd64edbee9ef6de79ed1ca3c8c22aa9effa32f6a3d8d039c70b51ae46aa9f8",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 411,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/411.jsonl",
+    "bytes": 19242,
+    "sha256": "afe499ffb5c3675a8f668cf9d66043b1b80eec634a0681644ce327aaf66fc705",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 412,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/412.jsonl",
+    "bytes": 19252,
+    "sha256": "4e2ef1aabf4f25965e1b80f05225069d50f9f15fb0c1fabf92b2f6670fbe9a14",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 413,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/413.jsonl",
+    "bytes": 19132,
+    "sha256": "fda02977d1704e76908e9084324f814ee1937872e49e18a5e3dcde093d01a986",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 414,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/414.jsonl",
+    "bytes": 19098,
+    "sha256": "898c7ba6222ff3e7f9c3f7faa341fb1e8aef17856c5028a5bba23ccf1611872d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 415,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/415.jsonl",
+    "bytes": 19144,
+    "sha256": "70b38308a522cd7862e3c6f87d08bdcc123547725b6eeed78b298b1f4f949c83",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 416,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/416.jsonl",
+    "bytes": 19252,
+    "sha256": "e6c77cf1c0db3cc03f6bf47d0a399e707ba29f5e3e00fd5c920ced16ccb630ec",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 417,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/417.jsonl",
+    "bytes": 19147,
+    "sha256": "63a7d488827b6c77ec2a7c3a0f130019e7a93b53b7ae7a3ed26d0572dd7d5535",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 418,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/418.jsonl",
+    "bytes": 19134,
+    "sha256": "b78292af81b7f6f085b80c49294a428c2e67df2484f6b1641d920c03043a1535",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 419,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/419.jsonl",
+    "bytes": 19150,
+    "sha256": "c777b542d138cbe50ab95b566789e6bbed4d806f51128aae1d5817dc19eb6893",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 420,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/420.jsonl",
+    "bytes": 19065,
+    "sha256": "193afa9f016aed640c1eedd4042f060b03171ffb6690900dec080b11546ad84d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 421,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/421.jsonl",
+    "bytes": 35350,
+    "sha256": "a790cc172958a41030eb80c415b1275795008830ce5006efd3b5341b8267b5fc",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 422,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/422.jsonl",
+    "bytes": 6416,
+    "sha256": "1aaed454000c768142f2fbb4ff43ddd3935dc2833ad7a90559e60e0c224c3708",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 423,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/423.jsonl",
+    "bytes": 6502,
+    "sha256": "b6373b510e7af8883ead7d98f60373eaf4fc335f2153fa253f12bb298fe17525",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 424,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/424.jsonl",
+    "bytes": 6499,
+    "sha256": "b62a20c10a134e7c332483a2b13cdce3ec785fc25a94f759bc9e314d3503d1b7",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 425,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/425.jsonl",
+    "bytes": 6453,
+    "sha256": "eca0d1ff424296b609e1dd545b16a65c2ca6c1e3fdb2293fffbd923b4574f8d9",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 426,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/426.jsonl",
+    "bytes": 6608,
+    "sha256": "bf48f827cf64a66aa2e53644d878728ac34101d1023e3fefc5e9c87aea965d2f",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 427,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/427.jsonl",
+    "bytes": 6664,
+    "sha256": "a4f46f73297ea24a37b1868c398a3cd8c0bc79960ebf206de71511716b0cb9f2",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 428,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/428.jsonl",
+    "bytes": 6521,
+    "sha256": "aa87181cd712cc07e2685391840ef161bc283f40895a7d0c77e7ceda52ae9385",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 429,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/429.jsonl",
+    "bytes": 6478,
+    "sha256": "5332373b330be20981f5e69cc4c185da58f3b1ae961d0dc03d2b315b622722ab",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 430,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/430.jsonl",
+    "bytes": 6688,
+    "sha256": "ca8d963749709f352902c3f34bf4234d897affcc18a1a7f236c7c47cf96b648b",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 431,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/431.jsonl",
+    "bytes": 6682,
+    "sha256": "35ea155880e351040abb1feeac34d98710a65c6d08f34b129336cd917cad95b3",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 432,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/432.jsonl",
+    "bytes": 6601,
+    "sha256": "77f3ff73879664dcdc7ac80235bf732a74169dcafb755ae82701a02b3b3fc7c0",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 433,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/433.jsonl",
+    "bytes": 6656,
+    "sha256": "29c2315841d126f101cbe8852c6c626cfc2f12d3386388afa27146485758221d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 434,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/434.jsonl",
+    "bytes": 6466,
+    "sha256": "742e0a0487af2967461dd65756fb978cab5e9358024ecae715f276fe017a24f9",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 435,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/435.jsonl",
+    "bytes": 6582,
+    "sha256": "a216500d8cbaa4f9e0145f20c7e9f197a34c2aedcee0912076cb8e7191278015",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 436,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/436.jsonl",
+    "bytes": 6693,
+    "sha256": "792afd69c9dc203b749b781e060a07759c298c5ed193d10f51d5147a5b796431",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 437,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/437.jsonl",
+    "bytes": 6480,
+    "sha256": "8158044526e875c69b82794c799009426ebb2cb137a1b3b2070021c1cd97803b",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 438,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/438.jsonl",
+    "bytes": 6567,
+    "sha256": "ac0ce6b885b84ebe5f089a703d610ff9965d61a56122f537cf6abea2e5fe33a6",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 439,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/439.jsonl",
+    "bytes": 6524,
+    "sha256": "4285e27b3afc855d7ebb6b9cf4ac058cc54e8057c0f0430ec3a46b2c776b1272",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 440,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/440.jsonl",
+    "bytes": 6588,
+    "sha256": "8473261628d246d40e9740e65b81b964c1d7e6c7e6b6fadd2e934a40b94861ff",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 441,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/441.jsonl",
+    "bytes": 6513,
+    "sha256": "6675fd2d127b11a77b8e4fdbbd65147f4b189afad36b400b79b20914b914664f",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 442,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/442.jsonl",
+    "bytes": 6534,
+    "sha256": "8ad5c7353d330bafb4e8ff22b4f5094a3d0861afe822f6f6e9db7e91baba366d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 443,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/443.jsonl",
+    "bytes": 6329,
+    "sha256": "a9000174377f17c64ac62f658263b0c1565efaf8713ee326b0687dc948ac7420",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 444,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/444.jsonl",
+    "bytes": 6507,
+    "sha256": "53d4e290b3213df17ea8d98abef23d564e6c19576f533200071cfce77079aaa1",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 445,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/445.jsonl",
+    "bytes": 6461,
+    "sha256": "be8c1c062d12670b0f46d8c11aadf8a29a39612d00eb167afc00a2844e959e18",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 446,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/446.jsonl",
+    "bytes": 6389,
+    "sha256": "d619f464f59376d0b06dc90166b845749d5478cfbdb7f71db209c361206ff988",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 447,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/447.jsonl",
+    "bytes": 17998,
+    "sha256": "11a748f9009bebd62a2eb81eb5893c9ef21177769808c50ffd2762701a1e5be4",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 448,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/448.jsonl",
+    "bytes": 16840,
+    "sha256": "72baa108c5054b1972e8095109e66553b19a74c3eb43472e5fc3e162d5489da9",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 449,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/449.jsonl",
+    "bytes": 7336,
+    "sha256": "56e7b0fd6b77b16e2d78b236ea48ba27630c42c9279649e74c4616111f4f49b5",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 450,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/450.jsonl",
+    "bytes": 19671,
+    "sha256": "18b24d05e6540c84f065c9d82be5109666482e2df342e601412fd54f7b0e8c57",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 451,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/451.jsonl",
+    "bytes": 19558,
+    "sha256": "da41b2ba10370d534024020b180b8e16651958561d85fe2eca13260391dd9da4",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 452,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/452.jsonl",
+    "bytes": 19842,
+    "sha256": "103b423ff5ef0ed93a3e8313a589ce60d56af7eb0f34607d93bf349a43251086",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 453,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/453.jsonl",
+    "bytes": 40847,
+    "sha256": "2d7018c359dbf6817a687f3c9e887ffb36916e2761ad7c47ebc15887ff676ca2",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 454,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/454.jsonl",
+    "bytes": 40907,
+    "sha256": "64fd2106d9ea25d35871bead28e2596f764280fdff00b2b1fae86756d4f9f9b5",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 455,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/455.jsonl",
+    "bytes": 56186,
+    "sha256": "f20e1fc9dd3338ba8c3a58b5be5f195d7cf1d3b7e26211d6fb016e753eb7a9c2",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 456,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/456.jsonl",
+    "bytes": 33197,
+    "sha256": "29285c34ac513166faa7248e0c7bd03a83ea66f32dfa82a402cfbeb4253c662b",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 457,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/457.jsonl",
+    "bytes": 32942,
+    "sha256": "a351c0dcfe60b43d96c8ac58b957c26f5e8ab405062608747fa2f0eeb116e9f8",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 458,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/458.jsonl",
+    "bytes": 45784,
+    "sha256": "b41ff559ae6b9a2c51fc3152e9ad6e569bc99b6cdcfce3ed87955daf9452d091",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 459,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/459.jsonl",
+    "bytes": 45656,
+    "sha256": "9a380e758430b80afd3226288de869eede3b74ab04b430a4c97cde9d705ff7bf",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 460,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/460.jsonl",
+    "bytes": 34156,
+    "sha256": "ddfd25408d0c29f5746fa963d72684ca1ef1332069c9e45b1421c4f5ceed1991",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 461,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/461.jsonl",
+    "bytes": 36575,
+    "sha256": "5d0ed68f9d178ca686c49083d25259b56bc096efde40cbd30d89e82e0efcb81d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 462,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/462.jsonl",
+    "bytes": 50679,
+    "sha256": "567b95149e0dd715add8ffa5737b7e4e436e5fdba49f828950d95c4362750dc4",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 463,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/463.jsonl",
+    "bytes": 13870,
+    "sha256": "7df5ab4bf8d71ad9522e17b4c49f06984d63515f121c83a01b74342375b1d4b8",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 464,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/464.jsonl",
+    "bytes": 12747,
+    "sha256": "1d5476f8417b007b690173561510b88c1f9f31195172984e4f26ff624d07fa21",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 465,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/465.jsonl",
+    "bytes": 14710,
+    "sha256": "c9b25d72ba63ac3086c61ee552ca12816496fc8d91e5443b3fd3662089baf007",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 466,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/466.jsonl",
+    "bytes": 14008,
+    "sha256": "a5f2898c485f21511d923d514aace4b4bbeac216e780dbab815f32953b2e8f79",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 467,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/467.jsonl",
+    "bytes": 13956,
+    "sha256": "bbfd88cfece7f0f530c1c77ddb3d95b882f3405b2d1011d3c0e539a79a569066",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 468,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/468.jsonl",
+    "bytes": 13964,
+    "sha256": "38ae62612373f9b5c138c1690811a7f0adce1db59a3c71c14b55574669395d1e",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 469,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/469.jsonl",
+    "bytes": 12936,
+    "sha256": "31ba5fb70806e38522a9ce944353a02af3a536279b240ec2a956e504ff4e3925",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 470,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/470.jsonl",
+    "bytes": 9278,
+    "sha256": "aa5a55e4a2b3177779ea5803a7f109919bb6c966ab5d5a4805b092866589c30a",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 471,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/471.jsonl",
+    "bytes": 8394,
+    "sha256": "7a48d8ce2c4ec80197daa10f9625421d9261bd0230af39dafe0036d2677176a6",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 472,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/472.jsonl",
+    "bytes": 33028,
+    "sha256": "cc41d472cef82e3e526d27948ef0f405b9550783116719cb26e044e5bd8decbf",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 473,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/473.jsonl",
+    "bytes": 6428,
+    "sha256": "5bbcbcaed46f6a4726c967564e28701772f98ddc6e27c459e625dd53ce004376",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 474,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/474.jsonl",
+    "bytes": 52643,
+    "sha256": "dbb637031672f7cd21df913f55a4e28f0e9bf7266f084c68aed7b2d2e6999181",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 475,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/475.jsonl",
+    "bytes": 37166,
+    "sha256": "5216d4a1dfe7157a1cc7e630efa1f160cc3851960df30234cce886e48f2d9797",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 476,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/476.jsonl",
+    "bytes": 55598,
+    "sha256": "ac8c82d08c09b17654d2444d11698332610c83a1c8d72336a0520a9fe4cb91f7",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 477,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/477.jsonl",
+    "bytes": 50890,
+    "sha256": "e37752478e3bb8e251cdc615c496c827a60940f672e829a0f00b6c9cbe133918",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 478,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/478.jsonl",
+    "bytes": 42529,
+    "sha256": "51e0ab6e3bccd7c619f0cfe0cddb6f5cb3aba34ec4ba5d30d48196ec28e74c01",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 479,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/479.jsonl",
+    "bytes": 46675,
+    "sha256": "43656bd559fcae96f8a32a69ebffbb0764fc59ad19e0190d064b050b9284bc4d",
+    "nul_bytes": 0,
+    "status": "valid"
+  },
+  {
+    "step": 480,
+    "path": "logs/rollouts/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/480.jsonl",
+    "bytes": 57053,
+    "sha256": "4c23488ea61c840bb06326262551b47fb9f24737291d5d81de7d8f6d7ae3f9a9",
+    "nul_bytes": 57053,
+    "status": "unreadable"
+  }
+]

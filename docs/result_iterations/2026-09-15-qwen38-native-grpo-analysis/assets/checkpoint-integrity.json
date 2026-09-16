@@ -1,0 +1,181 @@
+{
+  "checked_at": "2026-09-15T09:20:23.830389+00:00",
+  "method": "Full read below 100000 bytes, otherwise first 64 bytes only; no full model load or checksum",
+  "files": [
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/latest_checkpointed_iteration.txt",
+      "bytes": 3,
+      "read_bytes": 3,
+      "all_inspected_bytes_zero": true,
+      "full_file_inspected": true
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_460/data.pt",
+      "bytes": 1499,
+      "read_bytes": 1499,
+      "all_inspected_bytes_zero": false,
+      "full_file_inspected": true
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_460/actor/fsdp_config.json",
+      "bytes": 46,
+      "read_bytes": 46,
+      "all_inspected_bytes_zero": false,
+      "full_file_inspected": true
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_460/actor/lora_train_meta.json",
+      "bytes": 67,
+      "read_bytes": 67,
+      "all_inspected_bytes_zero": false,
+      "full_file_inspected": true
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_460/actor/optim_world_size_1_rank_0.pt",
+      "bytes": 999205960,
+      "read_bytes": 64,
+      "all_inspected_bytes_zero": false,
+      "full_file_inspected": false
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_460/actor/model_world_size_1_rank_0.pt",
+      "bytes": 55214335876,
+      "read_bytes": 64,
+      "all_inspected_bytes_zero": false,
+      "full_file_inspected": false
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_460/actor/extra_state_world_size_1_rank_0.pt",
+      "bytes": 15077,
+      "read_bytes": 15077,
+      "all_inspected_bytes_zero": false,
+      "full_file_inspected": true
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_460/actor/huggingface/tokenizer.json",
+      "bytes": 19989325,
+      "read_bytes": 64,
+      "all_inspected_bytes_zero": false,
+      "full_file_inspected": false
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_460/actor/huggingface/config.json",
+      "bytes": 3796,
+      "read_bytes": 3796,
+      "all_inspected_bytes_zero": false,
+      "full_file_inspected": true
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_460/actor/huggingface/generation_config.json",
+      "bytes": 213,
+      "read_bytes": 213,
+      "all_inspected_bytes_zero": false,
+      "full_file_inspected": true
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_460/actor/huggingface/tokenizer_config.json",
+      "bytes": 1165,
+      "read_bytes": 1165,
+      "all_inspected_bytes_zero": false,
+      "full_file_inspected": true
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_460/actor/huggingface/processor_config.json",
+      "bytes": 1191,
+      "read_bytes": 1191,
+      "all_inspected_bytes_zero": false,
+      "full_file_inspected": true
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_460/actor/huggingface/chat_template.jinja",
+      "bytes": 8952,
+      "read_bytes": 8952,
+      "all_inspected_bytes_zero": false,
+      "full_file_inspected": true
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_480/data.pt",
+      "bytes": 1499,
+      "read_bytes": 1499,
+      "all_inspected_bytes_zero": true,
+      "full_file_inspected": true
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_480/actor/fsdp_config.json",
+      "bytes": 46,
+      "read_bytes": 46,
+      "all_inspected_bytes_zero": true,
+      "full_file_inspected": true
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_480/actor/lora_train_meta.json",
+      "bytes": 67,
+      "read_bytes": 67,
+      "all_inspected_bytes_zero": true,
+      "full_file_inspected": true
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_480/actor/optim_world_size_1_rank_0.pt",
+      "bytes": 999205960,
+      "read_bytes": 64,
+      "all_inspected_bytes_zero": true,
+      "full_file_inspected": false
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_480/actor/model_world_size_1_rank_0.pt",
+      "bytes": 55214335876,
+      "read_bytes": 64,
+      "all_inspected_bytes_zero": false,
+      "full_file_inspected": false
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_480/actor/extra_state_world_size_1_rank_0.pt",
+      "bytes": 15077,
+      "read_bytes": 15077,
+      "all_inspected_bytes_zero": true,
+      "full_file_inspected": true
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_480/actor/huggingface/tokenizer.json",
+      "bytes": 19989325,
+      "read_bytes": 64,
+      "all_inspected_bytes_zero": true,
+      "full_file_inspected": false
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_480/actor/huggingface/config.json",
+      "bytes": 3796,
+      "read_bytes": 3796,
+      "all_inspected_bytes_zero": true,
+      "full_file_inspected": true
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_480/actor/huggingface/generation_config.json",
+      "bytes": 213,
+      "read_bytes": 213,
+      "all_inspected_bytes_zero": true,
+      "full_file_inspected": true
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_480/actor/huggingface/tokenizer_config.json",
+      "bytes": 1165,
+      "read_bytes": 1165,
+      "all_inspected_bytes_zero": true,
+      "full_file_inspected": true
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_480/actor/huggingface/processor_config.json",
+      "bytes": 1191,
+      "read_bytes": 1191,
+      "all_inspected_bytes_zero": true,
+      "full_file_inspected": true
+    },
+    {
+      "path": "checkpoints/GRPO-Qwen3.8-Smoke/Qwen3.8-27B-LoRA-FSDP2-MIG67G-ReferenceReward/global_step_480/actor/huggingface/chat_template.jinja",
+      "bytes": 8952,
+      "read_bytes": 8952,
+      "all_inspected_bytes_zero": true,
+      "full_file_inspected": true
+    }
+  ]
+}

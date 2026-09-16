@@ -1,0 +1,21 @@
+{
+  "scope": "steps 1-221, snapshot 2026-09-12 UTC",
+  "steps": 221,
+  "answers": 442,
+  "zero_rewards": 432,
+  "mean_reward": 0.012160444505748706,
+  "equal_reward_steps": 217,
+  "reward_difference_steps": [
+    5,
+    6,
+    7,
+    36
+  ],
+  "categories": {
+    "json_parse_failure": 152,
+    "json_positive": 10,
+    "tool_xml_protocol_mismatch": 180,
+    "json_parsed_zero": 66,
+    "tool_no_matching_call_block": 34
+  }
+}
