@@ -27,7 +27,7 @@ export TOKENIZERS_PARALLELISM=false
 # ------------------------------------------------------------
 
 # 已通过 uv sync 安装好的固定环境；训练时不再调用 uv run
-PYTHON=${PYTHON:-/workspace/.venv/verl/bin/python3}
+PYTHON=${PYTHON:-/shared/users/yangyq/env/verl/bin/python}
 
 if [ ! -x "${PYTHON}" ]; then
     echo "ERROR: Python not found or not executable: ${PYTHON}" >&2
@@ -76,7 +76,7 @@ export PYTHONPATH="${RECIPE_ROOT}${PYTHONPATH:+:${PYTHONPATH}}"
 # SwanLab
 # ------------------------------------------------------------
 # 二选一即可：
-#   1) 提前执行: /workspace/.venv/verl/bin/swanlab login
+#   1) 提前执行: /shared/users/yangyq/env/verl/bin/swanlab login
 #   2) 运行前:   export SWANLAB_API_KEY=xxxx
 #
 # 不在脚本里写死 API Key。
@@ -443,7 +443,7 @@ RAY=(
 
 ray stop --force || true
 
-# 直接使用已经同步好的 /workspace/.venv/verl；不再执行 uv run / uv sync
+# 直接使用已经同步好的 /shared/users/yangyq/env/verl；不再执行 uv run / uv sync
 "${PYTHON}" -m verl.trainer.main_ppo \
     "${DATA[@]}" \
     "${MODEL[@]}" \

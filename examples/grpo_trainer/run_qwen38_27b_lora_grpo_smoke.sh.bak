@@ -1,0 +1,293 @@
+#!/usr/bin/env bash
+set -xeuo pipefail
+
+# ============================================================
+# Qwen3.8-27B
+# verl GRPO + FSDP2 + LoRA + vLLM
+# B300 MIG 2g.67gb smoke test
+#
+# 1 GPU
+# prompt <= 8192
+# response <= 4096
+# rollout.n = 2
+# train_batch_size = 1
+# total_training_steps = 1
+# ============================================================
+
+export VLLM_USE_V1=1
+export TOKENIZERS_PARALLELISM=false
+
+# ------------------------------------------------------------
+# Python environment
+# ------------------------------------------------------------
+
+# 已通过 uv sync 安装好的固定环境；训练时不再调用 uv run
+PYTHON=${PYTHON:-/workspace/.venv/verl/bin/python3}
+
+if [ ! -x "${PYTHON}" ]; then
+    echo "ERROR: Python not found or not executable: ${PYTHON}" >&2
+    exit 1
+fi
+
+# ------------------------------------------------------------
+# 必改
+# ------------------------------------------------------------
+
+MODEL_PATH=${MODEL_PATH:-"Qwen/Qwen3.8-27B"}
+
+# verl 标准 GRPO parquet
+TRAIN_FILE=${TRAIN_FILE:?Please set TRAIN_FILE=/path/to/train.parquet}
+
+# smoke 不做 validation，直接复用 train file
+TEST_FILE=${TEST_FILE:-"${TRAIN_FILE}"}
+
+# ------------------------------------------------------------
+# Hardware
+# ------------------------------------------------------------
+
+NDEVICES_PER_NODE=1
+NNODES=1
+
+# 单 MIG，只能 TP=1
+GEN_TP=1
+FSDP_SIZE=1
+SP_SIZE=1
+
+# ------------------------------------------------------------
+# Smoke-test parameters
+# ------------------------------------------------------------
+
+TRAIN_BATCH_SIZE=1
+PPO_MINI_BATCH_SIZE=1
+PPO_MICRO_BATCH_SIZE_PER_GPU=1
+
+MAX_PROMPT_LENGTH=8192
+MAX_RESPONSE_LENGTH=4096
+
+# 8192 + 4096
+MAX_MODEL_LEN=12288
+
+# 真正 GRPO，保留两个 response
+ROLLOUT_N=2
+
+# LoRA
+# smoke 先 rank32，显存和兼容性更稳
+LORA_RANK=32
+LORA_ALPHA=64
+
+ACTOR_LR=3e-6
+
+# ------------------------------------------------------------
+# vLLM
+# ------------------------------------------------------------
+
+# 67GB MIG：
+# 27B BF16 本身已经 ~55GB，因此这个值必须比较高
+ROLLOUT_GPU_MEM_UTIL=0.93
+
+# chunked prefill，降低 8K prompt prefill 峰值
+MAX_NUM_BATCHED_TOKENS=2048
+
+PROJECT_NAME="GRPO-Qwen3.8-Smoke"
+EXPERIMENT_NAME="Qwen3.8-27B-LoRA-FSDP2-B300-MIG67G"
+
+mkdir -p logs
+START_TIME=$(date +%Y%m%d_%H%M%S)
+
+# ============================================================
+# DATA
+# ============================================================
+
+DATA=(
+    algorithm.adv_estimator=grpo
+    algorithm.use_kl_in_reward=False
+
+    data.train_files="${TRAIN_FILE}"
+    data.val_files="${TEST_FILE}"
+
+    # 1 prompt × rollout.n=2
+    data.train_batch_size=${TRAIN_BATCH_SIZE}
+
+    # dataset 再多也只取几条，加快 smoke
+    data.train_max_samples=4
+    data.val_max_samples=1
+
+    data.max_prompt_length=${MAX_PROMPT_LENGTH}
+    data.max_response_length=${MAX_RESPONSE_LENGTH}
+
+    data.filter_overlong_prompts=True
+    data.truncation=error
+    data.shuffle=False
+)
+
+# ============================================================
+# MODEL / LoRA
+# ============================================================
+
+MODEL=(
+    actor_rollout_ref.model.path="${MODEL_PATH}"
+
+    actor_rollout_ref.model.enable_gradient_checkpointing=True
+
+    # Qwen3.5/3.8 hybrid architecture 官方 recipe 使用该优化
+    actor_rollout_ref.model.use_remove_padding=True
+
+    # -------- LoRA --------
+    actor_rollout_ref.model.lora_rank=${LORA_RANK}
+    actor_rollout_ref.model.lora_alpha=${LORA_ALPHA}
+    actor_rollout_ref.model.target_modules=all-linear
+)
+
+# ============================================================
+# ACTOR: FSDP2 + aggressive offload
+# ============================================================
+
+ACTOR=(
+    actor_rollout_ref.actor.strategy=fsdp2
+
+    actor_rollout_ref.actor.optim.lr=${ACTOR_LR}
+
+    # 这里的 mini batch 单位按 prompt
+    actor_rollout_ref.actor.ppo_mini_batch_size=${PPO_MINI_BATCH_SIZE}
+    actor_rollout_ref.actor.ppo_micro_batch_size_per_gpu=${PPO_MICRO_BATCH_SIZE_PER_GPU}
+
+    actor_rollout_ref.actor.ppo_epochs=1
+    actor_rollout_ref.actor.use_dynamic_bsz=False
+
+    # KL
+    actor_rollout_ref.actor.use_kl_loss=True
+    actor_rollout_ref.actor.kl_loss_coef=0.001
+    actor_rollout_ref.actor.kl_loss_type=low_var_kl
+
+    actor_rollout_ref.actor.entropy_coeff=0
+
+    # smoke / hybrid model 先关 compile，少踩坑
+    actor_rollout_ref.actor.use_torch_compile=False
+
+    # -------- FSDP2 --------
+    actor_rollout_ref.actor.fsdp_config.fsdp_size=${FSDP_SIZE}
+    actor_rollout_ref.actor.fsdp_config.reshard_after_forward=True
+
+    # 67GB MIG 的关键
+    actor_rollout_ref.actor.fsdp_config.offload_policy=True
+    actor_rollout_ref.actor.fsdp_config.param_offload=True
+    actor_rollout_ref.actor.fsdp_config.optimizer_offload=True
+
+    # 降低 logits / entropy 峰值
+    actor_rollout_ref.actor.fsdp_config.entropy_checkpointing=True
+    actor_rollout_ref.actor.entropy_from_logits_with_chunking=True
+
+    actor_rollout_ref.actor.fsdp_config.ulysses_sequence_parallel_size=${SP_SIZE}
+)
+
+# ============================================================
+# REFERENCE
+# ============================================================
+
+REF=(
+    actor_rollout_ref.ref.strategy=fsdp2
+
+    actor_rollout_ref.ref.log_prob_micro_batch_size_per_gpu=1
+    actor_rollout_ref.ref.log_prob_use_dynamic_bsz=False
+
+    actor_rollout_ref.ref.use_torch_compile=False
+
+    actor_rollout_ref.ref.fsdp_config.param_offload=True
+    actor_rollout_ref.ref.fsdp_config.offload_policy=True
+    actor_rollout_ref.ref.fsdp_config.reshard_after_forward=True
+
+    actor_rollout_ref.ref.entropy_from_logits_with_chunking=True
+    actor_rollout_ref.ref.fsdp_config.ulysses_sequence_parallel_size=${SP_SIZE}
+)
+
+# ============================================================
+# vLLM rollout
+# ============================================================
+
+ROLLOUT=(
+    actor_rollout_ref.rollout.name=vllm
+
+    actor_rollout_ref.rollout.tensor_model_parallel_size=${GEN_TP}
+
+    # 真正 GRPO
+    actor_rollout_ref.rollout.n=${ROLLOUT_N}
+
+    actor_rollout_ref.rollout.ignore_eos=False
+
+    # LoRA + vLLM
+    actor_rollout_ref.rollout.load_format=safetensors
+    actor_rollout_ref.rollout.layered_summon=True
+
+    # -------- memory --------
+
+    actor_rollout_ref.rollout.gpu_memory_utilization=${ROLLOUT_GPU_MEM_UTIL}
+
+    actor_rollout_ref.rollout.max_model_len=${MAX_MODEL_LEN}
+
+    # 虽然 n=2，但 vLLM 同时只处理 1 条 sequence
+    # 更慢，但降低 smoke 峰值
+    actor_rollout_ref.rollout.max_num_seqs=1
+
+    # 8K prompt 分块 prefill
+    actor_rollout_ref.rollout.enable_chunked_prefill=True
+    actor_rollout_ref.rollout.max_num_batched_tokens=${MAX_NUM_BATCHED_TOKENS}
+
+    # smoke 先关闭，减少 hybrid model 兼容性变量
+    actor_rollout_ref.rollout.enable_prefix_caching=False
+
+    # 不捕获 CUDA graph，节省一部分显存
+    actor_rollout_ref.rollout.enforce_eager=True
+
+    # actor 阶段释放 rollout cache
+    actor_rollout_ref.rollout.free_cache_engine=True
+
+    # logprob 一条一条算
+    actor_rollout_ref.rollout.log_prob_micro_batch_size_per_gpu=1
+    actor_rollout_ref.rollout.log_prob_use_dynamic_bsz=False
+)
+
+# ============================================================
+# Trainer
+# ============================================================
+
+TRAINER=(
+    trainer.critic_warmup=0
+
+    trainer.logger='["console"]'
+
+    trainer.project_name="${PROJECT_NAME}"
+    trainer.experiment_name="${EXPERIMENT_NAME}"
+
+    trainer.n_gpus_per_node=${NDEVICES_PER_NODE}
+    trainer.nnodes=${NNODES}
+
+    trainer.balance_batch=False
+
+    # smoke：不 validate，不存 checkpoint
+    trainer.val_before_train=False
+    trainer.save_freq=-1
+    trainer.test_freq=-1
+
+    # ★ 只跑一个 GRPO training step
+    trainer.total_training_steps=1
+    trainer.total_epochs=1
+)
+
+# ============================================================
+# Launch
+# ============================================================
+
+ray stop --force || true
+
+# 直接使用已经安装好的 /workspace/.venv/verl 环境。
+# Driver 与 Ray worker 都显式使用同一个 Python，避免 Ray 拉起后跑到系统 Python。
+"${PYTHON}" -m verl.trainer.main_ppo \
+    "${DATA[@]}" \
+    "${MODEL[@]}" \
+    "${ACTOR[@]}" \
+    "${REF[@]}" \
+    "${ROLLOUT[@]}" \
+    "${TRAINER[@]}" \
+    ray_kwargs.ray_init.runtime_env.py_executable="${PYTHON}" \
+    "$@" \
+    2>&1 | tee "logs/${EXPERIMENT_NAME}-${START_TIME}.log"

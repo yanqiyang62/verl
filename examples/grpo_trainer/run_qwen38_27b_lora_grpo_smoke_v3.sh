@@ -35,41 +35,45 @@ if [ ! -x "${PYTHON}" ]; then
 fi
 
 # ------------------------------------------------------------
-# recipe_v2_fixed
+# recipe_v3_qwen38_json
 # ------------------------------------------------------------
-# 推荐把本脚本放在 recipe_v2_fixed/ 目录内；也支持放在它的父目录。
+# 推荐把本脚本放在 recipe_v3_qwen38_json/ 目录内；也支持放在它的父目录。
 # 如果放在其他位置，运行前：
-#   export RECIPE_ROOT=/path/to/recipe_v2_fixed
+#   export RECIPE_ROOT=/path/to/recipe_v3_qwen38_json
 # ------------------------------------------------------------
 
 SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 
 if [ -z "${RECIPE_ROOT:-}" ]; then
-    if [ -f "${SCRIPT_DIR}/tf_rl/reward.py" ]; then
+    if [ -f "${SCRIPT_DIR}/runtime/reward.py" ]; then
         RECIPE_ROOT="${SCRIPT_DIR}"
-    elif [ -f "${SCRIPT_DIR}/recipe_v2_fixed/tf_rl/reward.py" ]; then
-        RECIPE_ROOT="${SCRIPT_DIR}/recipe_v2_fixed"
+    elif [ -f "${SCRIPT_DIR}/recipe_v3_qwen38_json/runtime/reward.py" ]; then
+        RECIPE_ROOT="${SCRIPT_DIR}/recipe_v3_qwen38_json"
     else
-        echo "ERROR: Cannot locate recipe_v2_fixed." >&2
-        echo "Set it explicitly: export RECIPE_ROOT=/path/to/recipe_v2_fixed" >&2
+        echo "ERROR: Cannot locate recipe_v3_qwen38_json." >&2
+        echo "Set it explicitly: export RECIPE_ROOT=/path/to/recipe_v3_qwen38_json" >&2
         exit 1
     fi
 fi
 
 RECIPE_ROOT=$(cd "${RECIPE_ROOT}" && pwd)
 
-REWARD_FILE="${RECIPE_ROOT}/tf_rl/reward.py"
-DATASET_FILE="${RECIPE_ROOT}/tf_rl/dataset.py"
+REWARD_FILE="${RECIPE_ROOT}/runtime/reward.py"
+DATASET_FILE="${RECIPE_ROOT}/runtime/dataset.py"
 AGENT_LOOP_CONFIG="${RECIPE_ROOT}/agent_loop.yaml"
+CHAT_TEMPLATE_FILE="${RECIPE_ROOT}/templates/qwen38_json_tools.jinja"
 
-for f in "${REWARD_FILE}" "${DATASET_FILE}" "${AGENT_LOOP_CONFIG}"; do
+for f in "${REWARD_FILE}" "${DATASET_FILE}" "${AGENT_LOOP_CONFIG}" "${CHAT_TEMPLATE_FILE}"; do
     if [ ! -f "${f}" ]; then
         echo "ERROR: Required recipe file not found: ${f}" >&2
         exit 1
     fi
 done
 
-# tf_rl.agent_loop / tf_rl.rendering 必须能被 driver 和 Ray worker import
+# JSON 引号和换行转义让完整模板作为单个 Hydra 字符串参数传入。
+CHAT_TEMPLATE=$("${PYTHON}" -c 'import json, sys; from pathlib import Path; print(json.dumps(Path(sys.argv[1]).read_text(), ensure_ascii=False))' "${CHAT_TEMPLATE_FILE}")
+
+# runtime.agent_loop / runtime.rendering 必须能被 driver 和 Ray worker import
 export PYTHONPATH="${RECIPE_ROOT}${PYTHONPATH:+:${PYTHONPATH}}"
 
 # ------------------------------------------------------------
@@ -102,10 +106,10 @@ PY
 
 MODEL_PATH=${MODEL_PATH:-"Qwen/Qwen3.8-27B"}
 
-# 这个 reward + dataset + agent loop 是和 rule_*.parquet 配套的。
+# 读取 v3 已通过长度预检的 data/runtime/{train,val}.parquet。
 # 需要换路径可以在运行时覆盖 TRAIN_FILE / TEST_FILE。
-TRAIN_FILE=${TRAIN_FILE:-"${RECIPE_ROOT}/data/rule_train.parquet"}
-TEST_FILE=${TEST_FILE:-"${RECIPE_ROOT}/data/rule_val.parquet"}
+TRAIN_FILE=${TRAIN_FILE:-"${RECIPE_ROOT}/data/runtime/train.parquet"}
+TEST_FILE=${TEST_FILE:-"${RECIPE_ROOT}/data/runtime/val.parquet"}
 
 if [ ! -f "${TRAIN_FILE}" ]; then
     echo "ERROR: TRAIN_FILE not found: ${TRAIN_FILE}" >&2
@@ -191,7 +195,7 @@ DATA=(
     data.custom_cls.path="${DATASET_FILE}"
     data.custom_cls.name=FixedPrefixDataset
 
-    # 和 recipe_v2_fixed/run.py 的默认模板设置保持一致
+    # 和 v3 runtime/rendering.py 的 JSON 模板设置保持一致
     ++data.apply_chat_template_kwargs.enable_thinking=false
 
     # Qwen3.8 may expose a processor, but this recipe is text-only.
@@ -218,6 +222,7 @@ DATA=(
 
 MODEL=(
     actor_rollout_ref.model.path="${MODEL_PATH}"
+    "actor_rollout_ref.model.custom_chat_template=${CHAT_TEMPLATE}"
     actor_rollout_ref.model.enable_gradient_checkpointing=True
     +actor_rollout_ref.model.override_config.attn_implementation=sdpa
     ################################################################################################################################################
@@ -351,8 +356,8 @@ ROLLOUT=(
     # 不是在线真实工具多轮执行，所以 multi_turn 保持 false。
     actor_rollout_ref.rollout.multi_turn.enable=False
 
-    # 使用你包里的 fixed_prefix_agent
-    actor_rollout_ref.rollout.agent.default_agent_loop=fixed_prefix_agent
+    # 使用 v3 agent_loop.yaml 注册的 v3_fixed_prefix_agent
+    actor_rollout_ref.rollout.agent.default_agent_loop=v3_fixed_prefix_agent
     actor_rollout_ref.rollout.agent.agent_loop_config_path="${AGENT_LOOP_CONFIG}"
     actor_rollout_ref.rollout.agent.num_workers=1
     actor_rollout_ref.rollout.checkpoint_engine.update_weights_bucket_megabytes=3072
@@ -433,7 +438,7 @@ TRAINER=(
 RAY=(
     ray_kwargs.ray_init.runtime_env.py_executable="${PYTHON}"
 
-    # agent_loop.yaml 里的 _target_=tf_rl.agent_loop... 需要 Ray worker 能 import tf_rl
+    # agent_loop.yaml 里的 _target_=runtime.agent_loop... 需要 Ray worker 能 import runtime
     ++ray_kwargs.ray_init.runtime_env.env_vars.PYTHONPATH="${PYTHONPATH}"
 )
 
