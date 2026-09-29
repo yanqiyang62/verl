@@ -41,6 +41,35 @@ workers. Allow sufficient disk and host-memory headroom for initialization.
 
 Run from the integration worktree:
 
+For a **single-node, four-B300 smoke**, use
+`tasks/q38_next_4xb300_lora_grpo_smoke.sh` with the same environment variables
+below. This preset runs one step and saves a checkpoint: FSDP4 / TP4, four prompts
+with two responses each, 2K prompt + 2K response, no MTP/CUDA Graph, no evaluation
+or automatic resume. `VAL_FILE` can be omitted (it reuses `TRAIN_FILE` while
+evaluation is disabled). `OUTPUT_DIR` defaults to a new timestamped checkpoint
+directory. `RAY_ADDRESS` defaults to `local`; use `auto` only when intentionally
+connecting to an existing four-GPU Ray allocation. `DRY_RUN=1` composes the config
+without requiring real checkpoint/data paths or starting training. This is a
+smoke preset, not a measured guarantee of four-GPU capacity or learning progress.
+
+Single-node resource planning for that smoke (estimates, not measured minima):
+
+| Resource | Initial allocation | More headroom |
+| --- | --- | --- |
+| GPU | 4 B300, 288 GB nominal HBM each, same NVLink/NVSwitch domain | 8 B300 for larger batches; change topology accordingly |
+| Host RAM | 1 TB is a constrained trial; prefer 2 TB | 2 TB for the four-GPU smoke |
+| CPU | 128 logical CPUs allocated to the job | 256 logical CPUs |
+| Local NVMe | 1 TB free for checkpoint files, mmap and temporary data | 2 TB free if retaining both FP8 source and BF16 conversion |
+
+With SMT2, 128/256 logical CPUs correspond to 64/128 physical cores; confirm the
+scheduler's accounting and actual CPU topology. Core counts are throughput
+planning assumptions, not a model-imposed minimum. RAM capacity and bandwidth can
+matter more than adding cores. The CPU embedding is about 100 GB; per-rank CPU
+weight backups and initialization copies consume additional hundreds of GB.
+Request host RAM explicitly when sharing an eight-GPU node: allocating four GPUs
+does not guarantee access to the whole node's RAM. Keep at least 10–15% memory
+headroom and measure initialization, rollout sleep, update and save peaks.
+
 ```bash
 export PYTHON=/path/to/prepared-uv-env/bin/python
 export MODEL_PATH=/models/Qwen3.8-Flash-Next-BF16

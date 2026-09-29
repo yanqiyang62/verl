@@ -44,5 +44,5 @@ exec bash "${REPO_ROOT}/scripts/run_qwen38_lora_dapo.sh" \
     trainer.project_name=qwen38_next_lora_grpo \
     trainer.experiment_name=next_bf16_fsdp16_tp4 \
     "++ray_kwargs.ray_init.runtime_env.env_vars.VERL_NO_PLACEMENT_MMAP_DIR=${VERL_NO_PLACEMENT_MMAP_DIR}" \
-    "${PREVIEW[@]}" \
-    "$@"
+    "$@" \
+    "${PREVIEW[@]}"
