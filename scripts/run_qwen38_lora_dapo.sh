@@ -10,7 +10,12 @@ set -euo pipefail
 : "${VAL_FILE:?set the held-out AIME2024 parquet}"
 : "${OUTPUT_DIR:?set the checkpoint directory}"
 
-exec uv run --active --no-sync python -m verl.trainer.main_ppo \
+LAUNCH=(uv run --active --no-sync python)
+if [[ -n "${PYTHON:-}" ]]; then
+    LAUNCH=("${PYTHON}")
+fi
+
+exec "${LAUNCH[@]}" -m verl.trainer.main_ppo \
     algorithm.adv_estimator=grpo \
     algorithm.use_kl_in_reward=False \
     data.train_files="['${TRAIN_FILE}']" \
