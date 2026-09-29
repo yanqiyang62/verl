@@ -70,6 +70,16 @@ Signed-off-by: Your Name <your.email@example.com>
 
 Review comments from agent bots (e.g., gemini-code-assist) can be outdated or wrong. Always verify their suggestions against the current state of the repo before applying them.
 
+### Training result analysis records
+
+After every training-result analysis, save an iteration report under `report/iterations/` before replying with the final conclusions. This applies to training runs, rollout/reward quality, evaluation results, training failures, and performance analyses; it does not apply to unrelated code or documentation tasks.
+
+- Use a separate timestamped directory for each analysis and update the index in `report/iterations/README.md`; preserve earlier reports.
+- Record the run/checkpoint, data and reward versions, analyzed steps and snapshot time, current training state, key metrics, and evidence/log paths.
+- State what was optimized, why, and the observed before/after results. Distinguish implemented changes from proposals; if no training change was made, say so.
+- List remaining problems, confirmed causes versus hypotheses, validation limits, and prioritized next steps with success criteria. Note any additional training or model API calls and their measured cost, if available.
+- Link the report in the final response. Keep credentials out of reports.
+
 ---
 
 ## Domain-Specific Guides

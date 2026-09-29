@@ -139,8 +139,9 @@ class LLMServerClient:
             priority_kwargs = (
                 {"priority": priority} if priority != 0 and self.config.actor_rollout_ref.rollout.name == "vllm" else {}
             )
-            output: TokenOutput = await server.generate.remote(
-                request_id=self._vllm_request_id(request_id),  # use new request_id for each turn
+            backend_request_id = self._vllm_request_id(request_id)
+            generation_ref = server.generate.remote(
+                request_id=backend_request_id,  # use new request_id for each turn
                 prompt_ids=prompt_ids,
                 sampling_params=sampling_params,
                 image_data=image_data,
@@ -149,6 +150,21 @@ class LLMServerClient:
                 **priority_kwargs,
                 **kwargs,
             )
+            try:
+                output: TokenOutput = await generation_ref
+            except asyncio.CancelledError:
+                # Cancelling an ObjectRef await alone does not stop a Ray actor call.
+                # Cancel the remote coroutine as well, including requests parked at
+                # the weight-update admission gate, before releasing this client slot.
+                ray.cancel(generation_ref)
+                if self.config.actor_rollout_ref.rollout.name == "vllm":
+                    try:
+                        await asyncio.wait_for(
+                            server.abort_request.remote(backend_request_id, reset_prefix_cache=False), timeout=10
+                        )
+                    except Exception:
+                        logger.warning("Failed to acknowledge request abort: %s", backend_request_id, exc_info=True)
+                raise
             global_steps = output.extra_fields.get("global_steps")
             output.extra_fields.setdefault("min_global_steps", global_steps)
             output.extra_fields.setdefault("max_global_steps", global_steps)

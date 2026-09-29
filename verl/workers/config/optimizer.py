@@ -93,8 +93,8 @@ class FSDPOptimizerConfig(OptimizerConfig):
         optimizer_impl (str): Module path to import optimizer from (e.g., "torch.optim", "torchao.optim",
             "bitsandbytes.optim").
         lr (float): Learning rate.
-        min_lr_ratio (Optional[float]): Minimum LR ratio for cosine schedule.
-        lr_scheduler_type (str): LR scheduler type: "constant" or "cosine".
+        min_lr_ratio (Optional[float]): Minimum LR ratio for cosine or WSD schedule.
+        lr_scheduler_type (str): LR scheduler type: "constant", "cosine", or "wsd".
         num_cycles (float): Number of cosine cycles in LR schedule.
         zero_indexed_step (bool): Whether the LR schedule uses 0-indexed steps. If True (default),
             step counting starts at 0. If False, step counting starts at 1.
@@ -120,7 +120,7 @@ class FSDPOptimizerConfig(OptimizerConfig):
                 "`warmup_style` is deprecated, use `lr_scheduler_type` instead.", DeprecationWarning, stacklevel=2
             )
             self.lr_scheduler_type = self.warmup_style
-        assert self.lr_scheduler_type in ["constant", "cosine"]
+        assert self.lr_scheduler_type in ["constant", "cosine", "wsd"]
         return super().__post_init__()
 
 

@@ -34,6 +34,14 @@ if [ ! -x "${PYTHON}" ]; then
     exit 1
 fi
 
+# ============================================================
+# Patch Transformers 5.9.0 <-> FA4 max_seqlen compatibility
+# ============================================================
+
+PATCH_FILE=/shared/users/yangyq/projects/verl/scripts/patch_transformers_fa4_max_seqlen.py
+
+"$PYTHON" "$PATCH_FILE"
+
 # ------------------------------------------------------------
 # recipe_v2_fixed
 # ------------------------------------------------------------

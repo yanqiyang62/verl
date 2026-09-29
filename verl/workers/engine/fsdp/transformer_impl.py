@@ -496,7 +496,11 @@ class FSDPEngine(BaseEngine):
         return optimizer
 
     def _build_lr_scheduler(self, optimizer):
-        from verl.utils.torch_functional import get_constant_schedule_with_warmup, get_cosine_schedule_with_warmup
+        from verl.utils.torch_functional import (
+            get_constant_schedule_with_warmup,
+            get_cosine_schedule_with_warmup,
+            get_wsd_schedule_with_warmup,
+        )
 
         optim_config = self.optimizer_config
 
@@ -523,6 +527,14 @@ class FSDPEngine(BaseEngine):
                 min_lr_ratio=min_lr_ratio,
                 num_cycles=num_cycles,
                 zero_indexed_step=zero_indexed_step,
+            )
+        elif lr_scheduler_type == "wsd":
+            lr_scheduler = get_wsd_schedule_with_warmup(
+                optimizer=optimizer,
+                num_warmup_steps=num_warmup_steps,
+                num_training_steps=total_steps,
+                min_lr_ratio=0.0 if min_lr_ratio is None else min_lr_ratio,
+                num_cycles=num_cycles,
             )
         else:
             raise NotImplementedError(f"LR scheduler type {lr_scheduler_type} is not supported")

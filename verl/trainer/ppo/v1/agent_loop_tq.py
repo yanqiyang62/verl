@@ -17,6 +17,7 @@
 
 import asyncio
 import logging
+import math
 import os
 from typing import Any
 
@@ -49,12 +50,29 @@ async def _settle_session_tasks(tasks: list[asyncio.Task[Any]]) -> list[BaseExce
     return [result for result in results if isinstance(result, BaseException)]
 
 
+async def _run_session_with_deadline(coroutine, timeout_seconds, uid, session_id):
+    """Cancel and settle one trajectory before publishing its group's terminal status."""
+    try:
+        return await asyncio.wait_for(coroutine, timeout=timeout_seconds)
+    except TimeoutError as exc:
+        raise TimeoutError(
+            f"Rollout trajectory deadline exceeded: uid={uid} sample_id={session_id} "
+            f"limit={timeout_seconds}s; cancelled before group cleanup"
+        ) from exc
+
+
 @ray.remote
 class AgentLoopWorkerTQ(AgentLoopWorker):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         tq.init()
         self.background_tasks = set()
+        options = self.config.trainer.v1.sampler.get("sampler_kwargs", {})
+        self.trajectory_timeout = options.get("trajectory_timeout_seconds", None)
+        if self.trajectory_timeout is not None:
+            self.trajectory_timeout = float(self.trajectory_timeout)
+            if not math.isfinite(self.trajectory_timeout) or self.trajectory_timeout <= 0:
+                raise ValueError("trajectory_timeout_seconds must be finite and positive")
 
     async def generate_sequences(self, batch: TensorDict) -> None:
         """Spawn agent loop for each sample in the batch without waiting for the results."""
@@ -122,8 +140,13 @@ class AgentLoopWorkerTQ(AgentLoopWorker):
             tasks = []
             for i in range(n):
                 task = asyncio.create_task(
-                    self._run_agent_loop(
-                        run_sampling_params, trajectory=trajectory, trace=trace, session_id=i, **prompt
+                    _run_session_with_deadline(
+                        self._run_agent_loop(
+                            run_sampling_params, trajectory=trajectory, trace=trace, session_id=i, **prompt
+                        ),
+                        self.trajectory_timeout,
+                        uid,
+                        i,
                     )
                 )
                 tasks.append(task)

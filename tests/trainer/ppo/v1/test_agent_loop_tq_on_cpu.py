@@ -37,3 +37,71 @@ def test_settle_session_tasks_waits_for_siblings_after_failure():
         assert isinstance(errors[0], RuntimeError)
 
     asyncio.run(run())
+
+
+def test_deadline_settles_cancelled_trajectory_before_group_terminal():
+    from verl.trainer.ppo.v1.agent_loop_tq import _run_session_with_deadline
+
+    async def run():
+        writes = []
+        cleanup = asyncio.Event()
+
+        async def hangs():
+            try:
+                await asyncio.Event().wait()
+                writes.append("late-write")
+            finally:
+                await asyncio.sleep(0.01)
+                cleanup.set()
+
+        tasks = [asyncio.create_task(_run_session_with_deadline(hangs(), 0.01, "slow-group", 0))]
+        errors = await _settle_session_tasks(tasks)
+        assert cleanup.is_set()
+        assert tasks[0].done()
+        assert len(errors) == 1
+        assert isinstance(errors[0], TimeoutError)
+        assert "slow-group" in str(errors[0]) and "sample_id=0" in str(errors[0])
+        await asyncio.sleep(0.01)
+        assert writes == []
+
+    asyncio.run(run())
+
+
+def test_fifteen_complete_one_stuck_publishes_three_finished_one_failure(monkeypatch):
+    from types import SimpleNamespace
+
+    import verl.trainer.ppo.v1.agent_loop_tq as module
+
+    async def run():
+        tags, writes, cancelled = {}, [], []
+
+        async def put(key, partition_id, tag):
+            if tag["status"] == "failure":
+                assert cancelled == [("group3", 0)]  # No terminal status before cancellation settles.
+            tags[key] = tag["status"]
+
+        async def session(params, *, uid, session_id, **kwargs):
+            if uid == "group3" and session_id == 0:
+                try:
+                    await asyncio.Event().wait()
+                finally:
+                    cancelled.append((uid, session_id))
+            else:
+                await asyncio.sleep(0.001)
+                writes.append((uid, session_id))
+
+        monkeypatch.setattr(module.tq, "async_kv_put", put)
+        worker = SimpleNamespace(
+            config=SimpleNamespace(actor_rollout_ref=SimpleNamespace(rollout=SimpleNamespace(n=4))),
+            trajectory_timeout=0.03,
+            _run_agent_loop=session,
+        )
+        method = module.AgentLoopWorkerTQ.__ray_metadata__.modified_class._run_prompt
+        await asyncio.gather(*(method(worker, {"uid": f"group{i}"}, {}, {"validate": False}) for i in range(4)))
+        assert len(writes) == 15
+        assert list(tags.values()).count("finished") == 3
+        assert tags["group3"] == "failure"
+        await asyncio.sleep(0.01)
+        assert len(writes) == 15
+
+    asyncio.run(run())
